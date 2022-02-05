@@ -1,6 +1,28 @@
 import { css, html, LitElement } from 'lit';
-import { customElement } from 'lit/decorators.js';
+import { customElement, property, state } from 'lit/decorators.js';
 import { globalStyle } from './styles';
+
+const steps = [
+  {
+    navigation: html`<nav>HIIT Calisthenics</nav>`,
+    info: html` <article>
+      <p>Next workout</p>
+      <p>B</p>
+    </article>`,
+    input: html` <aside>
+      <input type="text" />
+    </aside>`,
+    button: html`<button>Start</button>`,
+  },
+  {
+    navigation: html`<nav>< Warmup X</nav>`,
+    info: html` <article>
+      <p>Picture of person</p>
+    </article>`,
+    input: html` <aside>90</aside>`,
+    button: html`<button>Start</button>`,
+  },
+];
 
 @customElement('hiit-calisthenics')
 export class HiitCalisthenics extends LitElement {
@@ -36,20 +58,26 @@ export class HiitCalisthenics extends LitElement {
     `,
   ];
 
+  @state()
+  private _currentStep = 0;
+
   render() {
     return html`
-      <header>
-        <nav>HIIT Calisthenics</nav>
-      </header>
+      <header>${steps[this._currentStep].navigation}</header>
       <main>
-        <article>Image</article>
-        <aside>Reps</aside>
+        ${steps[this._currentStep].info}${steps[this._currentStep].input}
       </main>
       <footer>
-        <button>Start</button>
+        ${steps[this._currentStep].button}<button @click="${this._onClick}">
+          Test
+        </button>
       </footer>
     `;
   }
+
+  private _onClick = () => {
+    this._currentStep++;
+  };
 }
 
 declare global {
