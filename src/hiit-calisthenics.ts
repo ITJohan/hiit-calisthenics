@@ -1,26 +1,34 @@
 import { css, html, LitElement } from 'lit';
-import { customElement, property, state } from 'lit/decorators.js';
+import { customElement, state } from 'lit/decorators.js';
 import { globalStyle } from './styles';
 
 const steps = [
   {
-    navigation: html`<nav>HIIT Calisthenics</nav>`,
-    info: html` <article>
-      <p>Next workout</p>
-      <p>B</p>
-    </article>`,
-    input: html` <aside>
-      <input type="text" />
-    </aside>`,
-    button: html`<button>Start</button>`,
+    headerText: 'Jumping jacks',
+    image: './src/images/jumping-jacks.jpg',
+    inputValue: 6,
+    inputType: 'countdown',
+    buttonText: 'Start',
+    previousId: -1,
+    nextId: 1,
   },
   {
-    navigation: html`<nav>< Warmup X</nav>`,
-    info: html` <article>
-      <p>Picture of person</p>
-    </article>`,
-    input: html` <aside>90</aside>`,
-    button: html`<button>Start</button>`,
+    headerText: 'Wrist warmup',
+    image: './src/images/jumping-jacks.jpg',
+    inputValue: 6,
+    inputType: 'countdown',
+    buttonText: 'Start',
+    previousId: 0,
+    nextId: 2,
+  },
+  {
+    headerText: 'Arm warmup',
+    image: './src/images/jumping-jacks.jpg',
+    inputValue: 6,
+    inputType: 'countdown',
+    buttonText: 'Start',
+    previousId: 1,
+    nextId: 3,
   },
 ];
 
@@ -37,7 +45,9 @@ export class HiitCalisthenics extends LitElement {
         max-width: 600px;
       }
 
-      header {
+      nav {
+        display: flex;
+        justify-content: space-between;
         padding: var(--spacing-md);
       }
 
@@ -59,24 +69,36 @@ export class HiitCalisthenics extends LitElement {
   ];
 
   @state()
-  private _currentStep = 0;
+  private _currentStepId = 0;
 
   render() {
     return html`
-      <header>${steps[this._currentStep].navigation}</header>
+      <nav>
+        <button
+          @click="${() =>
+            this._changeStep(steps[this._currentStepId].previousId)}"
+        >
+          <
+        </button>
+        <h1>${steps[this._currentStepId].headerText}</h1>
+        <button>X</button>
+      </nav>
       <main>
-        ${steps[this._currentStep].info}${steps[this._currentStep].input}
+        <img src="${steps[this._currentStepId].image}" />
+        <p>${steps[this._currentStepId].inputValue}</p>
       </main>
       <footer>
-        ${steps[this._currentStep].button}<button @click="${this._onClick}">
-          Test
+        <button
+          @click="${() => this._changeStep(steps[this._currentStepId].nextId)}"
+        >
+          ${steps[this._currentStepId].buttonText}
         </button>
       </footer>
     `;
   }
 
-  private _onClick = () => {
-    this._currentStep++;
+  private _changeStep = (stepId: number) => {
+    this._currentStepId = stepId;
   };
 }
 
