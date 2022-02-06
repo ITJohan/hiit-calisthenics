@@ -1,36 +1,7 @@
 import { css, html, LitElement } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import { globalStyle } from './styles';
-
-const steps = [
-  {
-    headerText: 'Jumping jacks',
-    image: './src/images/jumping-jacks.jpg',
-    inputValue: 6,
-    inputType: 'countdown',
-    buttonText: 'Start',
-    previousId: -1,
-    nextId: 1,
-  },
-  {
-    headerText: 'Wrist warmup',
-    image: './src/images/jumping-jacks.jpg',
-    inputValue: 6,
-    inputType: 'countdown',
-    buttonText: 'Start',
-    previousId: 0,
-    nextId: 2,
-  },
-  {
-    headerText: 'Arm warmup',
-    image: './src/images/jumping-jacks.jpg',
-    inputValue: 6,
-    inputType: 'countdown',
-    buttonText: 'Start',
-    previousId: 1,
-    nextId: 3,
-  },
-];
+import { steps } from './steps';
 
 @customElement('hiit-calisthenics')
 export class HiitCalisthenics extends LitElement {
@@ -69,9 +40,16 @@ export class HiitCalisthenics extends LitElement {
   ];
 
   @state()
-  private _currentStepId = 0;
+  private _currentStepId = -1;
 
   render() {
+    if (this._currentStepId === -1) {
+      return html`
+        <p>HIIT Calisthenics</p>
+        <button @click="${() => this._changeStep(0)}">Start</button>
+      `;
+    }
+
     return html`
       <nav>
         <button
