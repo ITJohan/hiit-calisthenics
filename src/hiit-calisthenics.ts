@@ -1,7 +1,7 @@
 import { css, html, LitElement } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import { globalStyle } from './styles';
-import { steps } from './steps';
+import { generateSteps } from './data';
 
 @customElement('hiit-calisthenics')
 export class HiitCalisthenics extends LitElement {
@@ -40,6 +40,9 @@ export class HiitCalisthenics extends LitElement {
   ];
 
   @state()
+  private _steps = generateSteps(0, 0, 0, 5, 'A');
+
+  @state()
   private _currentStepId = -1;
 
   render() {
@@ -54,22 +57,23 @@ export class HiitCalisthenics extends LitElement {
       <nav>
         <button
           @click="${() =>
-            this._changeStep(steps[this._currentStepId].previousId)}"
+            this._changeStep(this._steps[this._currentStepId].previousId)}"
         >
           <
         </button>
-        <h1>${steps[this._currentStepId].headerText}</h1>
+        <h1>${this._steps[this._currentStepId].headerText}</h1>
         <button>X</button>
       </nav>
       <main>
-        <img src="${steps[this._currentStepId].image}" />
-        <p>${steps[this._currentStepId].inputValue}</p>
+        <img src="${this._steps[this._currentStepId].image}" />
+        <p>${this._steps[this._currentStepId].inputValue}</p>
       </main>
       <footer>
         <button
-          @click="${() => this._changeStep(steps[this._currentStepId].nextId)}"
+          @click="${() =>
+            this._changeStep(this._steps[this._currentStepId].nextId)}"
         >
-          ${steps[this._currentStepId].buttonText}
+          ${this._steps[this._currentStepId].buttonText}
         </button>
       </footer>
     `;
