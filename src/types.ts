@@ -5,7 +5,7 @@ export type InputType = 'none' | 'cooldown' | 'reps';
 export interface Step {
   headerText: string;
   image: string;
-  inputValue: number;
+  inputValue?: number;
   inputType: InputType;
   buttonText: string;
   previousId: number;

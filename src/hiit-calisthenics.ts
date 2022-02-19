@@ -3,6 +3,7 @@ import { customElement, state } from 'lit/decorators.js';
 import { globalStyle } from './styles';
 import { generateSteps } from './data';
 import { InputType } from './types';
+import './cooldown-timer';
 
 @customElement('hiit-calisthenics')
 export class HiitCalisthenics extends LitElement {
@@ -41,10 +42,10 @@ export class HiitCalisthenics extends LitElement {
   ];
 
   @state()
-  private _steps = generateSteps(0, 0, 0, 5, 'A');
+  _steps = generateSteps(0, 0, 0, 5, 'A');
 
   @state()
-  private _currentStepId = -1;
+  _currentStepId = -1;
 
   render() {
     if (this._currentStepId === -1) {
@@ -55,7 +56,6 @@ export class HiitCalisthenics extends LitElement {
     }
 
     const step = this._steps[this._currentStepId];
-
     const input = this._generateInput(step.inputType, step.inputValue);
 
     return html`
@@ -76,14 +76,14 @@ export class HiitCalisthenics extends LitElement {
     `;
   }
 
-  private _changeStep = (stepId: number) => {
+  _changeStep = (stepId: number) => {
     this._currentStepId = stepId;
   };
 
-  private _generateInput = (inputType: InputType, inputValue: number) => {
+  _generateInput = (inputType: InputType, inputValue?: number) => {
     switch (inputType) {
       case 'cooldown':
-        return html`<p>Cooldown ${inputValue}</p>`;
+        return html`<cooldown-timer></cooldown-timer>`;
       case 'reps':
         return html`<p>Reps ${inputValue}</p>`;
       default:

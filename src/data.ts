@@ -67,7 +67,6 @@ export const generateSteps = (
   steps.push({
     headerText: 'Sun salutation',
     image: './src/images/jumping-jacks.jpg',
-    inputValue: 6,
     inputType: 'none',
     buttonText: 'Done',
     previousId: -1,
@@ -78,7 +77,7 @@ export const generateSteps = (
     steps.push({
       headerText: exercises[type].leg[legLevel],
       image: './src/images/jumping-jacks.jpg',
-      inputValue: 6,
+      inputValue: legLevel,
       inputType: 'reps',
       buttonText: 'Done',
       previousId: steps.length - 1,
@@ -87,7 +86,7 @@ export const generateSteps = (
     steps.push({
       headerText: exercises[type].push[pushLevel],
       image: './src/images/jumping-jacks.jpg',
-      inputValue: 6,
+      inputValue: pushLevel,
       inputType: 'reps',
       buttonText: 'Done',
       previousId: steps.length - 1,
@@ -96,7 +95,7 @@ export const generateSteps = (
     steps.push({
       headerText: exercises[type].pull[pullLevel],
       image: './src/images/jumping-jacks.jpg',
-      inputValue: 6,
+      inputValue: pullLevel,
       inputType: 'reps',
       buttonText: 'Done',
       previousId: steps.length - 1,
@@ -107,7 +106,6 @@ export const generateSteps = (
       steps.push({
         headerText: 'Rest',
         image: './src/images/jumping-jacks.jpg',
-        inputValue: 6,
         inputType: 'cooldown',
         buttonText: 'Done',
         previousId: steps.length - 1,
