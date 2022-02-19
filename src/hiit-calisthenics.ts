@@ -2,6 +2,7 @@ import { css, html, LitElement } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import { globalStyle } from './styles';
 import { generateSteps } from './data';
+import { InputType } from './types';
 
 @customElement('hiit-calisthenics')
 export class HiitCalisthenics extends LitElement {
@@ -53,27 +54,23 @@ export class HiitCalisthenics extends LitElement {
       `;
     }
 
+    const step = this._steps[this._currentStepId];
+
+    const input = this._generateInput(step.inputType, step.inputValue);
+
     return html`
       <nav>
-        <button
-          @click="${() =>
-            this._changeStep(this._steps[this._currentStepId].previousId)}"
-        >
-          <
-        </button>
-        <h1>${this._steps[this._currentStepId].headerText}</h1>
-        <button>X</button>
+        <button @click="${() => this._changeStep(step.previousId)}"><</button>
+        <h1>${step.headerText}</h1>
+        <button @click="${() => this._changeStep(-1)}">X</button>
       </nav>
       <main>
-        <img src="${this._steps[this._currentStepId].image}" />
-        <p>${this._steps[this._currentStepId].inputValue}</p>
+        <img src="${step.image}" />
+        ${input}
       </main>
       <footer>
-        <button
-          @click="${() =>
-            this._changeStep(this._steps[this._currentStepId].nextId)}"
-        >
-          ${this._steps[this._currentStepId].buttonText}
+        <button @click="${() => this._changeStep(step.nextId)}">
+          ${step.buttonText}
         </button>
       </footer>
     `;
@@ -81,6 +78,17 @@ export class HiitCalisthenics extends LitElement {
 
   private _changeStep = (stepId: number) => {
     this._currentStepId = stepId;
+  };
+
+  private _generateInput = (inputType: InputType, inputValue: number) => {
+    switch (inputType) {
+      case 'cooldown':
+        return html`<p>Cooldown ${inputValue}</p>`;
+      case 'reps':
+        return html`<p>Reps ${inputValue}</p>`;
+      default:
+        return;
+    }
   };
 }
 

@@ -1,3 +1,5 @@
+import { Level, Step, WorkoutType } from './types';
+
 const exercises = {
   A: {
     leg: {
@@ -54,13 +56,13 @@ const exercises = {
 };
 
 export const generateSteps = (
-  legLevel: 0 | 1 | 2 | 3 | 4 | 5,
-  pushLevel: 0 | 1 | 2 | 3 | 4 | 5,
-  pullLevel: 0 | 1 | 2 | 3 | 4 | 5,
+  legLevel: Level,
+  pushLevel: Level,
+  pullLevel: Level,
   sets: number,
-  type: 'A' | 'B'
+  type: WorkoutType
 ) => {
-  const steps = [];
+  const steps: Step[] = [];
 
   steps.push({
     headerText: 'Sun salutation',
@@ -77,7 +79,7 @@ export const generateSteps = (
       headerText: exercises[type].leg[legLevel],
       image: './src/images/jumping-jacks.jpg',
       inputValue: 6,
-      inputType: 'none',
+      inputType: 'reps',
       buttonText: 'Done',
       previousId: steps.length - 1,
       nextId: steps.length + 1,
@@ -86,7 +88,7 @@ export const generateSteps = (
       headerText: exercises[type].push[pushLevel],
       image: './src/images/jumping-jacks.jpg',
       inputValue: 6,
-      inputType: 'none',
+      inputType: 'reps',
       buttonText: 'Done',
       previousId: steps.length - 1,
       nextId: steps.length + 1,
@@ -95,11 +97,23 @@ export const generateSteps = (
       headerText: exercises[type].pull[pullLevel],
       image: './src/images/jumping-jacks.jpg',
       inputValue: 6,
-      inputType: 'none',
+      inputType: 'reps',
       buttonText: 'Done',
       previousId: steps.length - 1,
       nextId: steps.length + 1,
     });
+
+    if (i !== sets - 1) {
+      steps.push({
+        headerText: 'Rest',
+        image: './src/images/jumping-jacks.jpg',
+        inputValue: 6,
+        inputType: 'cooldown',
+        buttonText: 'Done',
+        previousId: steps.length - 1,
+        nextId: steps.length + 1,
+      });
+    }
   }
 
   steps.push({
