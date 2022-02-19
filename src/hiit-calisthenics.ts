@@ -80,12 +80,17 @@ export class HiitCalisthenics extends LitElement {
     this._currentStepId = stepId;
   };
 
-  _generateInput = (inputType: InputType, inputValue?: number) => {
+  _generateInput = (inputType: InputType, inputValue: number) => {
     switch (inputType) {
       case 'cooldown':
         return html`<cooldown-timer></cooldown-timer>`;
       case 'reps':
-        return html`<p>Reps ${inputValue}</p>`;
+        return html`<input
+          type="number"
+          min="0"
+          max="${inputValue}"
+          placeholder="${inputValue}"
+        />`;
       default:
         return;
     }

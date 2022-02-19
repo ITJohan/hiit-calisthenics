@@ -67,6 +67,7 @@ export const generateSteps = (
   steps.push({
     headerText: 'Sun salutation',
     image: './src/images/jumping-jacks.jpg',
+    inputValue: 0,
     inputType: 'none',
     buttonText: 'Done',
     previousId: -1,
@@ -117,7 +118,7 @@ export const generateSteps = (
   steps.push({
     headerText: 'Nice job!',
     image: './src/images/jumping-jacks.jpg',
-    inputValue: 6,
+    inputValue: 0,
     inputType: 'none',
     buttonText: 'Finish',
     previousId: steps.length - 1,
