@@ -107,6 +107,7 @@ export const generateSteps = (
       steps.push({
         headerText: 'Rest',
         image: './src/images/jumping-jacks.jpg',
+        inputValue: 90,
         inputType: 'cooldown',
         buttonText: 'Done',
         previousId: steps.length - 1,

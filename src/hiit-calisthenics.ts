@@ -42,45 +42,16 @@ export class HiitCalisthenics extends LitElement {
   ];
 
   @state()
-  _steps = generateSteps(0, 0, 0, 5, 'A');
+  steps = generateSteps(0, 0, 0, 5, 'A');
 
   @state()
-  _currentStepId = -1;
+  currentStepId = -1;
 
-  render() {
-    if (this._currentStepId === -1) {
-      return html`
-        <p>HIIT Calisthenics</p>
-        <button @click="${() => this._changeStep(0)}">Start</button>
-      `;
-    }
-
-    const step = this._steps[this._currentStepId];
-    const input = this._generateInput(step.inputType, step.inputValue);
-
-    return html`
-      <nav>
-        <button @click="${() => this._changeStep(step.previousId)}"><</button>
-        <h1>${step.headerText}</h1>
-        <button @click="${() => this._changeStep(-1)}">X</button>
-      </nav>
-      <main>
-        <img src="${step.image}" />
-        ${input}
-      </main>
-      <footer>
-        <button @click="${() => this._changeStep(step.nextId)}">
-          ${step.buttonText}
-        </button>
-      </footer>
-    `;
-  }
-
-  _changeStep = (stepId: number) => {
-    this._currentStepId = stepId;
+  changeStep = (stepId: number) => {
+    this.currentStepId = stepId;
   };
 
-  _generateInput = (inputType: InputType, inputValue: number) => {
+  generateInput = (inputType: InputType, inputValue: number) => {
     switch (inputType) {
       case 'cooldown':
         return html`<cooldown-timer></cooldown-timer>`;
@@ -95,6 +66,35 @@ export class HiitCalisthenics extends LitElement {
         return;
     }
   };
+
+  render() {
+    if (this.currentStepId === -1) {
+      return html`
+        <p>HIIT Calisthenics</p>
+        <button @click="${() => this.changeStep(0)}">Start</button>
+      `;
+    }
+
+    const step = this.steps[this.currentStepId];
+    const input = this.generateInput(step.inputType, step.inputValue);
+
+    return html`
+      <nav>
+        <button @click="${() => this.changeStep(step.previousId)}"><</button>
+        <h1>${step.headerText}</h1>
+        <button @click="${() => this.changeStep(-1)}">X</button>
+      </nav>
+      <main>
+        <img src="${step.image}" />
+        ${input}
+      </main>
+      <footer>
+        <button @click="${() => this.changeStep(step.nextId)}">
+          ${step.buttonText}
+        </button>
+      </footer>
+    `;
+  }
 }
 
 declare global {
