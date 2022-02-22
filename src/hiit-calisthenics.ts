@@ -2,8 +2,9 @@ import { css, html, LitElement } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import { globalStyle } from './styles';
 import { generateSteps } from './data';
-import { InputType } from './types';
+import { InputType, Step } from './types';
 import './cooldown-timer';
+import { isLevel, isWorkoutType } from './utils';
 
 @customElement('hiit-calisthenics')
 export class HiitCalisthenics extends LitElement {
@@ -42,16 +43,51 @@ export class HiitCalisthenics extends LitElement {
   ];
 
   @state()
-  steps = generateSteps(0, 0, 0, 5, 'A');
+  private _steps: Step[];
 
   @state()
-  currentStepId = -1;
+  private _currentStepId = -1;
 
-  changeStep = (stepId: number) => {
-    this.currentStepId = stepId;
+  @state()
+  private _workout = [];
+
+  constructor() {
+    super();
+
+    const workoutType = window.localStorage.getItem('workout-type');
+    const legLevel = Number(window.localStorage.getItem('leg-level'));
+    const pushLevel = Number(window.localStorage.getItem('push-level'));
+    const pullLevel = Number(window.localStorage.getItem('pull-level'));
+
+    if (
+      isWorkoutType(workoutType) &&
+      isLevel(legLevel) &&
+      isLevel(pushLevel) &&
+      isLevel(pullLevel)
+    ) {
+      this._steps = generateSteps(
+        workoutType,
+        legLevel,
+        pushLevel,
+        pullLevel,
+        5
+      );
+    } else {
+      this._steps = generateSteps('A', 0, 0, 0, 5);
+    }
+  }
+
+  private _changeStep = (stepId: number) => {
+    if (this._currentStepId === this._steps.length - 1) {
+      // TODO: Save workout to localStorage
+    } else {
+      // TODO: Add set to workout
+    }
+
+    this._currentStepId = stepId;
   };
 
-  generateInput = (inputType: InputType, inputValue: number) => {
+  private _generateInput = (inputType: InputType, inputValue: number) => {
     switch (inputType) {
       case 'cooldown':
         return html`<cooldown-timer></cooldown-timer>`;
@@ -67,29 +103,29 @@ export class HiitCalisthenics extends LitElement {
     }
   };
 
-  render() {
-    if (this.currentStepId === -1) {
+  protected render() {
+    if (this._currentStepId === -1) {
       return html`
         <p>HIIT Calisthenics</p>
-        <button @click="${() => this.changeStep(0)}">Start</button>
+        <button @click="${() => this._changeStep(0)}">Start</button>
       `;
     }
 
-    const step = this.steps[this.currentStepId];
-    const input = this.generateInput(step.inputType, step.inputValue);
+    const step = this._steps[this._currentStepId];
+    const input = this._generateInput(step.inputType, step.inputValue);
 
     return html`
       <nav>
-        <button @click="${() => this.changeStep(step.previousId)}"><</button>
+        <button @click="${() => this._changeStep(step.previousId)}"><</button>
         <h1>${step.headerText}</h1>
-        <button @click="${() => this.changeStep(-1)}">X</button>
+        <button @click="${() => this._changeStep(-1)}">X</button>
       </nav>
       <main>
         <img src="${step.image}" />
         ${input}
       </main>
       <footer>
-        <button @click="${() => this.changeStep(step.nextId)}">
+        <button @click="${() => this._changeStep(step.nextId)}">
           ${step.buttonText}
         </button>
       </footer>

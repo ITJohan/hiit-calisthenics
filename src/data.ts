@@ -56,11 +56,11 @@ const exercises = {
 };
 
 export const generateSteps = (
+  type: WorkoutType,
   legLevel: Level,
   pushLevel: Level,
   pullLevel: Level,
-  sets: number,
-  type: WorkoutType
+  sets: number
 ) => {
   const steps: Step[] = [];
 
