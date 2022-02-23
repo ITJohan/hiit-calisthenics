@@ -1,8 +1,8 @@
 import { css, html, LitElement } from 'lit';
-import { customElement, state } from 'lit/decorators.js';
+import { customElement, query, state } from 'lit/decorators.js';
 import { globalStyle } from './styles';
 import { generateSteps } from './data';
-import { InputType, Step } from './types';
+import { InputType, Step, Workout } from './types';
 import './cooldown-timer';
 import { isLevel, isWorkoutType } from './utils';
 
@@ -49,42 +49,121 @@ export class HiitCalisthenics extends LitElement {
   private _currentStepId = -1;
 
   @state()
-  private _workout = [];
+  private _workout: Workout;
+
+  @query('#reps-input')
+  private _repsInput: HTMLInputElement;
+
+  private _workouts: Workout[];
 
   constructor() {
     super();
 
-    const workoutType = window.localStorage.getItem('workout-type');
-    const legLevel = Number(window.localStorage.getItem('leg-level'));
-    const pushLevel = Number(window.localStorage.getItem('push-level'));
-    const pullLevel = Number(window.localStorage.getItem('pull-level'));
+    const storage = window.localStorage.getItem('workouts');
+    this._workouts = JSON.parse(storage ?? '[]');
 
-    if (
-      isWorkoutType(workoutType) &&
-      isLevel(legLevel) &&
-      isLevel(pushLevel) &&
-      isLevel(pullLevel)
-    ) {
-      this._steps = generateSteps(
-        workoutType,
-        legLevel,
-        pushLevel,
-        pullLevel,
-        5
-      );
-    } else {
+    if (!this._workouts || this._workouts.length === 0) {
+      // First A
       this._steps = generateSteps('A', 0, 0, 0, 5);
+      this._workout = {
+        date: new Date(),
+        workoutType: 'A',
+        leg: {
+          level: 0,
+          sets: [],
+        },
+        pull: {
+          level: 0,
+          sets: [],
+        },
+        push: {
+          level: 0,
+          sets: [],
+        },
+      };
+
+      return;
     }
+
+    if (this._workouts.length === 1) {
+      // First B
+      this._steps = generateSteps('B', 0, 0, 0, 5);
+      this._workout = {
+        date: new Date(),
+        workoutType: 'B',
+        leg: {
+          level: 0,
+          sets: [],
+        },
+        push: {
+          level: 0,
+          sets: [],
+        },
+        pull: {
+          level: 0,
+          sets: [],
+        },
+      };
+
+      return;
+    }
+
+    const previousWorkout = this._workouts[this._workouts.length - 2];
+    const workoutType = previousWorkout.workoutType;
+    const legLevel = previousWorkout.leg.level;
+    const pushLevel = previousWorkout.push.level;
+    const pullLevel = previousWorkout.pull.level;
+
+    this._steps = generateSteps(workoutType, legLevel, pushLevel, pullLevel, 5);
+    // TODO: pass the workout to steps or merge?
+    this._workout = {
+      date: new Date(),
+      workoutType,
+      leg: {
+        level: legLevel,
+        sets: [],
+      },
+      push: {
+        level: pushLevel,
+        sets: [],
+      },
+      pull: {
+        level: pullLevel,
+        sets: [],
+      },
+    };
   }
 
-  private _changeStep = (stepId: number) => {
-    if (this._currentStepId === this._steps.length - 1) {
-      // TODO: Save workout to localStorage
-    } else {
-      // TODO: Add set to workout
+  private _changeStep = (nextStepId: number) => {
+    if (this._currentStepId === -1) {
+      // First step, do nothing
+      this._currentStepId = nextStepId;
+
+      return;
     }
 
-    this._currentStepId = stepId;
+    if (this._currentStepId === this._steps.length - 1) {
+      // Finish step, save workout to localStorage
+      const newWorkouts = [...this._workouts, this._workout];
+      window.localStorage.setItem('workouts', JSON.stringify(newWorkouts));
+
+      this._currentStepId = nextStepId;
+
+      return;
+    }
+
+    if (this._steps[this._currentStepId].inputType === 'reps') {
+      // Exercise step, add value to workout
+
+      // TODO: Must merge workout with steps somehow
+
+      this._currentStepId = nextStepId;
+
+      return;
+    }
+
+    // All other steps
+    this._currentStepId = nextStepId;
   };
 
   private _generateInput = (inputType: InputType, inputValue: number) => {
@@ -93,6 +172,7 @@ export class HiitCalisthenics extends LitElement {
         return html`<cooldown-timer></cooldown-timer>`;
       case 'reps':
         return html`<input
+          id="reps-input"
           type="number"
           min="0"
           max="${inputValue}"
