@@ -5,25 +5,33 @@
   <meta charset="UTF-8" />
   <link rel="icon" type="image/svg+xml" href="/src/favicon.svg" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <style>
-    :root {
-      --spacing-sm: 8px;
-      --spacing-md: 16px;
-      --spacing-lg: 24px;
-    }
-
-    body {
-      height: 100vh;
-      margin: 0;
-    }
-  </style>
-  <title>HIIT Calisthenics</title>
-  <script type="module" src="/src/hiit-calisthenics.ts"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" type="module"></script>
+  <title>Calisthenics PWA</title>
 </head>
 
 <body>
-  <hiit-calisthenics>
-  </hiit-calisthenics>
+  <section id="main-page">
+    <nav>
+      <h1>Calisthenics PWA</h1>
+    </nav>
+    <main>Workout A</main>
+    <footer>
+      <button class="primary-btn">Start workout</button>
+    </footer>
+  </section>
+
+  <section id="warmup-page">
+    <nav>
+      <button>←</button>
+      <h1>Warmup</h1>
+      <button>→</button>
+    </nav>
+    <main>Stretch...</main>
+    <footer>
+      <button class="primary-btn">Next</button>
+    </footer>
+  </section>
 </body>
 
 </html>

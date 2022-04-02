@@ -186,7 +186,8 @@ export class HiitCalisthenics extends LitElement {
   protected render() {
     if (this._currentStepId === -1) {
       return html`
-        <p>HIIT Calisthenics</p>
+        <h1>HIIT Calisthenics</h1>
+        <p>Workout</p>
         <button @click="${() => this._changeStep(0)}">Start</button>
       `;
     }
