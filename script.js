@@ -1,22 +1,28 @@
-import { addClickHandler } from './utils.js';
+import { steps, addClickHandler, changeSection, changeStep } from './utils.js';
+
+let currentStep = 0;
 
 // Main page
 addClickHandler('start-btn', () => {
-  const sections = document.querySelectorAll('section');
-
-  for (const section of sections) {
-    if (section.id === 'workout-page') {
-      section.classList.remove('hide');
-    } else {
-      section.classList.add('hide');
-    }
-  }
+  changeStep(currentStep);
+  changeSection('workout-page');
 });
 
 // Workout page
 addClickHandler('back-btn', () => {
-  console.log('back');
+  if (currentStep === 0) {
+    changeSection('main-page');
+  } else {
+    currentStep--;
+    changeStep(currentStep);
+  }
 });
+
 addClickHandler('next-btn', () => {
-  console.log('next');
+  if (currentStep === steps.length) {
+    changeSection('finish-page');
+  } else {
+    currentStep++;
+    changeStep(currentStep);
+  }
 });
