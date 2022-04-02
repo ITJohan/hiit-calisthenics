@@ -27,6 +27,7 @@
 /* Sections */
 body {
   background-color: var(--color-light);
+  font-size: var(--font-size-lg);
   height: 100vh;
 }
 
@@ -43,40 +44,40 @@ footer {
   align-items: center;
   background-color: var(--color-green);
   display: flex;
-  font-size: var(--font-size-lg);
-  justify-content: center;
+  justify-content: space-between;
   padding: var(--spacing-md);
   width: 100%;
 }
 
 /* Utility */
-.primary-btn {
-  background-color: var(--color-dark);
+.btn {
   border: none;
   border-radius: var(--spacing-sm);
-  color: var(--color-light-orange);
   font-size: var(--font-size-lg);
   padding: var(--spacing-md);
+  cursor: pointer;
+}
+
+.primary-btn {
+  background-color: var(--color-dark);
+  color: var(--color-light-orange);
 }
 
 .primary-btn:hover {
   background-color: var(--color-dark-hover);
 }
 
-/* Main page */
-#main-page {
+.tertiary-btn {
+  background-color: transparent;
+  color: var(--color-dark);
+}
+
+.hide {
   display: none;
 }
 
-#main-page main {
-  font-size: var(--font-size-lg);
-}
-
-/* Warmup page */
-#warmup-page nav {
-  /* display: none; */
-  justify-content: space-between;
-}
-
-#warmup-page footer {
+/* Main page */
+#main-page nav,
+#main-page footer {
+  justify-content: center;
 }
