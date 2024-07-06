@@ -37,11 +37,15 @@ CREATE TABLE WorkoutExercises (
 
 INSERT INTO Athletes (name, email)
   VALUES 
-    ('Johan', 'johanlindkvist89@gmail.com'),
-    ('Astrid', 'astrid.eline@hotmail.com');
+    ('John Doe', 'john@doe.com'),
+    ('Jane', 'jane@doe.com');
 INSERT INTO Exercises (name, category, level, unit)
   VALUES
     ('Squats', 'legs', 1, 'reps'),
     ('Push-ups', 'push', 1, 'reps'),
     ('Incline pull-ups', 'push', 1, 'reps'),
     ('Bent leg raises', 'core', 1, 'reps');
+INSERT INTO Workouts (date)
+  VALUES (NOW());
+INSERT INTO AthleteWorkouts (workout, athlete)
+  VALUES (1, 1);
