@@ -17,7 +17,8 @@ CREATE TABLE Workouts (
 );
 
 CREATE TABLE Exercises (
-  name VARCHAR(100) PRIMARY KEY,
+  id SERIAL PRIMARY KEY,
+  name VARCHAR(100),
   category VARCHAR(100) CHECK (category IN ('legs', 'push', 'pull','core')),
   level SMALLINT CHECK (level >= 1 AND level <= 10),
   unit VARCHAR(10) CHECK (unit IN ('seconds', 'reps'))
@@ -29,7 +30,7 @@ CREATE TABLE AthleteWorkouts (
 );
 
 CREATE TABLE WorkoutExercises (
-  exercise VARCHAR(100) PRIMARY KEY REFERENCES Exercises(name) ON DELETE CASCADE ON UPDATE CASCADE,
+  exercise INT PRIMARY KEY REFERENCES Exercises(id) ON DELETE CASCADE ON UPDATE CASCADE,
   workout INT REFERENCES Workouts(id) ON DELETE CASCADE ON UPDATE CASCADE,
   set SMALLINT NOT NULL,
   reps SMALLINT NOT NULL
