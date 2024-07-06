@@ -6,44 +6,33 @@ CREATE DATABASE "Calisthenics";
 \c Calisthenics
 
 CREATE TABLE Athletes (
-  id SERIAL,
+  id SERIAL PRIMARY KEY,
   name VARCHAR(50) NOT NULL,
-  email VARCHAR(50) NOT NULL,
-  PRIMARY KEY (id)
+  email VARCHAR(50) NOT NULL
 );
 
 CREATE TABLE Workouts (
-  id SERIAL,
-  date TIMESTAMP NOT NULL,
-  PRIMARY KEY (id)
+  id SERIAL PRIMARY KEY,
+  date TIMESTAMP NOT NULL
 );
 
 CREATE TABLE Exercises (
-  name VARCHAR(100),
-  category VARCHAR(100),
+  name VARCHAR(100) PRIMARY KEY,
+  category VARCHAR(100) CHECK (category IN ('legs', 'push', 'pull','core')),
   level SMALLINT CHECK (level >= 1 AND level <= 10),
-  unit VARCHAR(10),
-  PRIMARY KEY (name),
-  CHECK (category IN ('legs', 'push', 'pull','core')),
-  CHECK (unit IN ('seconds', 'reps'))
+  unit VARCHAR(10) CHECK (unit IN ('seconds', 'reps'))
 );
 
 CREATE TABLE AthleteWorkouts (
-  workout INT,
-  athlete INT,
-  PRIMARY KEY (workout),
-  FOREIGN KEY (workout) REFERENCES Workouts(id),
-  FOREIGN KEY (athlete) REFERENCES Athletes(id)
+  workout INT PRIMARY KEY REFERENCES Workouts(id),
+  athlete INT REFERENCES Athletes(id)
 );
 
 CREATE TABLE WorkoutExercises (
-  exercise VARCHAR(100),
-  workout INT,
+  exercise VARCHAR(100) PRIMARY KEY REFERENCES Exercises(name),
+  workout INT REFERENCES Workouts(id),
   set SMALLINT NOT NULL,
-  reps SMALLINT NOT NULL,
-  PRIMARY KEY (exercise),
-  FOREIGN KEY (exercise) REFERENCES Exercises(name),
-  FOREIGN KEY (workout) REFERENCES Workouts(id)
+  reps SMALLINT NOT NULL
 );
 
 INSERT INTO Athletes (name, email)
