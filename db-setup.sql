@@ -1,3 +1,5 @@
+\c postgres
+
 DROP DATABASE "Calisthenics";
 CREATE DATABASE "Calisthenics";
 
@@ -19,11 +21,11 @@ CREATE TABLE Workouts (
 CREATE TABLE Exercises (
   name VARCHAR(100),
   category VARCHAR(100),
-  level SMALLINT UNIQUE CHECK (level >= 1 AND level <= 10),
+  level SMALLINT CHECK (level >= 1 AND level <= 10),
   unit VARCHAR(10),
   PRIMARY KEY (name),
-  CHECK (category IN ('leg', 'push', 'pull','core')),
-  CHECK (unit IN ('second', 'rep'))
+  CHECK (category IN ('legs', 'push', 'pull','core')),
+  CHECK (unit IN ('seconds', 'reps'))
 );
 
 CREATE TABLE AthleteWorkouts (
@@ -44,4 +46,13 @@ CREATE TABLE WorkoutExercises (
   FOREIGN KEY (workout) REFERENCES Workouts(id)
 );
 
-INSERT INTO Athletes (name, email) VALUES ('Johan', 'johanlindkvist89@gmail.com');
+INSERT INTO Athletes (name, email)
+  VALUES 
+    ('Johan', 'johanlindkvist89@gmail.com'),
+    ('Astrid', 'astrid.eline@hotmail.com');
+INSERT INTO Exercises (name, category, level, unit)
+  VALUES
+    ('Squats', 'legs', 1, 'reps'),
+    ('Push-ups', 'push', 1, 'reps'),
+    ('Incline pull-ups', 'push', 1, 'reps'),
+    ('Bent leg raises', 'core', 1, 'reps');
