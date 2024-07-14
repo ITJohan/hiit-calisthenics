@@ -48,5 +48,6 @@ INSERT INTO Exercises (name, category, level, unit)
     ('Bent leg raises', 'core', 1, 'reps');
 INSERT INTO Workouts (date)
   VALUES (NOW());
+-- Should we have a view that can be used to insert both workout and exercises?
 INSERT INTO AthleteWorkouts (workout, athlete)
   VALUES (1, 1);
