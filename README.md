@@ -31,9 +31,6 @@ erDiagram
     integer workout_log_id PK
     date workout_date
   }
-  SetLog {
-    integer set_log_id PK
-  }
   ExerciseLog {
     integer exercise_log_id PK
     integer reps
@@ -44,8 +41,7 @@ erDiagram
   Set }o--|{ Exercise : "contains"
   Athlete ||--o{ WorkoutLog : "logs"
   Workout ||--o{ WorkoutLog : "is part of"
-  WorkoutLog ||--|{ SetLog : "contains"
-  Set ||--o{ SetLog : "is part of"
-  SetLog ||--|{ ExerciseLog : "contains"
+  WorkoutLog ||--|{ ExerciseLog : "contains"
+  Set ||--o{ ExerciseLog : "is part of"
   Exercise ||--o{ ExerciseLog : "is part of"
 ```
