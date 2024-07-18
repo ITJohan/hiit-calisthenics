@@ -7,41 +7,39 @@ Calisthenics circuit workout
 ```mermaid
 erDiagram
   Athlete {
-    integer athlete_id PK
-    string email UK
-    string name
-    string password
+    int athlete_id PK
+    string athlete_email UK
+    string athlete_name
+    string athlete_password
   }
   Workout {
-    integer workout_id PK
-    date created_at
+    int workout_id PK
+    string workout_name UK
   }
-  Set {
-    integer set_id PK
-    integer set_number
-    integer cooldown
-  }
-  Exercise {
-    integer exercise_id PK
-    string name
-    string category
-    integer level UK
-  }
-  WorkoutLog {
-    integer workout_log_id PK
-    date workout_date
-  }
-  ExerciseLog {
-    integer exercise_log_id PK
-    integer reps
-  }
-
   Athlete ||--o{ Workout : "creates"
-  Workout ||--|{ Set : "contains"
-  Set }o--|{ Exercise : "contains"
-  Athlete ||--o{ WorkoutLog : "logs"
-  Workout ||--o{ WorkoutLog : "is part of"
-  WorkoutLog ||--|{ ExerciseLog : "contains"
-  Set ||--o{ ExerciseLog : "is part of"
-  Exercise ||--o{ ExerciseLog : "is part of"
+
+  Exercise {
+    int exercise_id PK
+    string exercise_name UK
+    string exercise_category
+    int exercise_level
+  }
+  WorkoutExercise {
+    int set_order PK
+    int exercise_order
+  }
+  Workout }|--o{ WorkoutExercise : "part of"
+  Exercise }|--o{ WorkoutExercise : "part of"
+
+  Log {
+    int log_id PK
+    timedate log_date
+  }
+  LogExercise {
+    int log_reps
+  }
+  Athlete ||--o{ Log : "notes"
+  Workout ||--o{ Log : "noted in"
+  Exercise }|--o{ LogExercise : "part of"
+  Log }|--o{ LogExercise : "part of"
 ```
