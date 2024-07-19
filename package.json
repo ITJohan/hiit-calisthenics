@@ -4,7 +4,7 @@
   "description": "Calisthenics circuit workout",
   "main": "main.js",
   "scripts": {
-    "dev": "node --env-file=.env --watch --inspect main.js"
+    "dev": "node --env-file=.env --watch --inspect ./src/main.js"
   },
   "author": "Johan Lindkvist",
   "license": "ISC",
