@@ -4,9 +4,12 @@
   "description": "Calisthenics circuit workout",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node --env-file=.env --watch main.js"
   },
   "author": "Johan Lindkvist",
   "license": "ISC",
-  "type": "module"
+  "type": "module",
+  "dependencies": {
+    "pg": "^8.12.0"
+  }
 }
