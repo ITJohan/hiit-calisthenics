@@ -1,5 +1,5 @@
 import { IncomingMessage, ServerResponse } from 'http';
-import * as db from './db.js';
+import * as db from '../db/db.js';
 
 /**
  * @param {IncomingMessage} req
