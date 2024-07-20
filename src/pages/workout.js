@@ -1,6 +1,6 @@
 export function renderWorkout() {
   return `
-    <h1>Workout</h1>
+    <h2>Workout</h2>
     <main>
       Hit it!
     </main>

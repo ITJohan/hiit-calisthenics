@@ -13,6 +13,7 @@ export function renderShell(content, dependencies) {
       <title>CaliCircuit</title>
     </head>
     <body>
+      <h1><a href="/">CaliCircuit</a></h1>
       ${content}
     </body>
     </html>  
