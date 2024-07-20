@@ -1,7 +1,8 @@
 import { IncomingMessage, ServerResponse } from 'http';
-import * as db from '../db/db.js';
 import { renderIndex } from '../pages/index.js';
 import { renderShell } from './shell.js';
+import { renderWorkout } from '../pages/workout.js';
+import { renderModify } from '../pages/modify.js';
 
 /**
  * @param {IncomingMessage} req
@@ -16,26 +17,15 @@ export default async function renderMiddleware(req, res, next) {
   }
 
   if (req.url === '/workout' && req.method === 'GET') {
-    try {
-      const response = await db.query('SELECT * from Athletes');
-      const athletes = response.rows;
-      res.writeHead(200, { 'Content-Type': 'text/html' });
-      res.write(
-        renderShell(
-          `
-        <h1>Athletes</h1>
-        <ul>
-          ${athletes.map((athlete) => `<li>${athlete.athlete_name}</li>`).join('')}
-        </ul>
-      `,
-          []
-        )
-      );
-      res.end();
-    } catch (error) {
-      res.writeHead(500, { 'Content-Type': 'application/json' });
-      res.end();
-    }
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.write(renderShell(renderWorkout(), []));
+    res.end();
+  }
+
+  if (req.url === '/modify' && req.method === 'GET') {
+    res.writeHead(200, { 'Content-Type': 'text/html' });
+    res.write(renderShell(renderModify(), []));
+    res.end();
   }
 
   next();
