@@ -3,3 +3,31 @@
   margin: 0;
   padding: 0;
 }
+
+:root {
+  --spacing-md: 16px;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  flex-basis: 600px;
+}
+
+create-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: var(--spacing-md);
+}
+
+create-form form label {
+  display: flex;
+  flex-direction: column;
+}
