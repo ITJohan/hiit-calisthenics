@@ -8,9 +8,21 @@ import path from 'node:path';
  * @param {() => void} next
  */
 export default async function fileMiddleware(req, res, next) {
+  if (req.url === '/styles.css') {
+    try {
+      const file = await readFile(path.resolve('./src/styles.css'));
+      res.writeHead(200, { 'Content-Type': 'text/css' });
+      res.write(file);
+      res.end();
+    } catch (error) {
+      res.writeHead(400);
+      res.end();
+    }
+  }
+
   if (req.url === '/favicon.ico') {
     try {
-      const file = await readFile(path.resolve('favicon.ico'));
+      const file = await readFile(path.resolve('./favicon.ico'));
       res.writeHead(200, { 'Content-Type': 'image/x-icon' });
       res.write(file);
       res.end();

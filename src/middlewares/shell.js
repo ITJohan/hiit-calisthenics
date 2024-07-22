@@ -9,6 +9,7 @@ export function renderShell(content, dependencies) {
     <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="/styles.css" rel="stylesheet" />
       ${dependencies.map((dependency) => `<script type="module" src="${dependency}"></script>`).join('')}
       <title>CaliCircuit</title>
     </head>
