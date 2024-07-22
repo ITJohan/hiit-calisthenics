@@ -24,13 +24,5 @@ jobs:
           SSH_USER: ${{ secrets.SSH_USER }}
           SSH_KEY: ${{ secrets.SSH_KEY }}
           SSH_HOST: ${{ secrets.SSH_HOST }}
-
-      - name: Stop the server
-        run: ssh deploy 'sudo systemctl stop cali-circuit'
-
       - name: Check out the source
-        run: ssh deploy 'cd /var/www/cali-circuit && git pull'
-
-      - name: Start the server
-        if: ${{ always() }}
-        run: ssh deploy 'sudo systemctl start cali-circuit'
+        run: ssh deploy 'cd /var/www/cali-circuit && git fetch && git reset --hard origin/main'
