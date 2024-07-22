@@ -20,7 +20,7 @@ export default async function fileMiddleware(req, res, next) {
     }
   }
 
-  if (req.url.startsWith('/islands')) {
+  if (req.url.startsWith('/src/islands')) {
     try {
       const file = await readFile(path.resolve(req.url.substring(1)));
       res.writeHead(200, { 'Content-Type': 'text/javascript' });
