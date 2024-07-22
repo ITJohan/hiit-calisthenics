@@ -22,7 +22,7 @@ export default async function renderMiddleware(req, res, next) {
   if (req.url === '/create') {
     if (req.method === 'GET') {
       res.writeHead(200, { 'Content-Type': 'text/html' });
-      res.write(renderShell(renderCreate(), []));
+      res.write(renderShell(await renderCreate(), []));
       res.end();
     }
 
