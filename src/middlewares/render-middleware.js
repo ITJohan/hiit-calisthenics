@@ -1,9 +1,10 @@
 import { IncomingMessage, ServerResponse } from 'http';
 import { renderIndex } from '../pages/index.js';
 import { renderShell } from './shell.js';
-import { postWorkout, renderCreate } from '../pages/create.js';
+import { renderCreate } from '../pages/create.js';
 import { renderWorkout } from '../pages/workout.js';
 import { renderModify } from '../pages/modify.js';
+import { parseFormData } from '../utils.js';
 
 /**
  * @param {IncomingMessage} req
@@ -27,15 +28,16 @@ export default async function renderMiddleware(req, res, next) {
     }
 
     if (req.method === 'POST') {
-      let body = '';
-      req.on('data', (chunk) => (body += chunk.toString()));
-      req.on('end', async () => {
-        const parsedData = new URLSearchParams(body);
-        postWorkout(parsedData);
-        res.writeHead(200, { 'Content-Type': 'text/html' });
-        res.write(renderShell(await renderIndex(), []));
-        res.end();
-      });
+      const formData = await parseFormData(req);
+      for (const [key, value] of formData) {
+        console.log(key, value);
+      }
+
+      // TODO: add to db
+
+      res.writeHead(200, { 'Content-Type': 'text/html' });
+      res.write(renderShell(await renderIndex(), []));
+      res.end();
     }
 
     return;
