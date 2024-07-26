@@ -1,0 +1,18 @@
+services:
+  db:
+    build:
+      context: ./src/db
+      dockerfile: Dockerfile
+    ports: 
+      - 5432:5432
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    depends_on:
+      - db
+    environment:
+      POSTGRESQL_CONNECTION_STRING: postgres://johan:password@db:5432/Calisthenics
+    ports:
+      - 3000:3000
+

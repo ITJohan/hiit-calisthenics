@@ -1,6 +1,3 @@
-\c postgres
-
-DROP DATABASE "Calisthenics";
 CREATE DATABASE "Calisthenics";
 
 \c Calisthenics
