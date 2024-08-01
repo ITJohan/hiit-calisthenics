@@ -1,18 +1,36 @@
 services:
   db:
-    build:
-      context: ./src/db
-      dockerfile: Dockerfile
+    image: postgres:latest
+    volumes:
+      - ./src/db/db-setup.sql:/docker-entrypoint-initdb.d/init.sql
+      - ./postgres:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_PASSWORD_FILE=/run/secrets/pg_password
     ports: 
       - 5432:5432
+    secrets:
+      - pg_password
   app:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    image: node:22  
+    user: node
+    working_dir: /app
+    volumes:
+      - .:/app
+    environment:
+      - PGUSER=postgres
+      - PGPASSWORD=/run/secrets/pg_password
+      - PGHOST=db
+      - PGDATABASE=Calisthenics
+    command: sh -c "npm i && node --watch ./src/main.js"
     depends_on:
       - db
-    environment:
-      POSTGRESQL_CONNECTION_STRING: postgres://johan:password@db:5432/Calisthenics
+    init: true
     ports:
       - 3000:3000
+    secrets:
+      - pg_password
+
+secrets:
+  pg_password: 
+    file: ./src/db/password.txt
 
