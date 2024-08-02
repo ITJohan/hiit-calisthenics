@@ -13,15 +13,25 @@ export async function renderCreate() {
             Name
             <input name="name" size="16" required />
           </label>
-          <label>
-            Exercise
-            <select name="exercise">
-              ${exercises
-                .map((exercise) => `<option value="${exercise.exercise_id}">${exercise.exercise_name}</option>`)
-                .join('')}
-            </select>
-          </label>
-          <button>Submit</button>
+          <fieldset>
+            <legend>Set 1</legend>
+            <label>
+              Exercise 1
+              <select name="exercise">
+                ${exercises
+                  .map((exercise) => `<option value="${exercise.exercise_id}">${exercise.exercise_name}</option>`)
+                  .join('')}
+              </select>
+            </label>
+            <div>
+              <button>Add exercise</button>
+              <button>Copy set</button>
+            </div>
+          </fieldset>
+          <div>
+            <button>Add set</button>
+            <button type="submit">Submit</button>
+          </div>
         </form>
       </create-form>
     </main>
