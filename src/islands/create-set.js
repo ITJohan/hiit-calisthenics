@@ -27,6 +27,7 @@ customElements.define('create-set', class CreateSet extends HTMLElement {
     if (!(event.target instanceof HTMLButtonElement)) return;
 
     if (event.target.matches('.add-exercise-btn')) this.addExercise();
+    if (event.target.matches('.copy-set-btn')) this.copySet();
   }
 
   addExercise() {
@@ -52,6 +53,11 @@ customElements.define('create-set', class CreateSet extends HTMLElement {
     select.setAttribute('name', newSelectId);
 
     lastExerciseContainer.after(exerciseContainer);
+  }
+
+  copySet() {
+    const event = new CustomEvent('cali-circuit:copy-set', {bubbles: true, detail: this})
+    this.dispatchEvent(event);
   }
 });
 
