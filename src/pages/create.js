@@ -1,9 +1,6 @@
 import * as db from '../db/db.js';
 
 export async function renderCreate() {
-  const result = await db.query('SELECT * FROM Exercises');
-  const exercises = result.rows;
-
   return `
     <h2>Create new workout</h2>
     <main>
@@ -13,21 +10,7 @@ export async function renderCreate() {
             Name
             <input name="name" size="16" required />
           </label>
-          <fieldset id="set-container">
-            <legend>Set 1</legend>
-            <label id="exercise-input">
-              Exercise 1
-              <select name="set-1-exercise-1">
-                ${exercises
-                  .map((exercise) => `<option value="${exercise.exercise_id}">${exercise.exercise_name}</option>`)
-                  .join('')}
-              </select>
-            </label>
-            <div>
-              <button type="button" id="add-exercise-btn">Add exercise</button>
-              <button type="button" id="copy-set-btn">Copy set</button>
-            </div>
-          </fieldset>
+          ${await renderCreateSet()}
           <div>
             <button type="button" id="add-set-btn">Add set</button>
             <button>Submit</button>
@@ -35,6 +18,32 @@ export async function renderCreate() {
         </form>
       </create-form>
     </main>
+  `;
+}
+
+async function renderCreateSet() {
+  const result = await db.query('SELECT * FROM Exercises');
+  const exercises = result.rows;
+
+  return `
+    <create-set>
+      <fieldset>
+        <legend>Set 1</legend>
+        <div>
+          <label for="set-1-exercise-1-select">Exercise 1</label>
+          <select id="set-1-exercise-1-select" name="set-1-exercise-1">
+            ${exercises
+              .map((exercise) => `<option value="${exercise.exercise_id}">${exercise.exercise_name}</option>`)
+              .join('')}
+          </select>
+        </div>
+        <div>
+          <button type="button" class="add-exercise-btn">Add exercise</button>
+          <button type="button" class="copy-set-btn">Copy set</button>
+          <button type="button" class="delete-set-btn">Delete set</button>
+        </div>
+      </fieldset>
+    </create-set>
   `;
 }
 
