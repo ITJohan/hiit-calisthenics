@@ -29,9 +29,9 @@ async function renderCreateSet() {
     <create-set>
       <fieldset>
         <legend>Set 1</legend>
-        <div>
-          <label for="set-1-exercise-1-select">Exercise 1</label>
-          <select id="set-1-exercise-1-select" name="set-1-exercise-1">
+        <div class="exercise-container">
+          <label for="set-1-exercise-1">Exercise 1</label>
+          <select id="set-1-exercise-1" name="set-1-exercise-1">
             ${exercises
               .map((exercise) => `<option value="${exercise.exercise_id}">${exercise.exercise_name}</option>`)
               .join('')}
