@@ -19,34 +19,36 @@ customElements.define('create-form', class CreateForm extends HTMLElement {
       console.log('adding set...');
     }
 
-    if (event.target.matches('create-set')) {
-      // Copy element
-      const element = event.detail;
-      if (!(element instanceof HTMLElement)) throw new Error('detail is not a HTMLElement');
-      const elementCopy = /** @type {HTMLElement} */ (element.cloneNode(true));
+    if (event.target.matches('create-set')) this.copySetHandler(event);
+  }
 
-      // Increment legend
-      const legend = elementCopy.querySelector('legend');
-      const legendParts = legend.textContent.split(' ');
-      const newLegend = legendParts.map((part, index) => index === 1 ? String(Number(part) + 1): part).join(' ');
-      legend.textContent = newLegend;
+  copySetHandler(/** @type {CustomEvent} */ event) {
+    // Copy element
+    const element = event.detail;
+    if (!(element instanceof HTMLElement)) throw new Error('detail is not a HTMLElement');
+    const elementCopy = /** @type {HTMLElement} */ (element.cloneNode(true));
 
-      // Increment labels and selects
-      const exerciseContainers = elementCopy.querySelectorAll('.exercise-container');
-      for (const exerciseContainer of exerciseContainers) {
-        const label = exerciseContainer.querySelector('label');
-        const select = exerciseContainer.querySelector('select');
+    // Increment legend
+    const legend = elementCopy.querySelector('legend');
+    const legendParts = legend.textContent.split(' ');
+    const newLegend = legendParts.map((part, index) => index === 1 ? String(Number(part) + 1): part).join(' ');
+    legend.textContent = newLegend;
 
-        const id = select.getAttribute('id');
-        const idParts = id.split('-');
-        const newId = idParts.map((part, index) => index === 1 ? String(Number(part) + 1) : part).join('-');
+    // Increment labels and selects
+    const exerciseContainers = elementCopy.querySelectorAll('.exercise-container');
+    for (const exerciseContainer of exerciseContainers) {
+      const label = exerciseContainer.querySelector('label');
+      const select = exerciseContainer.querySelector('select');
 
-        select.setAttribute('id', newId);
-        select.setAttribute('name', newId);
-        label.setAttribute('for', newId);
-      }
+      const id = select.getAttribute('id');
+      const idParts = id.split('-');
+      const newId = idParts.map((part, index) => index === 1 ? String(Number(part) + 1) : part).join('-');
 
-      element.after(elementCopy);
+      select.setAttribute('id', newId);
+      select.setAttribute('name', newId);
+      label.setAttribute('for', newId);
     }
+
+    element.after(elementCopy);
   }
 })
