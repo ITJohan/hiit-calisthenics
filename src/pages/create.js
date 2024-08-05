@@ -26,7 +26,7 @@ async function renderCreateWorkoutSet() {
     <template create-workout-set-template>
       <create-workout-set>
         <fieldset>
-          <legend><legend>
+          <legend></legend>
           ${await renderCreateSetExercise()}
           <div>
             <button type="button" class="add-exercise-btn">Add exercise</button>

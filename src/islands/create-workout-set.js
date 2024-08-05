@@ -1,23 +1,17 @@
 customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLElement {
   static observedAttributes = ['set-id'];
+
   constructor() {
     super();
 
+    this.legend = this.querySelector('legend');
     const addExerciseBtn = this.querySelector('.add-exercise-btn');
     const copySetBtn = this.querySelector('.copy-set-btn');
     const deleteSetBtn = this.querySelector('.delete-set-btn');
 
-    if (!(addExerciseBtn instanceof HTMLButtonElement)) {
-      throw new Error('.add-exercise-btn is not an instance of HTMLButtonElement');
-    }
-
-    if (!(copySetBtn instanceof HTMLButtonElement)) {
-      throw new Error('.copy-set-btn is not an instance of HTMLButtonElement');
-    }
-
-    if (!(deleteSetBtn instanceof HTMLButtonElement)) {
-      throw new Error('.delete-set-btn is not an instance of HTMLButtonElement');
-    }
+    if (!(addExerciseBtn instanceof HTMLButtonElement)) throw new Error('Not an instance of HTMLButtonElement');
+    if (!(copySetBtn instanceof HTMLButtonElement)) throw new Error('Not an instance of HTMLButtonElement');
+    if (!(deleteSetBtn instanceof HTMLButtonElement)) throw new Error('Not an instance of HTMLButtonElement');
 
     addExerciseBtn.addEventListener('click', this);
     copySetBtn.addEventListener('click', this);
@@ -38,9 +32,9 @@ customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLE
   ) {
     if (next === prev) return;
     
-    if (name === 'set-id') {
-      // TODO: set ids on subcomponents
-    }
+    this[name.replace(/-(\w)/g, (_, letter) => letter.toUpperCase())] = next;
+
+    this.legend.textContent = `Set ${next}`;   
   }
 
   addExercise() {

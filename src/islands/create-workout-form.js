@@ -1,5 +1,5 @@
 customElements.define('create-workout-form', class CreateWorkoutForm extends HTMLElement {
-  #nextSetId = 2;
+  #nextSetId = 1;
 
   constructor() {
     super();
@@ -16,13 +16,23 @@ customElements.define('create-workout-form', class CreateWorkoutForm extends HTM
 
   handleEvent(/** @type {CustomEvent} */ event) {
     if (!(event.target instanceof HTMLElement)) return;
-
-    if (event.target.matches('#add-set-btn')) {
-      // TODO: create a new set
-      // Here we are at a crossroad, should we continue imperatively or move to state-based UI?
-    }
-
+    if (event.target.matches('#add-set-btn')) this.addSet();
     if (event.target.matches('create-set')) this.copySetHandler(event);
+  }
+
+  addSet() {
+    const template = this.querySelector('[create-workout-set-template]');
+    
+    if (!(template instanceof HTMLTemplateElement)) throw new Error('Not an instance of HTMLTemplateElement');
+
+    const element = template.content.cloneNode(true);
+
+    if (!(element instanceof DocumentFragment)) throw new Error('Not an instance of DocumentFragment');
+
+    element.firstElementChild.setAttribute('set-id', String(this.#nextSetId));
+    template.before(element);
+
+    this.#nextSetId++;
   }
 
   copySetHandler(/** @type {CustomEvent} */ event) {
