@@ -23,7 +23,11 @@ export default async function renderMiddleware(req, res, next) {
   if (req.url === '/create') {
     if (req.method === 'GET') {
       res.writeHead(200, { 'Content-Type': 'text/html' });
-      res.write(renderShell(await renderCreate(), ['./src/islands/create-form.js', './src/islands/create-set.js']));
+      res.write(renderShell(await renderCreate(), [
+        './src/islands/create-workout-form.js',
+        './src/islands/create-workout-set.js',
+        './src/islands/create-set-exercise.js'
+      ]));
       res.end();
     }
 

@@ -1,4 +1,6 @@
-customElements.define('create-form', class CreateForm extends HTMLElement {
+customElements.define('create-workout-form', class CreateWorkoutForm extends HTMLElement {
+  #nextSetId = 2;
+
   constructor() {
     super();
 
@@ -16,7 +18,8 @@ customElements.define('create-form', class CreateForm extends HTMLElement {
     if (!(event.target instanceof HTMLElement)) return;
 
     if (event.target.matches('#add-set-btn')) {
-      console.log('adding set...');
+      // TODO: create a new set
+      // Here we are at a crossroad, should we continue imperatively or move to state-based UI?
     }
 
     if (event.target.matches('create-set')) this.copySetHandler(event);
@@ -30,9 +33,7 @@ customElements.define('create-form', class CreateForm extends HTMLElement {
 
     // Increment legend
     const legend = elementCopy.querySelector('legend');
-    const legendParts = legend.textContent.split(' ');
-    const newLegend = legendParts.map((part, index) => index === 1 ? String(Number(part) + 1): part).join(' ');
-    legend.textContent = newLegend;
+    legend.textContent = `Set ${this.#nextSetId}`;
 
     // Increment labels and selects
     const exerciseContainers = elementCopy.querySelectorAll('.exercise-container');
@@ -48,6 +49,8 @@ customElements.define('create-form', class CreateForm extends HTMLElement {
       select.setAttribute('name', newId);
       label.setAttribute('for', newId);
     }
+
+    this.#nextSetId++;
 
     element.after(elementCopy);
   }

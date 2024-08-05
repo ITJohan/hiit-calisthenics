@@ -1,4 +1,4 @@
-customElements.define('create-workout-exercise', class CreateWorkoutExercise extends HTMLElement {
+customElements.define('create-set-exercise', class CreateSetExercise extends HTMLElement {
   static observableAttributes = ['set-id', 'exercise-id'];
 
   /** @type {string} */ setId

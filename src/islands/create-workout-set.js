@@ -1,4 +1,5 @@
-customElements.define('create-set', class CreateSet extends HTMLElement {
+customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLElement {
+  static observedAttributes = ['set-id'];
   constructor() {
     super();
 
@@ -28,6 +29,18 @@ customElements.define('create-set', class CreateSet extends HTMLElement {
 
     if (event.target.matches('.add-exercise-btn')) this.addExercise();
     if (event.target.matches('.copy-set-btn')) this.copySet();
+  }
+
+  attributeChangedCallback(
+    /** @type {string} */ name,
+    /** @type {string | null} */ prev,
+    /** @type {string | null} */ next
+  ) {
+    if (next === prev) return;
+    
+    if (name === 'set-id') {
+      // TODO: set ids on subcomponents
+    }
   }
 
   addExercise() {
