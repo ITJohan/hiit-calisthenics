@@ -17,7 +17,7 @@ customElements.define('create-workout-form', class CreateWorkoutForm extends HTM
   }
 
   #addSet() {
-    const template = this.querySelector('#create-workout-set-template');
+    const template = document.querySelector('#create-workout-set-template');
     
     if (!(template instanceof HTMLTemplateElement)) throw new Error('Not an instance of HTMLTemplateElement');
 
@@ -26,7 +26,7 @@ customElements.define('create-workout-form', class CreateWorkoutForm extends HTM
     if (!(fragment instanceof DocumentFragment)) throw new Error('Not an instance of DocumentFragment');
 
     fragment.firstElementChild.setAttribute('set-id', String(this.#nextSetId));
-    template.before(fragment);
+    this.#addSetBtn.parentElement.before(fragment);
 
     this.#nextSetId++;
   }

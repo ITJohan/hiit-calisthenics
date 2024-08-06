@@ -40,7 +40,7 @@ customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLE
   }
 
   #addExercise() {
-    const template = this.querySelector('#create-set-exercise-template');
+    const template = document.querySelector('#create-set-exercise-template');
 
     if (!(template instanceof HTMLTemplateElement)) throw new Error('Not an instance of HTMLTemplateElement');
 
@@ -51,7 +51,7 @@ customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLE
     fragment.firstElementChild.setAttribute('set-id', this.setId);
     fragment.firstElementChild.setAttribute('exercise-id', String(this.#nextExerciseId));
 
-    template.before(fragment);
+    this.#addExerciseBtn.parentElement.before(fragment);
 
     this.#nextExerciseId++;
   }
