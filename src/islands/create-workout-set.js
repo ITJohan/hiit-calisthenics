@@ -37,6 +37,8 @@ customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLE
     this[name.replace(/-(\w)/g, (_, letter) => letter.toUpperCase())] = next;
 
     this.#legend.textContent = `Set ${next}`;   
+    const createSetExercises = this.querySelectorAll('create-set-exercise');
+    createSetExercises.forEach((element) => element.setAttribute('set-id', next));
   }
 
   #addExercise() {
