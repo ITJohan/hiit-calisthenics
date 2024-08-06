@@ -23,7 +23,7 @@ export async function renderCreate() {
 
 async function renderCreateWorkoutSet() {
   return `
-    <template create-workout-set-template>
+    <template id="create-workout-set-template">
       <create-workout-set>
         <fieldset>
           <legend></legend>
@@ -44,7 +44,7 @@ async function renderCreateSetExercise() {
   const exercises = result.rows;
 
   return `
-    <template create-set-exercise-template>
+    <template id="create-set-exercise-template">
       <create-set-exercise>
         <label></label>
         <select>

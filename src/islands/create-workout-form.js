@@ -12,12 +12,12 @@ customElements.define('create-workout-form', class CreateWorkoutForm extends HTM
 
   handleEvent(/** @type {CustomEvent} */ event) {
     if (!(event.target instanceof HTMLElement)) return;
-    if (event.target.matches('#add-set-btn')) this.addSet();
-    if (event.target.matches('create-workout-set')) this.copySetHandler(event);
+    if (event.target.matches('#add-set-btn')) this.#addSet();
+    if (event.target.matches('create-workout-set')) this.#copySetHandler(event);
   }
 
-  addSet() {
-    const template = this.querySelector('[create-workout-set-template]');
+  #addSet() {
+    const template = this.querySelector('#create-workout-set-template');
     
     if (!(template instanceof HTMLTemplateElement)) throw new Error('Not an instance of HTMLTemplateElement');
 
@@ -31,7 +31,7 @@ customElements.define('create-workout-form', class CreateWorkoutForm extends HTM
     this.#nextSetId++;
   }
 
-  copySetHandler(/** @type {CustomEvent} */ event) {
+  #copySetHandler(/** @type {CustomEvent} */ event) {
     const element = event.detail;
     if (!(element instanceof HTMLElement)) throw new Error('Not an instance of HTMLElement');
     const elementCopy = /** @type {HTMLElement} */ (element.cloneNode(true));

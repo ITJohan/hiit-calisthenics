@@ -23,8 +23,8 @@ customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLE
 
   handleEvent(/** @type {Event} */ event) {
     if (!(event.target instanceof HTMLButtonElement)) return;
-    if (event.target.matches('.add-exercise-btn')) this.addExercise();
-    if (event.target.matches('.copy-set-btn')) this.copySet();
+    if (event.target.matches('.add-exercise-btn')) this.#addExercise();
+    if (event.target.matches('.copy-set-btn')) this.#copySet();
   }
 
   attributeChangedCallback(
@@ -39,8 +39,8 @@ customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLE
     this.#legend.textContent = `Set ${next}`;   
   }
 
-  addExercise() {
-    const template = this.querySelector('[create-set-exercise-template]');
+  #addExercise() {
+    const template = this.querySelector('#create-set-exercise-template');
 
     if (!(template instanceof HTMLTemplateElement)) throw new Error('Not an instance of HTMLTemplateElement');
 
@@ -56,7 +56,7 @@ customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLE
     this.#nextExerciseId++;
   }
 
-  copySet() {
+  #copySet() {
     const event = new CustomEvent('cali-circuit:copy-set', {bubbles: true, detail: this})
     this.dispatchEvent(event);
   }
