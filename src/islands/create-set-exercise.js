@@ -3,12 +3,14 @@ customElements.define('create-set-exercise', class CreateSetExercise extends HTM
 
   /** @type {string} */ setId
   /** @type {string} */ exerciseId
+  /** @type {HTMLLabelElement} */ #label;
+  /** @type {HTMLSelectElement} */ #select;
 
   constructor() {
     super();
 
-    this.label = this.querySelector('label');
-    this.select = this.querySelector('select');
+    this.#label = this.querySelector('label');
+    this.#select = this.querySelector('select');
   }
 
   attributeChangedCallback(
@@ -21,13 +23,13 @@ customElements.define('create-set-exercise', class CreateSetExercise extends HTM
     this[name.replace(/-(\w)/g, (_, letter) => letter.toUpperCase())] = next;
 
     if (name === 'exercise-id') {
-      this.label.textContent = `Exercise ${next}`;
+      this.#label.textContent = `Exercise ${next}`;
     }
 
     const newId = `set-${this.setId}-exercise-${this.exerciseId}`;
 
-    this.label.setAttribute('for', newId);
-    this.select.setAttribute('id', newId);
-    this.select.setAttribute('name', newId);
+    this.#label.setAttribute('for', newId);
+    this.#select.setAttribute('id', newId);
+    this.#select.setAttribute('name', newId);
   }
 })

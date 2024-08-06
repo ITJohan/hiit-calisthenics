@@ -1,24 +1,24 @@
 customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLElement {
   static observedAttributes = ['set-id'];
 
-  /** @type {number} */ #nextExerciseId = 1;
   /** @type {string} */ setId;
+  /** @type {number} */ #nextExerciseId = 1;
+  /** @type {HTMLLegendElement} */ #legend;
+  /** @type {HTMLButtonElement} */ #addExerciseBtn;
+  /** @type {HTMLButtonElement} */ #copySetBtn;
+  /** @type {HTMLButtonElement} */ #deleteSetBtn;
 
   constructor() {
     super();
 
-    this.legend = this.querySelector('legend');
-    const addExerciseBtn = this.querySelector('.add-exercise-btn');
-    const copySetBtn = this.querySelector('.copy-set-btn');
-    const deleteSetBtn = this.querySelector('.delete-set-btn');
+    this.#legend = this.querySelector('legend');
+    this.#addExerciseBtn = this.querySelector('.add-exercise-btn');
+    this.#copySetBtn = this.querySelector('.copy-set-btn');
+    this.#deleteSetBtn = this.querySelector('.delete-set-btn');
 
-    if (!(addExerciseBtn instanceof HTMLButtonElement)) throw new Error('Not an instance of HTMLButtonElement');
-    if (!(copySetBtn instanceof HTMLButtonElement)) throw new Error('Not an instance of HTMLButtonElement');
-    if (!(deleteSetBtn instanceof HTMLButtonElement)) throw new Error('Not an instance of HTMLButtonElement');
-
-    addExerciseBtn.addEventListener('click', this);
-    copySetBtn.addEventListener('click', this);
-    deleteSetBtn.addEventListener('click', this);
+    this.#addExerciseBtn.addEventListener('click', this);
+    this.#copySetBtn.addEventListener('click', this);
+    this.#deleteSetBtn.addEventListener('click', this);
   }
 
   handleEvent(/** @type {Event} */ event) {
@@ -36,7 +36,7 @@ customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLE
     
     this[name.replace(/-(\w)/g, (_, letter) => letter.toUpperCase())] = next;
 
-    this.legend.textContent = `Set ${next}`;   
+    this.#legend.textContent = `Set ${next}`;   
   }
 
   addExercise() {
