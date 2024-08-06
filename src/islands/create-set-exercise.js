@@ -1,5 +1,5 @@
 customElements.define('create-set-exercise', class CreateSetExercise extends HTMLElement {
-  static observableAttributes = ['set-id', 'exercise-id'];
+  static observedAttributes = ['set-id', 'exercise-id'];
 
   /** @type {string} */ setId
   /** @type {string} */ exerciseId
@@ -19,6 +19,10 @@ customElements.define('create-set-exercise', class CreateSetExercise extends HTM
     if (prev === next) return;
 
     this[name.replace(/-(\w)/g, (_, letter) => letter.toUpperCase())] = next;
+
+    if (name === 'exercise-id') {
+      this.label.textContent = `Exercise ${next}`;
+    }
 
     const newId = `set-${this.setId}-exercise-${this.exerciseId}`;
 

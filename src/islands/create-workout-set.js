@@ -1,6 +1,9 @@
 customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLElement {
   static observedAttributes = ['set-id'];
 
+  /** @type {number} */ #nextExerciseId = 1;
+  /** @type {string} */ setId;
+
   constructor() {
     super();
 
@@ -20,7 +23,6 @@ customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLE
 
   handleEvent(/** @type {Event} */ event) {
     if (!(event.target instanceof HTMLButtonElement)) return;
-
     if (event.target.matches('.add-exercise-btn')) this.addExercise();
     if (event.target.matches('.copy-set-btn')) this.copySet();
   }
@@ -38,28 +40,20 @@ customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLE
   }
 
   addExercise() {
-    const lastExerciseContainer = this.querySelector('.exercise-container:nth-last-child(2)');
-    const exerciseContainer = lastExerciseContainer.cloneNode(true);
+    const template = this.querySelector('[create-set-exercise-template]');
 
-    if (!(exerciseContainer instanceof HTMLElement)) {
-      throw new Error('exerciseContainerCopy is not an instance of HTMLElement')
-    }
+    if (!(template instanceof HTMLTemplateElement)) throw new Error('Not an instance of HTMLTemplateElement');
 
-    const label = exerciseContainer.querySelector('label');
-    const select = exerciseContainer.querySelector('select');      
+    const fragment = template.content.cloneNode(true);
 
-    const labelParts = label.textContent.split(' ');
-    const selectIdParts = select.getAttribute('id').split('-');
-    
-    const newLabel = labelParts.map((part, index) => index === 1 ? String(Number(part) + 1) : part).join(' ');
-    const newSelectId = selectIdParts.map((part, index) => index === 3 ? String(Number(part) + 1) : part).join('-');
+    if (!(fragment instanceof DocumentFragment)) throw new Error('Not an instance of DocumentFragment');
 
-    label.textContent = newLabel;
-    label.setAttribute('for', newSelectId);
-    select.setAttribute('id', newSelectId);
-    select.setAttribute('name', newSelectId);
+    fragment.firstElementChild.setAttribute('set-id', this.setId);
+    fragment.firstElementChild.setAttribute('exercise-id', String(this.#nextExerciseId));
 
-    lastExerciseContainer.after(exerciseContainer);
+    template.before(fragment);
+
+    this.#nextExerciseId++;
   }
 
   copySet() {

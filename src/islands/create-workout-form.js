@@ -25,12 +25,12 @@ customElements.define('create-workout-form', class CreateWorkoutForm extends HTM
     
     if (!(template instanceof HTMLTemplateElement)) throw new Error('Not an instance of HTMLTemplateElement');
 
-    const element = template.content.cloneNode(true);
+    const fragment = template.content.cloneNode(true);
 
-    if (!(element instanceof DocumentFragment)) throw new Error('Not an instance of DocumentFragment');
+    if (!(fragment instanceof DocumentFragment)) throw new Error('Not an instance of DocumentFragment');
 
-    element.firstElementChild.setAttribute('set-id', String(this.#nextSetId));
-    template.before(element);
+    fragment.firstElementChild.setAttribute('set-id', String(this.#nextSetId));
+    template.before(fragment);
 
     this.#nextSetId++;
   }
