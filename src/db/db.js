@@ -23,6 +23,6 @@ export function getExercises() {
 
 /** @returns {Promise<pg.QueryResult<Pick<Exercise, "exercise_category">>>} */
 export function getCategories() {
-  return pool.query('SELECT * FROM Exercises');
+  return pool.query('SELECT DISTINCT exercise_category FROM Exercises');
 }
 

@@ -47,11 +47,14 @@ async function renderCreateSetExerciseTemplate() {
     <template id="create-set-exercise-template">
       <create-set-exercise>
         <label></label>
-        <select>
-          ${exercises
-            .map((exercise) => `<option value="${exercise.exercise_id}">${exercise.exercise_category} - level ${exercise.exercise_level} - ${exercise.exercise_name}</option>`)
-            .join('')}
-        </select>
+        <div>
+          <select>
+            ${exercises
+              .map((exercise) => `<option value="${exercise.exercise_id}">${exercise.exercise_category} - level ${exercise.exercise_level} - ${exercise.exercise_name}</option>`)
+              .join('')}
+          </select>
+          <button type="button" delete-exercise-btn>Delete exercise</button>
+        </div>
       </create-set-exercise>
     </template>
   `; 

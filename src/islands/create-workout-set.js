@@ -1,6 +1,4 @@
 customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLElement {
-  static observedAttributes = ['set-id'];
-
   /** @type {string} */ setId;
   /** @type {number} */ #nextExerciseId = 1;
   /** @type {HTMLLegendElement} */ #legend;
@@ -19,14 +17,18 @@ customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLE
     this.#addExerciseBtn.addEventListener('click', this);
     this.#copySetBtn.addEventListener('click', this);
     this.#deleteSetBtn.addEventListener('click', this);
+    this.addEventListener('cali-circuit:delete-exercise', this);
   }
 
-  handleEvent(/** @type {Event} */ event) {
-    if (!(event.target instanceof HTMLButtonElement)) return;
+  handleEvent(/** @type {CustomEvent} */ event) {
+    if (!(event.target instanceof HTMLElement)) throw new Error('Not an instance of HTMLElement');
     if (event.target.matches('.add-exercise-btn')) this.#addExercise();
     if (event.target.matches('.copy-set-btn')) this.#copySet();
     if (event.target.matches('.delete-set-btn')) this.#deleteSet();
+    if (event.type === 'cali-circuit:delete-exercise') this.#deleteExerciseHandler(event);
   }
+
+  static observedAttributes = ['set-id'];
 
   attributeChangedCallback(
     /** @type {string} */ name,
@@ -73,6 +75,26 @@ customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLE
   #deleteSet() {
     const event = new CustomEvent('cali-circuit:delete-set', {bubbles: true, detail: this});
     this.dispatchEvent(event);
+  }
+
+  #deleteExerciseHandler(/** @type {CustomEvent} */ event) {
+    const element = event.detail;
+
+    if (!(element instanceof HTMLElement)) throw new Error('Not an instance of HTMLElement');
+
+    const deletedExerciseId = Number(element.getAttribute('exercise-id'));
+    element.remove();
+
+    const createSetExercises = this.querySelectorAll('create-set-exercise');
+
+    createSetExercises.forEach(element => {
+      const exerciseId = Number(element.getAttribute('exercise-id'));
+      if (exerciseId > deletedExerciseId) {
+        element.setAttribute('exercise-id', String(exerciseId - 1));
+      }
+    });
+
+    this.#nextExerciseId--;
   }
 });
 
