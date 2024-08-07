@@ -41,7 +41,7 @@ async function renderCreateWorkoutSetTemplate() {
 
 async function renderCreateSetExerciseTemplate() {
   const result = await db.query('SELECT * FROM Exercises');
-  const exercises = result.rows;
+  const exercises = /** @type {Exercise[]} */ (result.rows);
 
   return `
     <template id="create-set-exercise-template">
@@ -49,7 +49,7 @@ async function renderCreateSetExerciseTemplate() {
         <label></label>
         <select>
           ${exercises
-            .map((exercise) => `<option value="${exercise.exercise_id}">${exercise.exercise_name}</option>`)
+            .map((exercise) => `<option value="${exercise.exercise_category}">${exercise.exercise_category}</option>`)
             .join('')}
         </select>
       </create-set-exercise>
