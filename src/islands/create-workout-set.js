@@ -25,6 +25,7 @@ customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLE
     if (!(event.target instanceof HTMLButtonElement)) return;
     if (event.target.matches('.add-exercise-btn')) this.#addExercise();
     if (event.target.matches('.copy-set-btn')) this.#copySet();
+    if (event.target.matches('.delete-set-btn')) this.remove();
   }
 
   attributeChangedCallback(
@@ -39,6 +40,12 @@ customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLE
     this.#legend.textContent = `Set ${next}`;   
     const createSetExercises = this.querySelectorAll('create-set-exercise');
     createSetExercises.forEach((element) => element.setAttribute('set-id', next));
+  }
+
+  disconnectedCallback() {
+    this.#addExerciseBtn.removeEventListener('click', this)
+    this.#copySetBtn.removeEventListener('click', this)
+    this.#deleteSetBtn.removeEventListener('click', this)
   }
 
   #addExercise() {

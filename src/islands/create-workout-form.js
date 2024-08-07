@@ -7,13 +7,18 @@ customElements.define('create-workout-form', class CreateWorkoutForm extends HTM
 
     this.#addSetBtn = this.querySelector('#add-set-btn');
     this.#addSetBtn.addEventListener('click', this);
-    this.addEventListener('cali-circuit:copy-set', this)
+    this.addEventListener('cali-circuit:copy-set', this);
   }
 
   handleEvent(/** @type {CustomEvent} */ event) {
     if (!(event.target instanceof HTMLElement)) return;
     if (event.target.matches('#add-set-btn')) this.#addSet();
     if (event.target.matches('create-workout-set')) this.#copySetHandler(event);
+  }
+
+  disconnectedCallback() {
+    this.#addSetBtn.removeEventListener('click', this);
+    this.removeEventListener('cali-circuit:copy-set', this);
   }
 
   #addSet() {
