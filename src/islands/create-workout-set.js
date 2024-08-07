@@ -25,7 +25,7 @@ customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLE
     if (!(event.target instanceof HTMLButtonElement)) return;
     if (event.target.matches('.add-exercise-btn')) this.#addExercise();
     if (event.target.matches('.copy-set-btn')) this.#copySet();
-    if (event.target.matches('.delete-set-btn')) this.remove();
+    if (event.target.matches('.delete-set-btn')) this.#deleteSet();
   }
 
   attributeChangedCallback(
@@ -67,6 +67,11 @@ customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLE
 
   #copySet() {
     const event = new CustomEvent('cali-circuit:copy-set', {bubbles: true, detail: this})
+    this.dispatchEvent(event);
+  }
+
+  #deleteSet() {
+    const event = new CustomEvent('cali-circuit:delete-set', {bubbles: true, detail: this});
     this.dispatchEvent(event);
   }
 });
