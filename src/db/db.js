@@ -11,11 +11,18 @@ const pool = new Pool({
   host: process.env.PGHOST
 });
 
-/**
- * @param {string} text
- * @param {string[]} [params]
- * @returns {Promise<pg.QueryResult<any>>}
- */
-export function query(text, params) {
-  return pool.query(text, params);
+/** @returns {Promise<pg.QueryResult<Workout>>} */
+export function getWorkouts() {
+  return pool.query('SELECT * FROM Workouts');
 }
+
+/** @returns {Promise<pg.QueryResult<Exercise>>} */
+export function getExercises() {
+  return pool.query('SELECT * FROM Exercises');
+}
+
+/** @returns {Promise<pg.QueryResult<Pick<Exercise, "exercise_category">>>} */
+export function getCategories() {
+  return pool.query('SELECT * FROM Exercises');
+}
+

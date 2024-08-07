@@ -10,10 +10,12 @@ type Workout = {
   athlete_id: number,
 };
 
+type Category = 'pull' | 'push' | 'legs' | 'core';
+
 type Exercise = {
   exercise_id: number,
   exercise_name: string,
-  exercise_category: string,
+  exercise_category: Category,
   exercise_level: number,
 };
 
@@ -35,3 +37,4 @@ type WorkoutExercise = {
   workout_id: number,
   exercise_id: number,
 };
+

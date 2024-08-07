@@ -1,7 +1,7 @@
-import * as db from '../db/db.js';
+import { getWorkouts } from '../db/db.js';
 
 export async function renderIndex() {
-  const result = await db.query('SELECT * FROM Workouts');
+  const result = await getWorkouts();
   const workouts = result.rows;
 
   return `
@@ -16,3 +16,4 @@ export async function renderIndex() {
     </main>
   `;
 }
+
