@@ -1,4 +1,5 @@
-customElements.define('create-workout-form', class CreateWorkoutForm extends HTMLElement {
+/** @implements {ICreateWorkoutForm} */
+class CreateWorkoutForm extends HTMLElement {
   /** @type {HTMLButtonElement} */ #addSetBtn;
 
   constructor() {
@@ -29,8 +30,8 @@ customElements.define('create-workout-form', class CreateWorkoutForm extends HTM
     if (!(lastSetElement instanceof HTMLElement)) throw new Error('Not an instance of HTMLElement');
 
     const lastSetId = Number(lastSetElement.getAttribute('set-id'));
-    const lastSetElementCopy = /** @type {HTMLElement} */ (lastSetElement.cloneNode(true));
-
+    const lastSetElementCopy = /** @type {ICreateWorkoutSet} */ (lastSetElement.cloneNode(true));
+    lastSetElementCopy.resetExercises();
     lastSetElementCopy.setAttribute('set-id', String(lastSetId + 1));
     lastSetElement.after(lastSetElementCopy);
   }
@@ -67,4 +68,6 @@ customElements.define('create-workout-form', class CreateWorkoutForm extends HTM
     
     element.remove();
   }
-})
+};
+
+customElements.define('create-workout-form', CreateWorkoutForm);

@@ -38,3 +38,15 @@ type WorkoutExercise = {
   exercise_id: number,
 };
 
+interface ICreateWorkoutForm extends HTMLElement {}
+
+interface ICreateWorkoutSet extends HTMLElement {
+  setId: string,
+  resetExercises(): void,
+}
+
+interface ICreateSetExercise extends HTMLElement {
+  setId: string,
+  exerciseId: string,
+}
+

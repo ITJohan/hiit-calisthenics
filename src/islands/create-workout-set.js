@@ -1,4 +1,5 @@
-customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLElement {
+/** @implements {ICreateWorkoutSet} */
+class CreateWorkoutSet extends HTMLElement {
   /** @type {string} */ setId;
   /** @type {HTMLLegendElement} */ #legend;
   /** @type {HTMLButtonElement} */ #addExerciseBtn;
@@ -91,5 +92,10 @@ customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLE
       }
     });
   }
-});
 
+  resetExercises() {
+    console.log('test');
+  }
+};
+
+customElements.define('create-workout-set', CreateWorkoutSet);

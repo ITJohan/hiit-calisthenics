@@ -1,4 +1,5 @@
-customElements.define('create-set-exercise', class CreateSetExercise extends HTMLElement {
+/** @implements {ICreateSetExercise} */
+class CreateSetExercise extends HTMLElement {
   /** @type {string} */ setId
   /** @type {string} */ exerciseId
   /** @type {HTMLLabelElement} */ #label;
@@ -51,4 +52,6 @@ customElements.define('create-set-exercise', class CreateSetExercise extends HTM
     const event = new CustomEvent('cali-circuit:delete-exercise', {bubbles: true, detail: this});
     this.dispatchEvent(event);
   }
-})
+};
+
+customElements.define('create-set-exercise', CreateSetExercise);
