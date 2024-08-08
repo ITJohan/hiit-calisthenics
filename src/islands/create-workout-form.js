@@ -41,7 +41,7 @@ class CreateWorkoutForm extends HTMLElement {
 
     if (!(element instanceof HTMLElement)) throw new Error('Not an instance of HTMLElement');
 
-    const elementCopy = /** @type {HTMLElement} */ (element.cloneNode(true));
+    const elementCopy = /** @type {ICreateWorkoutSet} */ (element.cloneNode(true));
 
     const lastSetElement = this.querySelector('create-workout-set:last-of-type');
     const lastSetId = Number(lastSetElement.getAttribute('set-id'));
