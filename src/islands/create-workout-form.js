@@ -1,5 +1,4 @@
 customElements.define('create-workout-form', class CreateWorkoutForm extends HTMLElement {
-  /** @type {number} */ #nextSetId = 1;
   /** @type {HTMLButtonElement} */ #addSetBtn;
 
   constructor() {
@@ -25,29 +24,28 @@ customElements.define('create-workout-form', class CreateWorkoutForm extends HTM
   }
 
   #addSet() {
-    const template = document.querySelector('#create-workout-set-template');
+    const lastSetElement = document.querySelector('create-workout-set:last-of-type');
     
-    if (!(template instanceof HTMLTemplateElement)) throw new Error('Not an instance of HTMLTemplateElement');
+    if (!(lastSetElement instanceof HTMLElement)) throw new Error('Not an instance of HTMLElement');
 
-    const fragment = template.content.cloneNode(true);
+    const lastSetId = Number(lastSetElement.getAttribute('set-id'));
+    const lastSetElementCopy = /** @type {HTMLElement} */ (lastSetElement.cloneNode(true));
 
-    if (!(fragment instanceof DocumentFragment)) throw new Error('Not an instance of DocumentFragment');
-
-    fragment.firstElementChild.setAttribute('set-id', String(this.#nextSetId));
-    this.#addSetBtn.parentElement.before(fragment);
-
-    this.#nextSetId++;
+    lastSetElementCopy.setAttribute('set-id', String(lastSetId + 1));
+    lastSetElement.after(lastSetElementCopy);
   }
 
   #copySetHandler(/** @type {CustomEvent} */ event) {
     const element = event.detail;
+
     if (!(element instanceof HTMLElement)) throw new Error('Not an instance of HTMLElement');
+
     const elementCopy = /** @type {HTMLElement} */ (element.cloneNode(true));
 
-    elementCopy.setAttribute('set-id', String(this.#nextSetId));
-    this.#addSetBtn.parentElement.before(elementCopy);
-
-    this.#nextSetId++;
+    const lastSetElement = this.querySelector('create-workout-set:last-of-type');
+    const lastSetId = Number(lastSetElement.getAttribute('set-id'));
+    elementCopy.setAttribute('set-id', String(lastSetId + 1));
+    lastSetElement.after(elementCopy);
   }
 
   #deleteSetHandler(/** @type {CustomEvent} */ event) {
@@ -68,6 +66,5 @@ customElements.define('create-workout-form', class CreateWorkoutForm extends HTM
     });
     
     element.remove();
-    this.#nextSetId--;
   }
 })

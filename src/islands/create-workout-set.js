@@ -1,6 +1,5 @@
 customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLElement {
   /** @type {string} */ setId;
-  /** @type {number} */ #nextExerciseId = 1;
   /** @type {HTMLLegendElement} */ #legend;
   /** @type {HTMLButtonElement} */ #addExerciseBtn;
   /** @type {HTMLButtonElement} */ #copySetBtn;
@@ -51,20 +50,18 @@ customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLE
   }
 
   #addExercise() {
-    const template = document.querySelector('#create-set-exercise-template');
+    const lastExerciseElement = this.querySelector('create-set-exercise:last-of-type');
 
-    if (!(template instanceof HTMLTemplateElement)) throw new Error('Not an instance of HTMLTemplateElement');
+    if (!(lastExerciseElement instanceof HTMLElement)) throw new Error('Not an instance of HTMLElement');
 
-    const fragment = template.content.cloneNode(true);
+    const lastExerciseElementCopy = /** @type {HTMLElement} */ (lastExerciseElement.cloneNode(true));
 
-    if (!(fragment instanceof DocumentFragment)) throw new Error('Not an instance of DocumentFragment');
+    lastExerciseElementCopy.setAttribute('set-id', this.setId);
 
-    fragment.firstElementChild.setAttribute('set-id', this.setId);
-    fragment.firstElementChild.setAttribute('exercise-id', String(this.#nextExerciseId));
+    const lastExerciseId = Number(lastExerciseElement.getAttribute('exercise-id'));
+    lastExerciseElementCopy.setAttribute('exercise-id', String(lastExerciseId + 1));
 
-    this.#addExerciseBtn.parentElement.before(fragment);
-
-    this.#nextExerciseId++;
+    lastExerciseElement.after(lastExerciseElementCopy);
   }
 
   #copySet() {
@@ -93,8 +90,6 @@ customElements.define('create-workout-set', class CreateWorkoutSet extends HTMLE
         element.setAttribute('exercise-id', String(exerciseId - 1));
       }
     });
-
-    this.#nextExerciseId--;
   }
 });
 
