@@ -26,7 +26,7 @@ erDiagram
   }
   WorkoutExercise {
     int set_order PK
-    int exercise_order
+    int exercise_order PK
   }
   Workout }|--o{ WorkoutExercise : "part of"
   Exercise }|--o{ WorkoutExercise : "part of"

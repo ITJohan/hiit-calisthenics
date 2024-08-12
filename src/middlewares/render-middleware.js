@@ -5,6 +5,7 @@ import { renderCreate } from '../pages/create.js';
 import { renderWorkout } from '../pages/workout.js';
 import { renderModify } from '../pages/modify.js';
 import { parseFormData } from '../utils.js';
+import { postWorkout } from '../db/db.js';
 
 /**
  * @param {IncomingMessage} req
@@ -33,11 +34,7 @@ export default async function renderMiddleware(req, res, next) {
 
     if (req.method === 'POST') {
       const formData = await parseFormData(req);
-      for (const [key, value] of formData) {
-        console.log(key, value);
-      }
-
-      // TODO: add to db
+      await postWorkout(formData);
 
       res.writeHead(200, { 'Content-Type': 'text/html' });
       res.write(renderShell(await renderIndex(), []));

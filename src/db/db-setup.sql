@@ -35,7 +35,7 @@ CREATE TABLE WorkoutExercises (
   exercise_order INT NOT NULL CHECK (exercise_order >= 0),
   workout_id INT REFERENCES Workouts(workout_id),
   exercise_id INT REFERENCES Exercises(exercise_id),
-  PRIMARY KEY (workout_id, exercise_id, set_order)
+  PRIMARY KEY (workout_id, exercise_id, set_order, exercise_order)
 );
 
 INSERT INTO Athletes (athlete_name, athlete_email, athlete_password)
