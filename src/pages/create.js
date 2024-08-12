@@ -23,7 +23,7 @@ export async function renderCreate() {
 
 async function renderCreateWorkoutSet() {
   return `
-    <create-workout-set set-id="1">
+    <create-workout-set set-id="1" delete-disabled>
       <fieldset>
         <legend></legend>
         ${await renderCreateSetExercise()}

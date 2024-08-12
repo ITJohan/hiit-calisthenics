@@ -28,7 +28,7 @@ class CreateWorkoutSet extends HTMLElement {
     if (event.type === 'cali-circuit:delete-exercise') this.#deleteExerciseHandler(event);
   }
 
-  static observedAttributes = ['set-id'];
+  static observedAttributes = ['set-id', 'delete-disabled'];
 
   attributeChangedCallback(
     /** @type {string} */ name,
@@ -39,9 +39,19 @@ class CreateWorkoutSet extends HTMLElement {
     
     this[name.replace(/-(\w)/g, (_, letter) => letter.toUpperCase())] = next;
 
-    this.#legend.textContent = `Set ${next}`;   
-    const createSetExercises = this.querySelectorAll('create-set-exercise');
-    createSetExercises.forEach((element) => element.setAttribute('set-id', next));
+    if (name === 'set-id') {
+      this.#legend.textContent = `Set ${next}`;   
+      const createSetExercises = this.querySelectorAll('create-set-exercise');
+      createSetExercises.forEach((element) => element.setAttribute('set-id', next));
+    }
+
+    if (name === 'delete-disabled') {
+      if (next === null) {
+        this.#deleteSetBtn.removeAttribute('disabled');
+      } else {
+        this.#deleteSetBtn.setAttribute('disabled', next);
+      }
+    }
   }
 
   disconnectedCallback() {

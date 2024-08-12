@@ -26,8 +26,8 @@ class CreateWorkoutForm extends HTMLElement {
 
   #addSet() {
     const lastSetElement = document.querySelector('create-workout-set:last-of-type');
-    
     if (!(lastSetElement instanceof HTMLElement)) throw new Error('Not an instance of HTMLElement');
+    lastSetElement.removeAttribute('delete-disabled');
 
     const lastSetId = Number(lastSetElement.getAttribute('set-id'));
     const lastSetElementCopy = /** @type {ICreateWorkoutSet} */ (lastSetElement.cloneNode(true));
@@ -51,12 +51,11 @@ class CreateWorkoutForm extends HTMLElement {
 
   #deleteSetHandler(/** @type {CustomEvent} */ event) {
     const element = event.detail;
-
     if (!(element instanceof HTMLElement)) throw new Error('Not an instance of HTMLElement');
+    const deletedSetId = Number(element.getAttribute('set-id'));
+    element.remove();
 
     const createWorkoutSets = this.querySelectorAll('create-workout-set');
-    const deletedSetId = Number(element.getAttribute('set-id'));
-
     createWorkoutSets.forEach((element) => {
       const setId = Number(element.getAttribute('set-id'));
 
@@ -65,8 +64,10 @@ class CreateWorkoutForm extends HTMLElement {
         element.setAttribute('set-id', String(newSetId));
       }
     });
-    
-    element.remove();
+
+    if (createWorkoutSets.length === 1) {
+      createWorkoutSets[0].setAttribute('delete-disabled', '');
+    }
   }
 };
 
