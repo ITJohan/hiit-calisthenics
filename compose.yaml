@@ -27,6 +27,7 @@ services:
     init: true
     ports:
       - 3000:3000
+      - 9229:9229
     secrets:
       - pg_password
 
