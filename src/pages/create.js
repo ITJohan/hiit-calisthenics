@@ -42,7 +42,7 @@ async function renderCreateSetExercise() {
   const exercises = result.rows;
 
   return `
-    <create-set-exercise set-id="1" exercise-id="1">
+    <create-set-exercise set-id="1" exercise-id="1" delete-disabled>
       <label></label>
       <div>
         <select>

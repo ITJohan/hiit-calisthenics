@@ -26,7 +26,7 @@ class CreateSetExercise extends HTMLElement {
     this.#deleteExerciseBtn.removeEventListener('click', this);
   }
 
-  static observedAttributes = ['set-id', 'exercise-id'];
+  static observedAttributes = ['set-id', 'exercise-id', 'delete-disabled'];
 
   attributeChangedCallback(
     /** @type {string} */ name,
@@ -41,11 +41,21 @@ class CreateSetExercise extends HTMLElement {
       this.#label.textContent = `Exercise ${next}`;
     }
 
-    const newId = `set-${this.setId}-exercise-${this.exerciseId}`;
+    if (name === 'exercise-id' || name === 'set-id') {
+      const newId = `set-${this.setId}-exercise-${this.exerciseId}`;
 
-    this.#label.setAttribute('for', newId);
-    this.#select.setAttribute('id', newId);
-    this.#select.setAttribute('name', newId);
+      this.#label.setAttribute('for', newId);
+      this.#select.setAttribute('id', newId);
+      this.#select.setAttribute('name', newId);
+    }
+
+    if (name === 'delete-disabled') {
+      if (next === null) {
+        this.#deleteExerciseBtn.removeAttribute('disabled');
+      } else {
+        this.#deleteExerciseBtn.setAttribute('disabled', '');
+      }
+    }
   }
 
   #deleteExerciseHandler() {
