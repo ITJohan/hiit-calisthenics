@@ -54,7 +54,7 @@ async function renderCreateSetExercise() {
              `)
             .join('')}
         </select>
-        <button type="button" delete-exercise-btn>Delete exercise</button>
+        <button type="button" delete-exercise-btn>❌</button>
       </div>
     </create-set-exercise>
   `; 

@@ -44,5 +44,16 @@ export default async function fileMiddleware(req, res, next) {
     }
   }
 
+  if (req.url.startsWith('/src/assets')) {
+    try {
+      const file = await readFile(path.resolve(req.url.substring(1)));
+      res.writeHead(200, { 'Content-Type': 'image/svg+xml' });
+      res.write(file);
+    } catch (error) {
+      res.writeHead(400);
+      res.end();
+    }
+  }
+
   next();
 }
