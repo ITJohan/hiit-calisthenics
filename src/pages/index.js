@@ -7,12 +7,14 @@ export async function renderIndex() {
   return `
     <h2>Welcome to CaliCircuit</h2>
     <main>
-      <select name="workout">
-        ${workouts.map((workout) => `<option value="${workout.workout_id}">${workout.workout_name}</option>`).join('')}
-      </select>
-      <a href="/workout">Start workout</a>
+      <form action="/workout">
+        <select name="id">
+          ${workouts.map((workout) => `<option value="${workout.workout_id}">${workout.workout_name}</option>`).join('')}
+        </select>
+        <button>Start workout</button>
+        <button>Modify workout</button>
+      </form>
       <a href="/create">Create workout</a>
-      <a href="/modify">Modify workout</a>
     </main>
   `;
 }

@@ -48,3 +48,13 @@ export async function getCategories() {
   return await pool.query('SELECT DISTINCT exercise_category FROM Exercises');
 }
 
+export async function getExercisesForWorkout(/** @type number */ workoutId) {
+  return await pool.query(`
+    SELECT Exercises.exercise_id AS exercise_id, exercise_name, exercise_category, exercise_level
+    FROM Exercises
+    JOIN WorkoutExercises
+    ON Exercises.exercise_id=WorkoutExercises.exercise_id
+    WHERE workout_id=$1
+    ORDER BY set_order, exercise_order
+  `, [workoutId]);
+}

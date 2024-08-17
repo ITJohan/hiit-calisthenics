@@ -5,7 +5,7 @@ import { renderCreate } from '../pages/create.js';
 import { renderWorkout } from '../pages/workout.js';
 import { renderModify } from '../pages/modify.js';
 import { parseFormData } from '../utils.js';
-import { postWorkout } from '../db/db.js';
+import { getExercisesForWorkout, postWorkout } from '../db/db.js';
 
 /**
  * @param {IncomingMessage} req
@@ -44,7 +44,15 @@ export default async function renderMiddleware(req, res, next) {
     return;
   }
 
-  if (req.url === '/workout' && req.method === 'GET') {
+  if (req.url.startsWith('/workout') && req.method === 'GET') {
+    const url = new URL(req.url, `http://${req.headers.host}`);
+
+    const workoutId = Number(url.searchParams.get('id'));
+
+    const exercises = await getExercisesForWorkout(workoutId);
+
+    console.log(exercises.rows);
+
     res.writeHead(200, { 'Content-Type': 'text/html' });
     res.write(renderShell(renderWorkout(), []));
     res.end();
