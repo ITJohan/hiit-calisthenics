@@ -49,12 +49,10 @@ export default async function renderMiddleware(req, res, next) {
 
     const workoutId = Number(url.searchParams.get('id'));
 
-    const exercises = await getExercisesForWorkout(workoutId);
-
-    console.log(exercises.rows);
+    const result = await getExercisesForWorkout(workoutId);
 
     res.writeHead(200, { 'Content-Type': 'text/html' });
-    res.write(renderShell(renderWorkout(), []));
+    res.write(renderShell(renderWorkout(result.rows), []));
     res.end();
 
     return;
