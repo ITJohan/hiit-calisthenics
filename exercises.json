@@ -1,0 +1,64 @@
+{
+  "warmups": [
+    {
+      "id": 0,
+      "name": "Yuri's Shoulder Band Warmup",
+      "reps": [5, 6, 7, 8],
+      "type": "rep",
+      "equipment": ["bands"],
+      "url": "https://www.youtube.com/watch?v=Vwn5hSf3WEg"
+      "prev": [],
+      "next": []
+    },
+    {
+      "id": 1,
+      "name": "Squat Sky Reaches",
+      "reps": [5, 6, 7, 8],
+      "type": "rep",
+      "equipment": [],
+      "url": "https://youtu.be/lbozu0DPcYI?t=42s"
+      "prev": [],
+      "next": []
+    },
+    {
+      "id": 2,
+      "name": "GMB Wrist Prep",
+      "reps": [10],
+      "type": "rep",
+      "equipment": [],
+      "url": "https://www.youtube.com/watch?v=mSZWSQSSEjE"
+      "prev": [],
+      "next": []
+    },
+    {
+      "id": 3,
+      "name": "Deadbugs",
+      "reps": [30],
+      "type": "sec",
+      "equipment": [],
+      "url": "https://www.youtube.com/watch?v=D1AIAl9UPVU"
+      "prev": [],
+      "next": []
+    },
+    {
+      "id": 4,
+      "name": "Arch Hangs",
+      "reps": [10],
+      "type": "rep",
+      "equipment": ["pull-up-bar"],
+      "url": "https://youtu.be/C995b3KLXS4?t=7s"
+      "prev": [],
+      "next": []
+    },
+    {
+      "id": 5,
+      "name": "Parallel Bar Support",
+      "reps": [30],
+      "type": "sec",
+      "equipment": ["parallel-bars"],
+      "url": "http://antranik.org/wp-content/uploads/2014/01/antranik-holding-support-hold-on-parallel-bars.jpg"
+      "prev": [],
+      "next": []
+    }
+  ]
+}
