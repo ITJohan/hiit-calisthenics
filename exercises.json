@@ -1,64 +1,117 @@
 {
-  "warmups": [
-    {
-      "id": 0,
-      "name": "Yuri's Shoulder Band Warmup",
-      "reps": [5, 6, 7, 8],
-      "type": "rep",
-      "equipment": ["bands"],
-      "url": "https://www.youtube.com/watch?v=Vwn5hSf3WEg"
-      "prev": [],
-      "next": []
-    },
-    {
-      "id": 1,
-      "name": "Squat Sky Reaches",
-      "reps": [5, 6, 7, 8],
-      "type": "rep",
-      "equipment": [],
-      "url": "https://youtu.be/lbozu0DPcYI?t=42s"
-      "prev": [],
-      "next": []
-    },
-    {
-      "id": 2,
-      "name": "GMB Wrist Prep",
-      "reps": [10],
-      "type": "rep",
-      "equipment": [],
-      "url": "https://www.youtube.com/watch?v=mSZWSQSSEjE"
-      "prev": [],
-      "next": []
-    },
-    {
-      "id": 3,
-      "name": "Deadbugs",
-      "reps": [30],
-      "type": "sec",
-      "equipment": [],
-      "url": "https://www.youtube.com/watch?v=D1AIAl9UPVU"
-      "prev": [],
-      "next": []
-    },
-    {
-      "id": 4,
-      "name": "Arch Hangs",
-      "reps": [10],
-      "type": "rep",
-      "equipment": ["pull-up-bar"],
-      "url": "https://youtu.be/C995b3KLXS4?t=7s"
-      "prev": [],
-      "next": []
-    },
-    {
-      "id": 5,
-      "name": "Parallel Bar Support",
-      "reps": [30],
-      "type": "sec",
-      "equipment": ["parallel-bars"],
-      "url": "http://antranik.org/wp-content/uploads/2014/01/antranik-holding-support-hold-on-parallel-bars.jpg"
-      "prev": [],
-      "next": []
-    }
-  ]
+  {
+    "id": "50eaa55c-5edf-4806-96d6-fcfdcba4df29",
+    "name": "Yuri's Shoulder Band Warmup",
+    "type": "rep",
+    "type": ["band"],
+    "url": "https://www.youtube.com/watch?v=Vwn5hSf3WEg"
+  }, {
+    "id": "0990fe2e-1081-4a18-8cf8-5857447c7851",
+    "name": "Squat Sky Reaches",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "https://youtu.be/lbozu0DPcYI?t=42s"
+  }, {
+    "id": "56940182-a40e-439c-82c1-888031c6b755",
+    "name": "GMB Wrist Prep",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "https://www.youtube.com/watch?v=mSZWSQSSEjE"
+  }, {
+    "id": "6e5e46dc-a27b-40a0-8b52-80be03df5358",
+    "name": "Deadbugs",
+    "type": "sec",
+    "equipment": ["none"],
+    "url": "https://www.youtube.com/watch?v=D1AIAl9UPVU"
+  }, {
+    "id": "326c38e2-9b7e-447d-bd5d-fb2e5baf163b",
+    "name": "Arch Hangs",
+    "type": "rep",
+    "type": ["pull-up-bar"],
+    "url": "https://youtu.be/C995b3KLXS4?t=7s"
+  }, {
+    "id": "f3c10e5c-5f61-4aa1-8143-4965a5a6e7e5",
+    "name": "Parallel Bar Support",
+    "type": "sec",
+    "equipment": ["parallel-bars"],
+    "url": "http://antranik.org/wp-content/uploads/2014/01/antranik-holding-support-hold-on-parallel-bars.jpg"
+  }, {
+    "id": "e8ef478b-73bd-4984-8429-1a797dcd4a1e",
+    "name": "Ring Support Hold",
+    "type": "sec",
+    "equipment": ["rings"],
+    "url": "https://imgur.com/hGRuEkA"
+  }, {
+    "id": "5d39eb5b-345e-4a9c-bb2c-e8b70c4950cb",
+    "name": "Rings Turned Out Support Hold",
+    "type": "sec",
+    "equipment": ["rings"],
+    "url": "https://imgur.com/hGRuEkA"
+  }, {
+    "id": "7cb26bfa-ac1f-4b23-b4b4-9c8721578a15",
+    "name": "Assisted Squat",
+    "type": "rep",
+    "equipment": "none",
+    "url": "https://www.youtube.com/watch?v=OuR_Fp7AB0c"
+  }, {
+    "id": "ac2c5f97-3be6-4f2b-bb24-f5ab3f182083",
+    "name": "Squat",
+    "type": "rep",
+    "equipment": "none",
+    "url": "https://www.youtube.com/watch?v=zJBLDJMJiDE"
+  }, {
+    "id": "4c0aad30-cbc1-4526-866a-250ba46b80e4",
+    "name": "Split Squat",
+    "type": "rep",
+    "equipment": "none",
+    "url": "https://www.youtube.com/watch?v=SGHnCftrZkA"
+  }, {
+    "id": "7d7f5b67-1af8-4291-8555-ef426a5ce39b",
+    "name": "Bulgarian Split Squat",
+    "type": "rep",
+    "equipment": "none",
+    "url": "https://www.youtube.com/watch?v=kkdmHTASZg8&feature=youtu.be&t=1m15s"
+  }, {
+    "id": "a50398ab-8e29-49fb-96e9-98d325afca22",
+    "name": "Beginner Shrimp Squat",
+    "type": "rep",
+    "equipment": "none",
+    "url": "https://www.youtube.com/watch?v=TKt0-c83GSc&feature=youtu.be&t=3m9s"
+  }, {
+    "id": "27129057-ac84-401a-910b-45d6f83914dd",
+    "name": "Intermediate Shrimp Squat",
+    "type": "rep",
+    "equipment": "none",
+    "url": "https://youtu.be/Dpgn6eRtsdw?si=3X0UbU--gF6e974L&t=27a"
+  }, {
+    "id": "c3f654b9-43b2-41ed-bdb8-0531303d520d",
+    "name": "Advanced Shrimp Squat",
+    "type": "rep",
+    "equipment": "none",
+    "url": "https://youtu.be/xfl7SDj0Gzs?si=BgdVo0orZpTlkC1N&t=102"
+  }, {
+    "id": "b264b91a-d91d-4adb-84fa-0b2b243b50d6",
+    "name": "Step-ups",
+    "type": "rep",
+    "equipment": ["box"],
+    "url": "https://www.youtube.com/watch?v=487aR3A7HvM"
+  }, {
+    "id": "0b368d1d-a9b0-457d-8899-ae6033fc60d9",
+    "name": "Deep Step-ups",
+    "type": "rep",
+    "equipment": ["box"],
+    "url": "https://imgur.com/Ga6RHLE.gifv"
+  }, {
+    "id": "d076822a-3fe1-4753-bafb-c070b84a008c",
+    "name": "Partial ROM Pistol Squats",
+    "type": "rep",
+    "equipment": "none",
+    "url": "https://www.youtube.com/watch?v=0SN8ZaxOBpA"
+  }, {
+    "id": "5ed9064a-bedb-491d-9096-cb36921c62db",
+    "name": "Pistol Squat",
+    "type": "rep",
+    "equipment": "none",
+    "url": "https://youtu.be/0SN8ZaxOBpA?t=30s"
+  }
 }
