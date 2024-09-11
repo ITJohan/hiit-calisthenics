@@ -191,5 +191,59 @@
     "type": "rep",
     "equipment": ["none"],
     "url": "https://www.youtube.com/watch?v=8w6nkNnE3-M"
+  }, {
+    "id": "97a1fdf4-baf6-4370-abe2-4723a7c6cede",
+    "name": "Scapular Pulls",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://youtu.be/FgYoc4O-cio?t=1m21s"
+  }, {
+    "id": "9ad1fe5d-f1b4-4004-b6cb-424e459e8d11",
+    "name": "Arch Hangs",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://youtu.be/C995b3KLXS4?t=7s"
+  }, {
+    "id": "c3273b5e-02c4-427a-8b73-df29165069ca",
+    "name": "Pull-up Negatives",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://www.youtube.com/watch?v=EkpJkHpJXmM"
+  }, {
+    "id": "05d72b5e-b68b-49ac-a575-428c6cb319fa",
+    "name": "Pull-ups",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://www.youtube.com/watch?v=eGo4IYlbE5g"
+  }, {
+    "id": "c938da17-8cfa-4541-929b-7191304daf88",
+    "name": "Weighted Pull-ups",
+    "type": "rep",
+    "equipment": ["pull-up-bar", "weights"],
+    "url": "https://www.youtube.com/watch?v=HuuyDNGrCI8"
+  }, {
+    "id": "3e310620-b105-4eb2-9313-f281a620949e",
+    "name": "L-sit Pull-ups",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://www.youtube.com/watch?v=qeGS55RHBUU"
+  }, {
+    "id": "8544846e-e38c-410d-a754-9d4a09266955",
+    "name": "Arch Body Pull-ups",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://www.youtube.com/watch?v=t8_TO8CBkgg"
+  }, {
+    "id": "7e62dcba-7d22-40f5-8650-e3f388658f45",
+    "name": "Type-Writer Pull-up",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://youtu.be/dvd5Fyl-Ves?t=15s"
+  }, {
+    "id": "b0af4c2b-aba0-4b30-896a-e92c31e317b1",
+    "name": "Archer Pull-ups",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://youtu.be/vdjWgw98EeI?t=1m52s"
   }
 ]
