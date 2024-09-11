@@ -383,5 +383,47 @@
     "type": "rep",
     "equipment": ["rings"],
     "url": "https://www.youtube.com/watch?v=67Lp_DeX3-c"
+  }, {
+    "id": "e9dc0d0a-3339-4744-b463-2450a07b1a53",
+    "name": "Vertical Pushup",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "https://www.youtube.com/watch?v=-KVhapnEtuk"
+  }, {
+    "id": "0bb01b69-d1cd-49a5-b38b-5b0d16f92e53",
+    "name": "Incline Pushup",
+    "type": "rep",
+    "equipment": ["box"],
+    "url": "https://www.youtube.com/watch?v=NnfAYkBRDPY"
+  }, {
+    "id": "8491f401-cb01-4c63-ba66-236474df208a",
+    "name": "Full Pushup",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "https://www.youtube.com/watch?v=IODxDxX7oi4"
+  }, {
+    "id": "10550610-cc38-4b27-b774-3c05271c7080",
+    "name": "Diamond Pushup",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "https://www.youtube.com/watch?v=J0DnG1_S92I"
+  }, {
+    "id": "c5df498a-20b5-48d0-a897-0315fb1b9c86",
+    "name": "Pseudo Planche Pushups",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "http://www.youtube.com/watch?v=Cdmg0CfMZeo"
+  }, {
+    "id": "00d7d9cb-2d3b-499b-9a43-f83f22417f32",
+    "name": "Rings Pushup",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=vBviFvN3rHw"
+  }, {
+    "id": "8b82c548-9c41-40bc-a061-ecf6a64bc1cb",
+    "name": "RTO Pushup",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=MrlyEIpe0LI&t=2m55s"
   }
 ]
