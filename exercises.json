@@ -329,5 +329,59 @@
     "type": "rep",
     "equipment": ["none"],
     "url": "https://www.youtube.com/watch?v=rOOL9vaIeo8&t=338s"
+  }, {
+    "id": "c852f177-0b26-4840-8c92-579415e63017",
+    "name": "Vertical Rows",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=wr8ZA-cvH3s"
+  }, {
+    "id": "f60aa2e9-9574-4e08-a901-d2bcbe9ce186",
+    "name": "Incline Rows",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=LR2EnFWpVao"
+  }, {
+    "id": "2905c4bd-f7ad-4990-b619-4af35f8eab2c",
+    "name": "Horizontal Rows",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=dvkIaarnf0g"
+  }, {
+    "id": "0317b18b-4ac1-4aba-b5c1-b58c04cc2aca",
+    "name": "Wide Rows",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=f3yfJ0RStQw"
+  }, {
+    "id": "dcac6d20-4bef-4aaf-975d-2f8c80200206",
+    "name": "Weighted Inverted Rows",
+    "type": "rep",
+    "equipment": ["rings", "weights"],
+    "url": "https://www.youtube.com/watch?v=3cYR6pis5zc"
+  }, {
+    "id": "28a93f8e-e160-488e-82b5-ece0a76c2d06",
+    "name": "Tuck Front Lever",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://youtu.be/tStwC06qdwM?t=2m50s"
+  }, {
+    "id": "65017558-c6e2-42bd-b72c-d877d64157a3",
+    "name": "Tuck Front Lever Pulls",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://www.youtube.com/watch?v=ZWxrvwRKR-s&t=259s"
+  }, {
+    "id": "b1771585-58cc-4746-802a-6a35a7b5ac9b",
+    "name": "Archer Rows",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=PGoW1i4K_o0"
+  }, {
+    "id": "77809396-30e0-486f-97ca-d5346d3ac554",
+    "name": "One Arm Rows",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=67Lp_DeX3-c"
   }
 ]
