@@ -245,5 +245,41 @@
     "type": "rep",
     "equipment": ["pull-up-bar"],
     "url": "https://youtu.be/vdjWgw98EeI?t=1m52s"
+  }, {
+    "id": "f02760b9-094a-4ec4-8604-5cf4d66eb2b4",
+    "name": "Parallel Bar Support Hold",
+    "type": "sec",
+    "equipment": ["parallel-bars"],
+    "url": "https://www.youtube.com/watch?v=IbWE49HdsrE"
+  }, {
+    "id": "f221eebb-eb90-4dc9-9aaf-35616d4f427d",
+    "name": "Negative Dips",
+    "type": "rep",
+    "equipment": ["parallel-bars"],
+    "url": "https://www.youtube.com/watch?v=T3Scqw1BbCc"
+  }, {
+    "id": "14914a70-33fe-4e5d-8f28-3ace14f5f23e",
+    "name": "Parallel Bar Dips",
+    "type": "rep",
+    "equipment": ["parallel-bars"],
+    "url": "https://www.youtube.com/watch?v=2z8JmcrW-As"
+  }, {
+    "id": "1850a236-8c6c-4e90-9f34-d10439239d5a",
+    "name": "Weighted Dips",
+    "type": "rep",
+    "equipment": ["parallel-bars", "weights"],
+    "url": "https://www.youtube.com/watch?v=MhPl9Vf4toc"
+  }, {
+    "id": "100d003c-c4f6-45f4-95c3-2b7e6c5e1884",
+    "name": "Ring Dips",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "http://www.youtube.com/watch?v=2Vymm8nH4wM"
+  }, {
+    "id": "a45c9210-d4cd-489c-adea-8e26fe24e82d",
+    "name": "Rings RTO Dips",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=WGbtrkzIiOA&t=60s"
   }
 ]
