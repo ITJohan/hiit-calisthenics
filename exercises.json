@@ -425,5 +425,125 @@
     "type": "rep",
     "equipment": ["rings"],
     "url": "https://www.youtube.com/watch?v=MrlyEIpe0LI&t=2m55s"
+  }, {
+    "id": "ce40da1d-0df0-4819-8f30-60ba77dc1277",
+    "name": "Plank",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "https://www.youtube.com/watch?v=kL_NJAkCQBg"
+  }, {
+    "id": "e2e38298-3e2c-4236-919a-d562db3a0a36",
+    "name": "Ring Ab Rollouts",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=LBUfnmugKLw"
+  }, {
+    "id": "3630b482-3992-4fb9-892b-145767531026",
+    "name": "Kneeling Ab Wheel Rollouts",
+    "type": "rep",
+    "equipment": ["wheel"],
+    "url": "https://www.youtube.com/watch?v=uYBOBBv9GzY"
+  }, {
+    "id": "58bc2c9f-aa1c-4b73-8646-d122cdb64f2a",
+    "name": "Standing Ab Wheel Rollouts",
+    "type": "rep",
+    "equipment": ["wheel"],
+    "url": "https://www.youtube.com/watch?v=L_2k97JeyzY"
+  }, {
+    "id": "613a37c9-dd2d-4301-a972-fc937947c103",
+    "name": "Tucked Hanging Leg Raises",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://www.youtube.com/watch?v=Gw3RyyARhBQ"
+  }, {
+    "id": "5d797cfe-72ba-4de3-b1ac-49492237953e",
+    "name": "Pike Hanging Leg Raises Negative",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://www.youtube.com/watch?v=_Yds3pKxOLU"
+  }, {
+    "id": "d9d57208-ca1a-478a-a443-2643e958f832",
+    "name": "Straight Hanging Leg Raises",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://www.youtube.com/watch?v=QyVq5oUBpss"
+  }, {
+    "id": "fab7e508-7b2b-4548-9c0c-d65ddedede4e",
+    "name": "Pike Compressions",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "https://www.youtube.com/watch?v=G1_EoDs-G7E&t=251s"
+  }, {
+    "id": "b3b197a1-65dd-4fc4-bb3b-8bc4a132641b",
+    "name": "Banded Pallof Press",
+    "type": "rep",
+    "equipment": ["band"],
+    "url": "https://www.youtube.com/watch?v=AH_QZLm_0-s"
+  }, {
+    "id": "5a5d7911-fdb3-422e-8401-e855bee5fc77",
+    "name": "Assisted Knee Copenhagen Plank",
+    "type": "sec",
+    "equipment": ["box"],
+    "url": "https://youtu.be/1NNqUQvMYGc?si=8tkjTMPVpCosek-P&t=13"
+  }, {
+    "id": "7e93efc7-e058-4293-874d-65a470576fb1",
+    "name": "Knee Copenhagen Plank",
+    "type": "sec",
+    "equipment": ["box"],
+    "url": "https://youtu.be/1NNqUQvMYGc?si=8tkjTMPVpCosek-P&t=11"
+  }, {
+    "id": "b7ded961-07ae-494f-806e-7801bec925a7",
+    "name": "Assisted Copenhagen Plank",
+    "type": "sec",
+    "equipment": ["box"],
+    "url": "https://youtu.be/1NNqUQvMYGc?si=8tkjTMPVpCosek-P&t=7"
+  }, {
+    "id": "07bd9dc2-4054-49fc-a723-a78f60932e4e",
+    "name": "Copenhagen Plank",
+    "type": "sec",
+    "equipment": ["box"],
+    "url": "https://youtu.be/1NNqUQvMYGc?si=8tkjTMPVpCosek-P&t=5"
+  }, {
+    "id": "88d8a198-a2d9-41da-8992-3de24efe28c4",
+    "name": "Copenhagen Plank with Movement",
+    "type": "sec",
+    "equipment": ["box"],
+    "url": "https://www.youtube.com/watch?v=1NNqUQvMYGc"
+  }, {
+    "id": "18c9d7ca-5982-43e4-9d42-dc4f5ce1ce4f",
+    "name": "Ring Pallof Press",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=YSN3rqhYlKU"
+  }, {
+    "id": "b6519241-d838-48f6-8769-d27092736054",
+    "name": "Reverse Hyperextension",
+    "type": "rep",
+    "equipment": ["box"],
+    "url": "https://www.youtube.com/watch?v=ZeRsNzFcQLQ"
+  }, {
+    "id": "b6519241-d838-48f6-8769-d27092736054",
+    "name": "Arch Raises",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "https://www.youtube.com/watch?v=OgyqYuh41Mw&t=220s"
+  }, {
+    "id": "7480a8cc-f285-4d33-997b-8a5a7f4f8b52",
+    "name": "Arch Body Hold",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "https://www.youtube.com/watch?v=OgyqYuh41Mw"
+  }, {
+    "id": "8ffed1f9-7711-434d-870b-477eaf93be5f",
+    "name": "Arch Body Rocks",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "https://www.youtube.com/watch?v=FazlcjNXMwA"
+  }, {
+    "id": "e246215e-4ef8-49de-b3e7-d2a27719ec1a",
+    "name": "Hyper Extension",
+    "type": "rep",
+    "equipment": ["extension-machine"],
+    "url": "https://www.youtube.com/watch?v=ph3pddpKzzw"
   }
 ]
