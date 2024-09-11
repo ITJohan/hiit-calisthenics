@@ -1,4 +1,4 @@
-{
+[
   {
     "id": "50eaa55c-5edf-4806-96d6-fcfdcba4df29",
     "name": "Yuri's Shoulder Band Warmup",
@@ -113,5 +113,83 @@
     "type": "rep",
     "equipment": "none",
     "url": "https://youtu.be/0SN8ZaxOBpA?t=30s"
+  }, {
+    "id": "56a69a2b-b1f1-47b9-ac64-6356241a9d25",
+    "name": "Romanian Deadlift",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "https://www.youtube.com/watch?v=7j-2w4-P14I"
+  }, {
+    "id": "772479f0-fc71-4a57-98ac-b31cd1a89c19",
+    "name": "Single Legged Deadlift",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "https://www.youtube.com/watch?v=iDV8r5u6En0"
+  }, {
+    "id": "27c6ef4b-8e7c-45ac-b575-a0aa17c2ef41",
+    "name": "Banded Nordic Curl Negatives",
+    "type": "rep",
+    "equipment": ["band"],
+    "url": "https://www.youtube.com/watch?v=HUXS3S2xSX4"
+  }, {
+    "id": "89951710-f4ff-4e44-a373-4c8450b6d8e4",
+    "name": "Banded Nordic Curl",
+    "type": "rep",
+    "equipment": ["band"],
+    "url": "https://www.youtube.com/watch?v=HUXS3S2xSX4"
+  }, {
+    "id": "841b4078-d471-4cd9-8a38-4775e5814995",
+    "name": "Nordic Curls",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "https://www.youtube.com/watch?v=d8AAPcYxPo8"
+  }, {
+    "id": "67d58f46-c998-4777-9b3b-8a7d28133830",
+    "name": "Floor Slide Progressions",
+    "type": "rep",
+    "equipment": ["towel"],
+    "url": "https://www.youtube.com/watch?v=Dlazt593cuA"
+  }, {
+    "id": "d5db3373-1300-4d92-af79-d625ff9d4969",
+    "name": "Negative Hamstring Slide",
+    "type": "rep",
+    "equipment": ["towel"],
+    "url": "https://www.youtube.com/watch?v=OY8Jci5KJdM"
+  }, {
+    "id": "3f34ac75-09c0-4e41-bed3-1010f4025a32",
+    "name": "Hamstring Slide",
+    "type": "rep",
+    "equipment": ["towel"],
+    "url": "https://www.youtube.com/watch?v=Dlazt593cuA"
+  }, {
+    "id": "38b2cc3b-7163-4ee6-8ba8-7ae6a7bcdfb7",
+    "name": "Eccentric Single Leg Sliding Hamstring Slide",
+    "type": "rep",
+    "equipment": ["towel"],
+    "url": "https://www.youtube.com/watch?v=dE5d39sErBU"
+  }, {
+    "id": "e2b1f9a4-47f4-4567-8f5a-c2298e72cfab",
+    "name": "Single Leg Sliding Hamstring Slide",
+    "type": "rep",
+    "equipment": ["towel"],
+    "url": "https://www.youtube.com/watch?v=PzAtOaY1-Dk"
+  }, {
+    "id": "dff4434f-dffd-461a-a52f-6709edd3b251",
+    "name": "Beginner Harop Curl",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "https://www.youtube.com/watch?v=A2xRx7dGWaE"
+  }, {
+    "id": "fe934ed8-31f7-4c1f-8aef-b7031562141d",
+    "name": "Advanced Harop Curl",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "https://www.youtube.com/watch?v=Y7ndeehIOhU"
+  }, {
+    "id": "2c0b5509-ac52-433d-986e-2d758f96fa0a",
+    "name": "Glute Ham Raise",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "https://www.youtube.com/watch?v=8w6nkNnE3-M"
   }
-}
+]
