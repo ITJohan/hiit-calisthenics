@@ -281,5 +281,53 @@
     "type": "rep",
     "equipment": ["rings"],
     "url": "https://www.youtube.com/watch?v=WGbtrkzIiOA&t=60s"
+  }, {
+    "id": "c53ff42f-8c0a-4d13-8f6c-b8466522b631",
+    "name": "Pike Push-Up",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "https://www.youtube.com/watch?v=XckEEwa1BPI"
+  }, {
+    "id": "8105c4fc-d7f6-4360-81cf-96ab704b33ec",
+    "name": "Box Push-Up",
+    "type": "rep",
+    "equipment": ["box"],
+    "url": "https://www.youtube.com/watch?v=ZnsLpLhywgk&t=50s"
+  }, {
+    "id": "7aa7d8bd-b504-4b86-90f4-5e837b1a2afd",
+    "name": "Wall Headstand Push-Up Eccentrics",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "http://www.youtube.com/watch?v=Lj2KZwbr_jo"
+  }, {
+    "id": "a4f114fd-3f4c-48d3-9e7b-e8fd7340e4b4",
+    "name": "Wall Headstand Push-Up",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "https://www.youtube.com/watch?v=WxgJS48wf1M"
+  }, {
+    "id": "a18776f6-506c-46e4-9654-ec77c19f6040",
+    "name": "Wall Handstand Push-Up Eccentrics",
+    "type": "rep",
+    "equipment": ["parallel-bars"],
+    "url": "https://www.youtube.com/watch?v=2vxkWqpYcCA"
+  }, {
+    "id": "3de39a47-6615-43b1-b850-62f2cc472b7a",
+    "name": "Wall Handstand Push-Up",
+    "type": "rep",
+    "equipment": ["parallel-bars"],
+    "url": "https://www.youtube.com/watch?v=r-aiCMOOhNQ"
+  }, {
+    "id": "f7ba3129-0c37-4646-92fb-35bbe00d8405",
+    "name": "Freestanding Headstand Push-Up",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "https://www.youtube.com/watch?v=aAErmRDDJKY"
+  }, {
+    "id": "47cfea5f-eac3-4a27-b8f7-da158ee2207f",
+    "name": "Freestanding Handstand Push-Up",
+    "type": "rep",
+    "equipment": ["none"],
+    "url": "https://www.youtube.com/watch?v=rOOL9vaIeo8&t=338s"
   }
 ]
