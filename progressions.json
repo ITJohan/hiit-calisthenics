@@ -5,7 +5,8 @@
     "exercises": [
       {
         "id": "50eaa55c-5edf-4806-96d6-fcfdcba4df29",
-        "reps": [5, 6, 7, 8, 9, 10]
+        "reps": [5, 6, 7, 8, 9, 10],
+        "rest": 90
       }
     ]
   }, {
@@ -14,7 +15,8 @@
     "exercises": [
       {
         "id": "0990fe2e-1081-4a18-8cf8-5857447c7851",
-        "reps": [5, 6, 7, 8, 9, 10]
+        "reps": [5, 6, 7, 8, 9, 10],
+        "rest": 90
       }
     ]
   }, {
@@ -23,7 +25,8 @@
     "exercises": [
       {
         "id": "56940182-a40e-439c-82c1-888031c6b755",
-        "reps": [10]
+        "reps": [10],
+        "rest": 90
       }
     ]
   }, {
@@ -32,7 +35,8 @@
     "exercises": [
       {
         "id": "6e5e46dc-a27b-40a0-8b52-80be03df5358",
-        "reps": [30]
+        "reps": [30],
+        "rest": 90
       }
     ]
   }, {
@@ -41,7 +45,8 @@
     "exercises": [
       {
         "id": "9ad1fe5d-f1b4-4004-b6cb-424e459e8d11",
-        "reps": [10]
+        "reps": [10],
+        "rest": 90
       }
     ]
   }, {
@@ -50,13 +55,16 @@
     "exercises": [
       {
         "id": "f3c10e5c-5f61-4aa1-8143-4965a5a6e7e5",
-        "reps": [30]
+        "reps": [30],
+        "rest": 90
       }, {
         "id": "e8ef478b-73bd-4984-8429-1a797dcd4a1e",
-        "reps": [30]
+        "reps": [30],
+        "rest": 90
       }, {
         "id": "5d39eb5b-345e-4a9c-bb2c-e8b70c4950cb",
-        "reps": [30]
+        "reps": [30],
+        "rest": 90
       }
     ]
   }, {
@@ -65,13 +73,16 @@
     "exercises": [
       {
         "id": "7cb26bfa-ac1f-4b23-b4b4-9c8721578a15",
-        "reps": [10]
+        "reps": [10],
+        "rest": 90
       }, {
         "id": "ac2c5f97-3be6-4f2b-bb24-f5ab3f182083",
-        "reps": [10]
+        "reps": [10],
+        "rest": 90
       }, {
         "id": "4c0aad30-cbc1-4526-866a-250ba46b80e4",
-        "reps": [10]
+        "reps": [10],
+        "rest": 90
       }
     ]
   }, {
@@ -80,13 +91,16 @@
     "exercises": [
       {
         "id": "56a69a2b-b1f1-47b9-ac64-6356241a9d25",
-        "reps": [10]
+        "reps": [10],
+        "rest": 90
       }, {
         "id": "772479f0-fc71-4a57-98ac-b31cd1a89c19",
-        "reps": [10]
+        "reps": [10],
+        "rest": 90
       }, {
         "id": "27c6ef4b-8e7c-45ac-b575-a0aa17c2ef41",
-        "reps": [10]
+        "reps": [10],
+        "rest": 90
       }
     ]
   }, {
@@ -95,13 +109,106 @@
     "exercises": [
       {
         "id": "97a1fdf4-baf6-4370-abe2-4723a7c6cede",
-        "reps": [5, 6, 7, 8]
+        "reps": [5, 6, 7, 8],
+        "rest": 90
       }, {
         "id": "9ad1fe5d-f1b4-4004-b6cb-424e459e8d11",
-        "reps": [5, 6, 7, 8]
+        "reps": [5, 6, 7, 8],
+        "rest": 90
       }, {
         "id": "c3273b5e-02c4-427a-8b73-df29165069ca",
-        "reps": [5, 6, 7, 8]
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "05d72b5e-b68b-49ac-a575-428c6cb319fa",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "c938da17-8cfa-4541-929b-7191304daf88",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }
+    ]
+  }, {
+    "id": "49330312-74b8-4312-8f60-6493ba31c09d",
+    "name": "pull-up-progression-2",
+    "exercises": [
+      {
+        "id": "97a1fdf4-baf6-4370-abe2-4723a7c6cede",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "9ad1fe5d-f1b4-4004-b6cb-424e459e8d11",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "c3273b5e-02c4-427a-8b73-df29165069ca",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "05d72b5e-b68b-49ac-a575-428c6cb319fa",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "3e310620-b105-4eb2-9313-f281a620949e",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }
+    ]
+  }, {
+    "id": "d06eb64d-1520-4239-a20e-b453ad795d8f",
+    "name": "pull-up-progression-3",
+    "exercises": [
+      {
+        "id": "97a1fdf4-baf6-4370-abe2-4723a7c6cede",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "9ad1fe5d-f1b4-4004-b6cb-424e459e8d11",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "c3273b5e-02c4-427a-8b73-df29165069ca",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "05d72b5e-b68b-49ac-a575-428c6cb319fa",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "8544846e-e38c-410d-a754-9d4a09266955",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }
+    ]
+  }, {
+    "id": "10063035-cd80-483a-92fe-29a34593a489",
+    "name": "pull-up-progression-4",
+    "exercises": [
+      {
+        "id": "97a1fdf4-baf6-4370-abe2-4723a7c6cede",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "9ad1fe5d-f1b4-4004-b6cb-424e459e8d11",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "c3273b5e-02c4-427a-8b73-df29165069ca",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "05d72b5e-b68b-49ac-a575-428c6cb319fa",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "7e62dcba-7d22-40f5-8650-e3f388658f45",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "b0af4c2b-aba0-4b30-896a-e92c31e317b1",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
       }
     ]
   }
