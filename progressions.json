@@ -40,7 +40,7 @@
     "name": "back-warmup-progression",
     "exercises": [
       {
-        "id": "326c38e2-9b7e-447d-bd5d-fb2e5baf163b",
+        "id": "9ad1fe5d-f1b4-4004-b6cb-424e459e8d11",
         "reps": [10]
       }
     ]
@@ -89,5 +89,20 @@
         "reps": [10]
       }
     ]
-  } 
+  }, {
+    "id": "1b795017-949c-44fe-bc84-ecb798382dc9",
+    "name": "pull-up-progression-1",
+    "exercises": [
+      {
+        "id": "97a1fdf4-baf6-4370-abe2-4723a7c6cede",
+        "reps": [5, 6, 7, 8]
+      }, {
+        "id": "9ad1fe5d-f1b4-4004-b6cb-424e459e8d11",
+        "reps": [5, 6, 7, 8]
+      }, {
+        "id": "c3273b5e-02c4-427a-8b73-df29165069ca",
+        "reps": [5, 6, 7, 8]
+      }
+    ]
+  }
 ]
