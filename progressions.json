@@ -361,5 +361,43 @@
         "rest": 90
       }
     ]
+  }, {
+    "id": "5885ead0-7521-4d93-875f-9a5d7a64dde0",
+    "name": "handstand-progression-1",
+    "exercises": [
+      {
+        "id": "c53ff42f-8c0a-4d13-8f6c-b8466522b631",
+        "reps": [60],
+        "rest": 90
+      }, {
+        "id": "8105c4fc-d7f6-4360-81cf-96ab704b33ec",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "7aa7d8bd-b504-4b86-90f4-5e837b1a2afd",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "a4f114fd-3f4c-48d3-9e7b-e8fd7340e4b4",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "a18776f6-506c-46e4-9654-ec77c19f6040",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "3de39a47-6615-43b1-b850-62f2cc472b7a",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "f7ba3129-0c37-4646-92fb-35bbe00d8405",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "47cfea5f-eac3-4a27-b8f7-da158ee2207f",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }
+    ]
   }
 ]
