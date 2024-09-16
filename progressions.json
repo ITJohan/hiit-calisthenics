@@ -313,5 +313,53 @@
         "rest": 90
       }
     ]
+  }, {
+    "id": "43c496f3-eab4-4c79-b261-cebbeb2a503e",
+    "name": "dip-progression-1",
+    "exercises": [
+      {
+        "id": "f02760b9-094a-4ec4-8604-5cf4d66eb2b4",
+        "reps": [60],
+        "rest": 90
+      }, {
+        "id": "f221eebb-eb90-4dc9-9aaf-35616d4f427d",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "14914a70-33fe-4e5d-8f28-3ace14f5f23e",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "1850a236-8c6c-4e90-9f34-d10439239d5a",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }
+    ]
+  }, {
+    "id": "23258f53-f3f4-4dd6-94fa-b0c8b4eff13f",
+    "name": "dip-progression-2",
+    "exercises": [
+      {
+        "id": "f02760b9-094a-4ec4-8604-5cf4d66eb2b4",
+        "reps": [60],
+        "rest": 90
+      }, {
+        "id": "f221eebb-eb90-4dc9-9aaf-35616d4f427d",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "14914a70-33fe-4e5d-8f28-3ace14f5f23e",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "100d003c-c4f6-45f4-95c3-2b7e6c5e1884",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "a45c9210-d4cd-489c-adea-8e26fe24e82d",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }
+    ]
   }
 ]
