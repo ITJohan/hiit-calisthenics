@@ -3,7 +3,7 @@
     "id": "50eaa55c-5edf-4806-96d6-fcfdcba4df29",
     "name": "Yuri's Shoulder Band Warmup",
     "type": "rep",
-    "type": ["band"],
+    "equipment": ["band"],
     "url": "https://www.youtube.com/watch?v=Vwn5hSf3WEg"
   }, {
     "id": "0990fe2e-1081-4a18-8cf8-5857447c7851",
@@ -23,12 +23,6 @@
     "type": "sec",
     "equipment": ["none"],
     "url": "https://www.youtube.com/watch?v=D1AIAl9UPVU"
-  }, {
-    "id": "326c38e2-9b7e-447d-bd5d-fb2e5baf163b",
-    "name": "Arch Hangs",
-    "type": "rep",
-    "type": ["pull-up-bar"],
-    "url": "https://youtu.be/C995b3KLXS4?t=7s"
   }, {
     "id": "f3c10e5c-5f61-4aa1-8143-4965a5a6e7e5",
     "name": "Parallel Bar Support",
