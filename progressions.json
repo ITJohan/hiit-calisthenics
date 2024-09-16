@@ -499,5 +499,91 @@
         "rest": 90
       }
     ]
+  }, {
+    "id": "d5da2beb-6bd5-46c8-a9df-f5ee4d0167fe",
+    "name": "row-progression-1",
+    "exercises": [
+      {
+        "id": "c852f177-0b26-4840-8c92-579415e63017",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "f60aa2e9-9574-4e08-a901-d2bcbe9ce186",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "2905c4bd-f7ad-4990-b619-4af35f8eab2c",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "0317b18b-4ac1-4aba-b5c1-b58c04cc2aca",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "dcac6d20-4bef-4aaf-975d-2f8c80200206",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }
+    ]
+  }, {
+    "id": "df534972-7a42-4d53-ae9a-53129f58aadb",
+    "name": "row-progression-2",
+    "exercises": [
+      {
+        "id": "c852f177-0b26-4840-8c92-579415e63017",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "f60aa2e9-9574-4e08-a901-d2bcbe9ce186",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "2905c4bd-f7ad-4990-b619-4af35f8eab2c",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "0317b18b-4ac1-4aba-b5c1-b58c04cc2aca",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "28a93f8e-e160-488e-82b5-ece0a76c2d06",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "65017558-c6e2-42bd-b72c-d877d64157a3",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }
+    ]
+  }, {
+    "id": "6621832a-8d24-4d3d-8fb7-ced3afc1d4ab",
+    "name": "row-progression-3",
+    "exercises": [
+      {
+        "id": "c852f177-0b26-4840-8c92-579415e63017",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "f60aa2e9-9574-4e08-a901-d2bcbe9ce186",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "2905c4bd-f7ad-4990-b619-4af35f8eab2c",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "0317b18b-4ac1-4aba-b5c1-b58c04cc2aca",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "b1771585-58cc-4746-802a-6a35a7b5ac9b",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "77809396-30e0-486f-97ca-d5346d3ac554",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }
+    ]
   }
 ]
