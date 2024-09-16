@@ -211,5 +211,107 @@
         "rest": 90
       }
     ]
+  }, {
+    "id": "b70f32d6-e568-4dc9-b17f-f97603c7af84",
+    "name": "squat-progression-1",
+    "exercises": [
+      {
+        "id": "7cb26bfa-ac1f-4b23-b4b4-9c8721578a15",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "ac2c5f97-3be6-4f2b-bb24-f5ab3f182083",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "4c0aad30-cbc1-4526-866a-250ba46b80e4",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "7d7f5b67-1af8-4291-8555-ef426a5ce39b",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "a50398ab-8e29-49fb-96e9-98d325afca22",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "27129057-ac84-401a-910b-45d6f83914dd",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "c3f654b9-43b2-41ed-bdb8-0531303d520d",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "c3f654b9-43b2-41ed-bdb8-0531303d520d",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "0bc42641-337f-42ec-85fa-6306256377d6",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }
+    ]
+  }, {
+    "id": "74a74ab0-5399-4126-a3bb-f8db3a5bb546",
+    "name": "squat-progression-2",
+    "exercises": [
+      {
+        "id": "7cb26bfa-ac1f-4b23-b4b4-9c8721578a15",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "ac2c5f97-3be6-4f2b-bb24-f5ab3f182083",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "4c0aad30-cbc1-4526-866a-250ba46b80e4",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "7d7f5b67-1af8-4291-8555-ef426a5ce39b",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "b264b91a-d91d-4adb-84fa-0b2b243b50d6",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "0b368d1d-a9b0-457d-8899-ae6033fc60d9",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }
+    ]
+  }, {
+    "id": "1c13bb9d-7c1c-40f1-a6ec-081a27236085",
+    "name": "squat-progression-3",
+    "exercises": [
+      {
+        "id": "7cb26bfa-ac1f-4b23-b4b4-9c8721578a15",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "ac2c5f97-3be6-4f2b-bb24-f5ab3f182083",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "4c0aad30-cbc1-4526-866a-250ba46b80e4",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "7d7f5b67-1af8-4291-8555-ef426a5ce39b",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "d076822a-3fe1-4753-bafb-c070b84a008c",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "5ed9064a-bedb-491d-9096-cb36921c62db",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }
+    ]
   }
 ]
