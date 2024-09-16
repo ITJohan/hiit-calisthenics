@@ -367,7 +367,7 @@
     "exercises": [
       {
         "id": "c53ff42f-8c0a-4d13-8f6c-b8466522b631",
-        "reps": [60],
+        "reps": [5, 6, 7, 8],
         "rest": 90
       }, {
         "id": "8105c4fc-d7f6-4360-81cf-96ab704b33ec",
@@ -395,6 +395,106 @@
         "rest": 90
       }, {
         "id": "47cfea5f-eac3-4a27-b8f7-da158ee2207f",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }
+    ]
+  }, {
+    "id": "24036322-4cb0-4a51-96c3-68a4bb7088b9",
+    "name": "hinge-progression-1",
+    "exercises": [
+      {
+        "id": "56a69a2b-b1f1-47b9-ac64-6356241a9d25",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "772479f0-fc71-4a57-98ac-b31cd1a89c19",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "27c6ef4b-8e7c-45ac-b575-a0aa17c2ef41",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "89951710-f4ff-4e44-a373-4c8450b6d8e4",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "841b4078-d471-4cd9-8a38-4775e5814995",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }
+    ]
+  }, {
+    "id": "656468d3-987d-4cba-9805-1760bbb53a54",
+    "name": "hinge-progression-2",
+    "exercises": [
+      {
+        "id": "56a69a2b-b1f1-47b9-ac64-6356241a9d25",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "772479f0-fc71-4a57-98ac-b31cd1a89c19",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "67d58f46-c998-4777-9b3b-8a7d28133830",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "d5db3373-1300-4d92-af79-d625ff9d4969",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "3f34ac75-09c0-4e41-bed3-1010f4025a32",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "38b2cc3b-7163-4ee6-8ba8-7ae6a7bcdfb7",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "e2b1f9a4-47f4-4567-8f5a-c2298e72cfab",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }
+    ]
+  }, {
+    "id": "f80bc8b2-c196-4866-9225-73808d0fadba",
+    "name": "hinge-progression-3",
+    "exercises": [
+      {
+        "id": "56a69a2b-b1f1-47b9-ac64-6356241a9d25",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "772479f0-fc71-4a57-98ac-b31cd1a89c19",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "dff4434f-dffd-461a-a52f-6709edd3b251",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "fe934ed8-31f7-4c1f-8aef-b7031562141d",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }
+    ]
+  }, {
+    "id": "f4da290e-a833-4156-bb47-5a0ec6112376",
+    "name": "hinge-progression-4",
+    "exercises": [
+      {
+        "id": "56a69a2b-b1f1-47b9-ac64-6356241a9d25",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "772479f0-fc71-4a57-98ac-b31cd1a89c19",
+        "reps": [5, 6, 7, 8],
+        "rest": 90
+      }, {
+        "id": "2c0b5509-ac52-433d-986e-2d758f96fa0a",
         "reps": [5, 6, 7, 8],
         "rest": 90
       }
