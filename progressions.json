@@ -735,5 +735,51 @@
         "rest": 60
       }
     ]
+  }, {
+    "id": "1ce85f38-62aa-4651-aa35-a7172e5296ba",
+    "name": "anti-rotation-progression-1",
+    "exercises": [
+      {
+        "id": "b3b197a1-65dd-4fc4-bb3b-8bc4a132641b",
+        "reps": [8, 9, 10, 11, 12],
+        "rest": 60
+      }
+    ]
+  }, {
+    "id": "90630966-e672-4f92-83c4-79b0a2cea033",
+    "name": "anti-rotation-progression-2",
+    "exercises": [
+      {
+        "id": "5a5d7911-fdb3-422e-8401-e855bee5fc77",
+        "reps": [8, 9, 10, 11, 12],
+        "rest": 60
+      }, {
+        "id": "7e93efc7-e058-4293-874d-65a470576fb1",
+        "reps": [8, 9, 10, 11, 12],
+        "rest": 60
+      }, {
+        "id": "b7ded961-07ae-494f-806e-7801bec925a7",
+        "reps": [8, 9, 10, 11, 12],
+        "rest": 60
+      }, {
+        "id": "07bd9dc2-4054-49fc-a723-a78f60932e4e",
+        "reps": [8, 9, 10, 11, 12],
+        "rest": 60
+      }, {
+        "id": "88d8a198-a2d9-41da-8992-3de24efe28c4",
+        "reps": [8, 9, 10, 11, 12],
+        "rest": 60
+      }
+    ]
+  }, {
+    "id": "d20bfdc8-793b-4f4b-ad0a-ee688f1a7f3e",
+    "name": "anti-rotation-progression-3",
+    "exercises": [
+      {
+        "id": "18c9d7ca-5982-43e4-9d42-dc4f5ce1ce4f",
+        "reps": [8, 9, 10, 11, 12],
+        "rest": 60
+      }
+    ]
   }
 ]
