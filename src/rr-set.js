@@ -6,23 +6,14 @@ function template() {
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     <div>
-      <input type="radio" id="option1" name="numbers" value="1" hidden>
       <label for="option1">1</label>
-    </div>
-
-    <div>
-      <input type="radio" id="option2" name="numbers" value="2" hidden>
+      <input type="radio" id="option1" name="numbers" value="1" hidden>
       <label for="option2">2</label>
-    </div>
-
-    <div>
-      <input type="radio" id="option3" name="numbers" value="3" hidden>
+      <input type="radio" id="option2" name="numbers" value="2" hidden>
       <label for="option3">3</label>
-    </div>
-
-    <div>
-      <input type="radio" id="option4" name="numbers" value="4" hidden>
+      <input type="radio" id="option3" name="numbers" value="3" hidden>
       <label for="option4">4</label>
+      <input type="radio" id="option4" name="numbers" value="4" hidden>
     </div>
   `
 }
