@@ -428,7 +428,7 @@
   }, {
     "id": "ce40da1d-0df0-4819-8f30-60ba77dc1277",
     "name": "Plank",
-    "type": "rep",
+    "type": "sec",
     "equipment": ["none"],
     "url": "https://www.youtube.com/watch?v=kL_NJAkCQBg"
   }, {
@@ -522,7 +522,7 @@
     "equipment": ["box"],
     "url": "https://www.youtube.com/watch?v=ZeRsNzFcQLQ"
   }, {
-    "id": "b6519241-d838-48f6-8769-d27092736054",
+    "id": "b6cf0f07-b8c5-4e53-8192-5078842b619f",
     "name": "Arch Raises",
     "type": "rep",
     "equipment": ["none"],

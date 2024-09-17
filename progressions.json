@@ -781,5 +781,43 @@
         "rest": 60
       }
     ]
+  }, {
+    "id": "88b5cbad-f2d9-4bb0-a642-e4f6305b459b",
+    "name": "extension-progression-1",
+    "exercises": [
+      {
+        "id": "b6519241-d838-48f6-8769-d27092736054",
+        "reps": [8, 9, 10, 11, 12],
+        "rest": 60
+      }
+    ]
+  }, {
+    "id": "4a290064-792d-48ad-ab93-ec0e85d56c37",
+    "name": "extension-progression-2",
+    "exercises": [
+      {
+        "id": "b6cf0f07-b8c5-4e53-8192-5078842b619f",
+        "reps": [8, 9, 10, 11, 12],
+        "rest": 60
+      }, {
+        "id": "7480a8cc-f285-4d33-997b-8a5a7f4f8b52",
+        "reps": [8, 9, 10, 11, 12],
+        "rest": 60
+      }, {
+        "id": "8ffed1f9-7711-434d-870b-477eaf93be5f",
+        "reps": [8, 9, 10, 11, 12],
+        "rest": 60
+      }
+    ]
+  }, {
+    "id": "2e1080f9-ff3c-4658-8ba4-1652506a76bc",
+    "name": "extension-progression-3",
+    "exercises": [
+      {
+        "id": "e246215e-4ef8-49de-b3e7-d2a27719ec1a",
+        "reps": [8, 9, 10, 11, 12],
+        "rest": 60
+      }
+    ]
   }
 ]
