@@ -5,41 +5,64 @@ Calisthenics circuit workout
 ## ER-diagram
 
 ```mermaid
-erDiagram
-  Athlete {
-    int athlete_id PK
-    string athlete_email UK
-    string athlete_name
-    string athlete_password
-  }
-  Workout {
-    int workout_id PK
-    string workout_name UK
-  }
-  Athlete ||--o{ Workout : "creates"
+    erDiagram
 
-  Exercise {
-    int exercise_id PK
-    string exercise_name UK
-    string exercise_category
-    int exercise_level
-  }
-  WorkoutExercise {
-    int set_order PK
-    int exercise_order PK
-  }
-  Workout }|--o{ WorkoutExercise : "part of"
-  Exercise }|--o{ WorkoutExercise : "part of"
+    Exercise {
+        int id
+        string name
+        string description
+        string video_url
+        string target_muscle_group
+    }
 
-  Log {
-    int log_id PK
-    timedate log_date
-  }
-  LogExercise {
-    int log_reps
-  }
-  Athlete ||--o{ Log : "notes"
-  Workout ||--o{ Log : "noted in"
-  Exercise }|--o{ LogExercise : "part of"
-  Log }|--o{ LogExercise : "part of"
+    Progression {
+        int id
+        string name
+    }
+
+    ProgressionExercise {
+        int progression_id
+        int exercise_id
+        int order
+        int max_reps
+    }
+
+    Workout {
+        int id
+        string name
+    }
+
+    WorkoutProgression {
+        int workout_id
+        int progression_id
+        int order
+    }
+
+    User {
+        int id
+        string username
+    }
+
+    UserWorkoutLog {
+        int id
+        int user_id
+        int workout_id
+        date date
+    }
+
+    UserExerciseLog {
+        int id
+        int user_workout_log_id
+        int exercise_id
+        int reps
+    }
+
+    Exercise ||--o{ ProgressionExercise : "can be in"
+    Progression ||--o{ ProgressionExercise : "can have"
+    Progression ||--o{ WorkoutProgression : "can be in"
+    Workout ||--o{ WorkoutProgression : "can have"
+    User ||--o{ UserWorkoutLog : "can have"
+    Workout ||--o{ UserWorkoutLog : "can have"
+    UserWorkoutLog ||--o{ UserExerciseLog : "can have"
+    Exercise ||--o{ UserExerciseLog : "can have"
 ```
