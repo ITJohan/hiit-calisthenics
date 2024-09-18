@@ -40,6 +40,4 @@ interface IRRSet {
 	url: string;
 	reps: string[];
 	id: string;
-	prevId: string;
-	nextId: string;
 }

@@ -3,8 +3,6 @@ function template(
 	/** @type {string} */ url,
 	/** @type {string} */ reps,
 	/** @type {string} */ id,
-	/** @type {string} */ prevId,
-	/** @type {string} */ nextId,
 ) {
 	return `
     <h2>${name}</h2>
@@ -29,10 +27,6 @@ function template(
 				)
 				.join("")}
     </div>
-    <nav>
-      <a href="#${prevId}">Previous</a>
-      <a href="#${nextId}">Next</a>
-    </nav>
   `;
 }
 
@@ -45,25 +39,11 @@ customElements.define(
 
 		async connectedCallback() {
 			this.setHTMLUnsafe(
-				template(
-					this["name"],
-					this["url"],
-					this["reps"],
-					this["id"],
-					this["prev-id"],
-					this["next-id"],
-				),
+				template(this["name"], this["url"], this["reps"], this["id"]),
 			);
 		}
 
-		static observedAttributes = [
-			"name",
-			"url",
-			"reps",
-			"id",
-			"prev-id",
-			"next-id",
-		];
+		static observedAttributes = ["name", "url", "reps", "id"];
 
 		attributeChangedCallback(
 			/** @type {string} */ name,

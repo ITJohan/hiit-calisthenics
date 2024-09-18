@@ -12,8 +12,6 @@ function template(/** @type {IRRSet[]} */ rrSets) {
           url="${set.url}"
           reps="${set.reps}"
           id="${set.id}"
-          prev-id="${set.prevId}"
-          next-id="${set.nextId}"
         ></rr-set>`,
 				)
 				.join("")}
@@ -42,8 +40,6 @@ customElements.define(
 						url: exercise.url,
 						reps: set.reps.map((rep) => String(rep)),
 						id: `set-${index + 1}`,
-						prevId: index === 0 ? "title" : `set-${index}`,
-						nextId: index === length - 1 ? undefined : `set-${index + 2}`,
 					};
 				});
 
