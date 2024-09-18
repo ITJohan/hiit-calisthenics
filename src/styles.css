@@ -73,6 +73,7 @@ rr-landing {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 	height: 100dvh;
 	padding: var(--spacing-md);
 	scroll-snap-align: start;
@@ -87,6 +88,7 @@ rr-set {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+	align-items: center;
 	height: 100dvh;
 	padding: var(--spacing-md);
 	scroll-snap-align: start;
