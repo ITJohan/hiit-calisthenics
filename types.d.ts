@@ -16,7 +16,7 @@ type Exercise = {
 	)[];
 };
 
-type Set = {
+type ProgressionSet = {
 	exerciseId: string;
 	reps: number[];
 	rest: number;
@@ -25,7 +25,7 @@ type Set = {
 type Progression = {
 	id: string;
 	name: string;
-	sets: Set[];
+	sets: ProgressionSet[];
 };
 
 type Workout = {

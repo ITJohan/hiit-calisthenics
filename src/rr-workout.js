@@ -1,14 +1,14 @@
 import "./rr-set.js";
 
-function template(/** @type {Exercise[] | undefined} */ exercises) {
-	if (exercises === undefined) {
+function template(/** @type {ProgressionSet[] | undefined} */ sets) {
+	if (sets === undefined) {
 		return `
       <div>Loading...</div>
     `;
 	}
 	return `
     <form>
-      ${exercises.map((exercise, index) => `<rr-set id="set-${index + 1}">${exercise.name}</rr-set>`).join("")}
+      ${sets.map((set, index) => `<rr-set id="set-${index + 1}" exercise-id="${set.exerciseId}"></rr-set>`).join("")}
     </form>
   `;
 }
@@ -38,11 +38,7 @@ customElements.define(
 				.map((id) =>
 					allProgressions.find((progression) => progression.id === id),
 				)
-				.map((progression) =>
-					allExercises.find(
-						(exercise) => exercise.id === progression.exercises[0].id,
-					),
-				);
+				.map((progression) => progression.sets[0]);
 
 			this.setHTMLUnsafe(template(exercises));
 		}
