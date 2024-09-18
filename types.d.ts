@@ -1,6 +1,7 @@
 type Exercise = {
 	id: string;
 	name: string;
+	url: string;
 	type: "rep" | "sec";
 	equipment: (
 		| "band"
@@ -33,3 +34,12 @@ type Workout = {
 	name: string;
 	progressions: string[];
 };
+
+interface IRRSet {
+	name: string;
+	url: string;
+	reps: string[];
+	id: string;
+	prevId: string;
+	nextId: string;
+}

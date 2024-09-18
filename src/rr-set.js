@@ -1,26 +1,78 @@
-function template() {
-  return `
-    <h2 id="shoulder-warmup">Shoulder warmup</h2>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Vwn5hSf3WEg?si=zLq8Hz64BDpF18Oy"
-      title="YouTube video player" frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-      referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+function template(
+	/** @type {string} */ name,
+	/** @type {string} */ url,
+	/** @type {string} */ reps,
+	/** @type {string} */ id,
+	/** @type {string} */ prevId,
+	/** @type {string} */ nextId,
+) {
+	return `
+    <h2>${name}</h2>
+    <iframe
+      width="560"
+      height="315"
+      src="${url}"
+      title="YouTube video player"
+      frameborder="0"
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
     <div>
-      <label for="option1">1</label>
-      <input type="radio" id="option1" name="numbers" value="1" hidden>
-      <label for="option2">2</label>
-      <input type="radio" id="option2" name="numbers" value="2" hidden>
-      <label for="option3">3</label>
-      <input type="radio" id="option3" name="numbers" value="3" hidden>
-      <label for="option4">4</label>
-      <input type="radio" id="option4" name="numbers" value="4" hidden>
+      ${reps
+				.split(",")
+				.map(
+					(rep) => `
+        <label for="rep-${rep}">${rep}</label>
+        <input type="radio" id="rep-${rep}" name="${id}" value="${rep}" hidden>
+      `,
+				)
+				.join("")}
     </div>
-  `
+    <nav>
+      <a href="#${prevId}">Previous</a>
+      <a href="#${nextId}">Next</a>
+    </nav>
+  `;
 }
 
-customElements.define('rr-set', class RRSet extends HTMLElement {
-  constructor() {
-    super()
-    this.setHTMLUnsafe(template())
-  }
-})
+customElements.define(
+	"rr-set",
+	class RRSet extends HTMLElement {
+		constructor() {
+			super();
+		}
+
+		async connectedCallback() {
+			this.setHTMLUnsafe(
+				template(
+					this["name"],
+					this["url"],
+					this["reps"],
+					this["id"],
+					this["prev-id"],
+					this["next-id"],
+				),
+			);
+		}
+
+		static observedAttributes = [
+			"name",
+			"url",
+			"reps",
+			"id",
+			"prev-id",
+			"next-id",
+		];
+
+		attributeChangedCallback(
+			/** @type {string} */ name,
+			/** @type {string} */ prev,
+			/** @type {string} */ next,
+		) {
+			if (prev === next) return;
+
+			this[name] = next;
+		}
+	},
+);

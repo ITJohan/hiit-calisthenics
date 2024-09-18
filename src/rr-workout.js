@@ -1,14 +1,22 @@
+import { getExercise, getProgression, getWorkout } from "./db.js";
 import "./rr-set.js";
 
-function template(/** @type {ProgressionSet[] | undefined} */ sets) {
-	if (sets === undefined) {
-		return `
-      <div>Loading...</div>
-    `;
-	}
+function template(/** @type {IRRSet[]} */ rrSets) {
 	return `
     <form>
-      ${sets.map((set, index) => `<rr-set id="set-${index + 1}" exercise-id="${set.exerciseId}"></rr-set>`).join("")}
+      ${rrSets
+				.map(
+					(set) => `
+        <rr-set
+          name="${set.name}"
+          url="${set.url}"
+          reps="${set.reps}"
+          id="${set.id}"
+          prev-id="${set.prevId}"
+          next-id="${set.nextId}"
+        ></rr-set>`,
+				)
+				.join("")}
     </form>
   `;
 }
@@ -18,29 +26,28 @@ customElements.define(
 	class RRWorkout extends HTMLElement {
 		constructor() {
 			super();
-			this.setHTMLUnsafe(template());
 		}
 
 		async connectedCallback() {
-			const workoutsRes = await fetch("./data/workouts.json");
-			const progressionsRes = await fetch("./data/progressions.json");
-			const exercisesRes = await fetch("./data/exercises.json");
-			/** @type {Workout[]} */
-			const allWorkouts = await workoutsRes.json();
-			/** @type {Progression[]} */
-			const allProgressions = await progressionsRes.json();
-			/** @type {Exercise[]} */
-			const allExercises = await exercisesRes.json();
+			const firstWorkout = getWorkout("d32b6d9c-8e2a-4b23-a261-19f17286e8f3");
 
-			const firstWorkout = allWorkouts[0];
+			/** @type {IRRSet[]} */
+			const rrSets = firstWorkout.progressions
+				.map((id) => getProgression(id))
+				.map((progression) => progression.sets[0])
+				.map((set, index, { length }) => {
+					const exercise = getExercise(set.exerciseId);
+					return {
+						name: exercise.name,
+						url: exercise.url,
+						reps: set.reps.map((rep) => String(rep)),
+						id: `set-${index + 1}`,
+						prevId: index === 0 ? "title" : `set-${index}`,
+						nextId: index === length - 1 ? undefined : `set-${index + 2}`,
+					};
+				});
 
-			const exercises = firstWorkout.progressions
-				.map((id) =>
-					allProgressions.find((progression) => progression.id === id),
-				)
-				.map((progression) => progression.sets[0]);
-
-			this.setHTMLUnsafe(template(exercises));
+			this.setHTMLUnsafe(template(rrSets));
 		}
 	},
 );
