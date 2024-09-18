@@ -76,7 +76,7 @@ rr-landing {
 	align-items: center;
 	height: 100dvh;
 	padding: var(--spacing-md);
-	scroll-snap-align: start;
+	scroll-snap-align: center;
 
 	& > nav {
 		display: flex;
@@ -91,7 +91,7 @@ rr-set {
 	align-items: center;
 	height: 100dvh;
 	padding: var(--spacing-md);
-	scroll-snap-align: start;
+	scroll-snap-align: center;
 
 	& > div {
 		display: flex;
