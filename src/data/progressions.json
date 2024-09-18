@@ -2,7 +2,7 @@
   {
     "id": "8f802458-687d-4c40-8cce-eeac7b7b8d13",
     "name": "shoulder-warmup-progression",
-    "exercises": [
+    "sets": [
       {
         "id": "50eaa55c-5edf-4806-96d6-fcfdcba4df29",
         "reps": [5, 6, 7, 8, 9, 10],
@@ -12,7 +12,7 @@
   }, {
     "id": "9e0405a9-4906-47a6-9915-11957413dd85",
     "name": "spine-warmup-progression",
-    "exercises": [
+    "sets": [
       {
         "id": "0990fe2e-1081-4a18-8cf8-5857447c7851",
         "reps": [5, 6, 7, 8, 9, 10],
@@ -22,7 +22,7 @@
   }, {
     "id": "f72ff700-545b-4a6a-b298-87ea11ae215a",
     "name": "wrist-warmup-progression",
-    "exercises": [
+    "sets": [
       {
         "id": "56940182-a40e-439c-82c1-888031c6b755",
         "reps": [10],
@@ -32,7 +32,7 @@
   }, {
     "id": "f3b32eb2-528e-4f5a-bae2-b51543d2ee29",
     "name": "core-warmup-progression",
-    "exercises": [
+    "sets": [
       {
         "id": "6e5e46dc-a27b-40a0-8b52-80be03df5358",
         "reps": [30],
@@ -42,7 +42,7 @@
   }, {
     "id": "d0c0bf06-4d9f-4ca6-9e06-cbaf1c6b90a0",
     "name": "back-warmup-progression",
-    "exercises": [
+    "sets": [
       {
         "id": "9ad1fe5d-f1b4-4004-b6cb-424e459e8d11",
         "reps": [10],
@@ -52,7 +52,7 @@
   }, {
     "id": "95a05322-9d1c-4d9e-9b26-c7e16305bbac",
     "name": "hold-warmup-progression",
-    "exercises": [
+    "sets": [
       {
         "id": "f3c10e5c-5f61-4aa1-8143-4965a5a6e7e5",
         "reps": [30],
@@ -70,7 +70,7 @@
   }, {
     "id": "a42e231f-85e7-4ba9-88c2-e05942169101",
     "name": "squat-warmup-progression",
-    "exercises": [
+    "sets": [
       {
         "id": "7cb26bfa-ac1f-4b23-b4b4-9c8721578a15",
         "reps": [10],
@@ -88,7 +88,7 @@
   }, {
     "id": "72b4f21d-8865-45f4-b025-0a87884b0c64",
     "name": "hinge-warmup-progression",
-    "exercises": [
+    "sets": [
       {
         "id": "56a69a2b-b1f1-47b9-ac64-6356241a9d25",
         "reps": [10],
@@ -106,7 +106,7 @@
   }, {
     "id": "1b795017-949c-44fe-bc84-ecb798382dc9",
     "name": "pull-up-progression-1",
-    "exercises": [
+    "sets": [
       {
         "id": "97a1fdf4-baf6-4370-abe2-4723a7c6cede",
         "reps": [5, 6, 7, 8],
@@ -132,7 +132,7 @@
   }, {
     "id": "49330312-74b8-4312-8f60-6493ba31c09d",
     "name": "pull-up-progression-2",
-    "exercises": [
+    "sets": [
       {
         "id": "97a1fdf4-baf6-4370-abe2-4723a7c6cede",
         "reps": [5, 6, 7, 8],
@@ -158,7 +158,7 @@
   }, {
     "id": "d06eb64d-1520-4239-a20e-b453ad795d8f",
     "name": "pull-up-progression-3",
-    "exercises": [
+    "sets": [
       {
         "id": "97a1fdf4-baf6-4370-abe2-4723a7c6cede",
         "reps": [5, 6, 7, 8],
@@ -184,7 +184,7 @@
   }, {
     "id": "10063035-cd80-483a-92fe-29a34593a489",
     "name": "pull-up-progression-4",
-    "exercises": [
+    "sets": [
       {
         "id": "97a1fdf4-baf6-4370-abe2-4723a7c6cede",
         "reps": [5, 6, 7, 8],
@@ -214,7 +214,7 @@
   }, {
     "id": "b70f32d6-e568-4dc9-b17f-f97603c7af84",
     "name": "squat-progression-1",
-    "exercises": [
+    "sets": [
       {
         "id": "7cb26bfa-ac1f-4b23-b4b4-9c8721578a15",
         "reps": [5, 6, 7, 8],
@@ -256,7 +256,7 @@
   }, {
     "id": "74a74ab0-5399-4126-a3bb-f8db3a5bb546",
     "name": "squat-progression-2",
-    "exercises": [
+    "sets": [
       {
         "id": "7cb26bfa-ac1f-4b23-b4b4-9c8721578a15",
         "reps": [5, 6, 7, 8],
@@ -286,7 +286,7 @@
   }, {
     "id": "1c13bb9d-7c1c-40f1-a6ec-081a27236085",
     "name": "squat-progression-3",
-    "exercises": [
+    "sets": [
       {
         "id": "7cb26bfa-ac1f-4b23-b4b4-9c8721578a15",
         "reps": [5, 6, 7, 8],
@@ -316,7 +316,7 @@
   }, {
     "id": "43c496f3-eab4-4c79-b261-cebbeb2a503e",
     "name": "dip-progression-1",
-    "exercises": [
+    "sets": [
       {
         "id": "f02760b9-094a-4ec4-8604-5cf4d66eb2b4",
         "reps": [60],
@@ -338,7 +338,7 @@
   }, {
     "id": "23258f53-f3f4-4dd6-94fa-b0c8b4eff13f",
     "name": "dip-progression-2",
-    "exercises": [
+    "sets": [
       {
         "id": "f02760b9-094a-4ec4-8604-5cf4d66eb2b4",
         "reps": [60],
@@ -364,7 +364,7 @@
   }, {
     "id": "5885ead0-7521-4d93-875f-9a5d7a64dde0",
     "name": "handstand-progression-1",
-    "exercises": [
+    "sets": [
       {
         "id": "c53ff42f-8c0a-4d13-8f6c-b8466522b631",
         "reps": [5, 6, 7, 8],
@@ -402,7 +402,7 @@
   }, {
     "id": "24036322-4cb0-4a51-96c3-68a4bb7088b9",
     "name": "hinge-progression-1",
-    "exercises": [
+    "sets": [
       {
         "id": "56a69a2b-b1f1-47b9-ac64-6356241a9d25",
         "reps": [5, 6, 7, 8],
@@ -428,7 +428,7 @@
   }, {
     "id": "656468d3-987d-4cba-9805-1760bbb53a54",
     "name": "hinge-progression-2",
-    "exercises": [
+    "sets": [
       {
         "id": "56a69a2b-b1f1-47b9-ac64-6356241a9d25",
         "reps": [5, 6, 7, 8],
@@ -462,7 +462,7 @@
   }, {
     "id": "f80bc8b2-c196-4866-9225-73808d0fadba",
     "name": "hinge-progression-3",
-    "exercises": [
+    "sets": [
       {
         "id": "56a69a2b-b1f1-47b9-ac64-6356241a9d25",
         "reps": [5, 6, 7, 8],
@@ -484,7 +484,7 @@
   }, {
     "id": "f4da290e-a833-4156-bb47-5a0ec6112376",
     "name": "hinge-progression-4",
-    "exercises": [
+    "sets": [
       {
         "id": "56a69a2b-b1f1-47b9-ac64-6356241a9d25",
         "reps": [5, 6, 7, 8],
@@ -502,7 +502,7 @@
   }, {
     "id": "d5da2beb-6bd5-46c8-a9df-f5ee4d0167fe",
     "name": "row-progression-1",
-    "exercises": [
+    "sets": [
       {
         "id": "c852f177-0b26-4840-8c92-579415e63017",
         "reps": [5, 6, 7, 8],
@@ -528,7 +528,7 @@
   }, {
     "id": "df534972-7a42-4d53-ae9a-53129f58aadb",
     "name": "row-progression-2",
-    "exercises": [
+    "sets": [
       {
         "id": "c852f177-0b26-4840-8c92-579415e63017",
         "reps": [5, 6, 7, 8],
@@ -558,7 +558,7 @@
   }, {
     "id": "6621832a-8d24-4d3d-8fb7-ced3afc1d4ab",
     "name": "row-progression-3",
-    "exercises": [
+    "sets": [
       {
         "id": "c852f177-0b26-4840-8c92-579415e63017",
         "reps": [5, 6, 7, 8],
@@ -588,7 +588,7 @@
   }, {
     "id": "2c29d685-23de-4b59-ba4d-1c0eb5e05e92",
     "name": "pushup-progression-1",
-    "exercises": [
+    "sets": [
       {
         "id": "e9dc0d0a-3339-4744-b463-2450a07b1a53",
         "reps": [5, 6, 7, 8],
@@ -614,7 +614,7 @@
   }, {
     "id": "6c7ef5e8-2420-4852-9d56-04dbf368dc35",
     "name": "pushup-progression-2",
-    "exercises": [
+    "sets": [
       {
         "id": "e9dc0d0a-3339-4744-b463-2450a07b1a53",
         "reps": [5, 6, 7, 8],
@@ -644,7 +644,7 @@
   }, {
     "id": "0d6b96bc-6160-4655-a72a-c79c6a6f3c49",
     "name": "pushup-progression-3",
-    "exercises": [
+    "sets": [
       {
         "id": "e9dc0d0a-3339-4744-b463-2450a07b1a53",
         "reps": [5, 6, 7, 8],
@@ -670,7 +670,7 @@
   }, {
     "id": "6b4d57ae-99d6-409c-9a28-868d730fb437",
     "name": "anti-extension-progression-1",
-    "exercises": [
+    "sets": [
       {
         "id": "ce40da1d-0df0-4819-8f30-60ba77dc1277",
         "reps": [30],
@@ -684,7 +684,7 @@
   }, {
     "id": "bba1b52b-e395-4526-abaf-47ab71895977",
     "name": "anti-extension-progression-2",
-    "exercises": [
+    "sets": [
       {
         "id": "ce40da1d-0df0-4819-8f30-60ba77dc1277",
         "reps": [30],
@@ -702,7 +702,7 @@
   }, {
     "id": "a8575a6e-2d8f-4ce5-89b6-e85ad2d9dc62",
     "name": "anti-extension-progression-3",
-    "exercises": [
+    "sets": [
       {
         "id": "ce40da1d-0df0-4819-8f30-60ba77dc1277",
         "reps": [30],
@@ -724,7 +724,7 @@
   }, {
     "id": "5c01bb7d-89f7-4b87-b94f-6dae58c593be",
     "name": "anti-extension-progression-4",
-    "exercises": [
+    "sets": [
       {
         "id": "ce40da1d-0df0-4819-8f30-60ba77dc1277",
         "reps": [30],
@@ -738,7 +738,7 @@
   }, {
     "id": "1ce85f38-62aa-4651-aa35-a7172e5296ba",
     "name": "anti-rotation-progression-1",
-    "exercises": [
+    "sets": [
       {
         "id": "b3b197a1-65dd-4fc4-bb3b-8bc4a132641b",
         "reps": [8, 9, 10, 11, 12],
@@ -748,7 +748,7 @@
   }, {
     "id": "90630966-e672-4f92-83c4-79b0a2cea033",
     "name": "anti-rotation-progression-2",
-    "exercises": [
+    "sets": [
       {
         "id": "5a5d7911-fdb3-422e-8401-e855bee5fc77",
         "reps": [8, 9, 10, 11, 12],
@@ -774,7 +774,7 @@
   }, {
     "id": "d20bfdc8-793b-4f4b-ad0a-ee688f1a7f3e",
     "name": "anti-rotation-progression-3",
-    "exercises": [
+    "sets": [
       {
         "id": "18c9d7ca-5982-43e4-9d42-dc4f5ce1ce4f",
         "reps": [8, 9, 10, 11, 12],
@@ -784,7 +784,7 @@
   }, {
     "id": "88b5cbad-f2d9-4bb0-a642-e4f6305b459b",
     "name": "extension-progression-1",
-    "exercises": [
+    "sets": [
       {
         "id": "b6519241-d838-48f6-8769-d27092736054",
         "reps": [8, 9, 10, 11, 12],
@@ -794,7 +794,7 @@
   }, {
     "id": "4a290064-792d-48ad-ab93-ec0e85d56c37",
     "name": "extension-progression-2",
-    "exercises": [
+    "sets": [
       {
         "id": "b6cf0f07-b8c5-4e53-8192-5078842b619f",
         "reps": [8, 9, 10, 11, 12],
@@ -812,7 +812,7 @@
   }, {
     "id": "2e1080f9-ff3c-4658-8ba4-1652506a76bc",
     "name": "extension-progression-3",
-    "exercises": [
+    "sets": [
       {
         "id": "e246215e-4ef8-49de-b3e7-d2a27719ec1a",
         "reps": [8, 9, 10, 11, 12],
