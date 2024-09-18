@@ -4,7 +4,7 @@ function template(
 	/** @type {string} */ reps,
 	/** @type {string} */ id,
 ) {
-	return `
+  return `
     <h2>${name}</h2>
     <iframe
       width="560"
@@ -18,41 +18,40 @@ function template(
     ></iframe>
     <div>
       ${reps
-				.split(",")
-				.map(
-					(rep) => `
+      .split(",")
+      .map(
+        (rep) => `
         <label for="rep-${rep}">${rep}</label>
         <input type="radio" id="rep-${rep}" name="${id}" value="${rep}" hidden>
       `,
-				)
-				.join("")}
+      )
+      .join("")}
     </div>
   `;
 }
 
 customElements.define(
-	"rr-set",
-	class RRSet extends HTMLElement {
-		constructor() {
-			super();
-		}
+  "rr-set",
+  class RRSet extends HTMLElement {
+		/** @type {string} */ name;
+		/** @type {string} */ url;
+		/** @type {string} */ reps;
+		/** @type {string} */ id;
 
-		async connectedCallback() {
-			this.setHTMLUnsafe(
-				template(this["name"], this["url"], this["reps"], this["id"]),
-			);
-		}
+    connectedCallback() {
+      this.setHTMLUnsafe(template(this.name, this.url, this.reps, this.id));
+    }
 
-		static observedAttributes = ["name", "url", "reps", "id"];
+    static observedAttributes = ["name", "url", "reps", "id"];
 
-		attributeChangedCallback(
+    attributeChangedCallback(
 			/** @type {string} */ name,
 			/** @type {string} */ prev,
 			/** @type {string} */ next,
-		) {
-			if (prev === next) return;
+    ) {
+      if (prev === next) return;
 
-			this[name] = next;
-		}
-	},
+      this[name] = next;
+    }
+  },
 );
