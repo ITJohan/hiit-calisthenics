@@ -23,12 +23,10 @@
 html {
 	display: flex;
 	justify-content: center;
+	scroll-snap-type: y mandatory;
 }
 
-body {
-	display: flex;
-	flex-direction: column;
-	gap: var(--spacing-md);
+main {
 	flex-basis: 560px;
 }
 
@@ -77,6 +75,7 @@ rr-landing {
 	justify-content: space-between;
 	height: 100dvh;
 	padding: var(--spacing-md);
+	scroll-snap-align: start;
 
 	& > nav {
 		display: flex;
@@ -90,6 +89,7 @@ rr-set {
 	justify-content: space-between;
 	height: 100dvh;
 	padding: var(--spacing-md);
+	scroll-snap-align: start;
 
 	& > div {
 		display: flex;
