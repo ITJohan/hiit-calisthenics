@@ -20,14 +20,11 @@
 	background-color: var(--color-black);
 }
 
-html {
-	display: flex;
-	justify-content: center;
-	scroll-snap-type: y mandatory;
-}
-
+html,
 body {
-	flex-basis: 560px;
+	display: flex;
+	flex-direction: column;
+	scroll-snap-type: y mandatory;
 }
 
 button {
@@ -74,9 +71,9 @@ rr-landing {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	height: 100dvh;
+	height: 100lvh;
 	padding: var(--spacing-md);
-	scroll-snap-align: center;
+	scroll-snap-align: start;
 
 	& > nav {
 		display: flex;
@@ -89,9 +86,9 @@ rr-set {
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
-	height: 100dvh;
+	height: 100lvh;
 	padding: var(--spacing-md);
-	scroll-snap-align: center;
+	scroll-snap-align: start;
 
 	& > div {
 		display: flex;
