@@ -1,7 +1,9 @@
+import { getExercises, getProgressions } from "./db.js";
+
 function template(
 	/** @type {string} */ name,
 	/** @type {string} */ url,
-	/** @type {string} */ reps,
+	/** @type {number[]} */ reps,
 	/** @type {string} */ id,
 ) {
   return `
@@ -18,7 +20,6 @@ function template(
     ></iframe>
     <div>
       ${reps
-      .split(",")
       .map(
         (rep) => `
         <label for="rep-${rep}">${rep}</label>
@@ -33,16 +34,30 @@ function template(
 customElements.define(
   "rr-set",
   class RRSet extends HTMLElement {
-		/** @type {string} */ name;
-		/** @type {string} */ url;
-		/** @type {string} */ reps;
-		/** @type {string} */ id;
+		/** @type {Category} */ category;
 
     connectedCallback() {
-      this.setHTMLUnsafe(template(this.name, this.url, this.reps, this.id));
+      const progressions = getProgressions();
+      const exercises = getExercises();
+      const progressionsFromCategory = progressions.filter(
+        (progression) => progression.category === this.category,
+      );
+      const progressionSet = progressionsFromCategory[0].sets[0];
+
+      const exercise = exercises.find(
+        (exercise) => exercise.id === progressionSet.exerciseId,
+      );
+
+      const reps = Array(progressionSet.max - progressionSet.min + 1)
+        .fill()
+        .map((_, index) => progressionSet.min + index);
+
+      this.setHTMLUnsafe(
+        template(exercise.name, exercise.url, reps, exercise.id),
+      );
     }
 
-    static observedAttributes = ["name", "url", "reps", "id"];
+    static observedAttributes = ["category"];
 
     attributeChangedCallback(
 			/** @type {string} */ name,
