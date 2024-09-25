@@ -1,4 +1,4 @@
-import { getExercises, getProgressions } from "./db.js";
+import { getExercises, getProgressionsFromCategory } from "./db.js";
 
 function template(
 	/** @type {string} */ name,
@@ -37,10 +37,9 @@ customElements.define(
 		/** @type {Category} */ category;
 
     connectedCallback() {
-      const progressions = getProgressions();
       const exercises = getExercises();
-      const progressionsFromCategory = progressions.filter(
-        (progression) => progression.category === this.category,
+      const progressionsFromCategory = getProgressionsFromCategory(
+        this.category,
       );
       const progressionSet = progressionsFromCategory[0].sets[0];
 

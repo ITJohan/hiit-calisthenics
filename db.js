@@ -10,25 +10,32 @@ const progressions = await progressionsRes.json();
 const exercises = await exercisesRes.json();
 
 export function getWorkouts() {
-	return workouts;
+  return workouts;
 }
 
 export function getWorkout(/** @type {string} */ id) {
-	return workouts.find((workout) => workout.id === id);
+  return workouts.find((workout) => workout.id === id);
 }
 
 export function getProgressions() {
-	return progressions;
+  return progressions;
 }
 
 export function getProgression(/** @type {string} */ id) {
-	return progressions.find((progression) => progression.id === id);
+  return progressions.find((progression) => progression.id === id);
+}
+
+export function getProgressionsFromCategory(/** @type {Category} */ category) {
+  const progressions = getProgressions();
+  return progressions.filter(
+    (progression) => progression.category === category,
+  );
 }
 
 export function getExercises() {
-	return exercises;
+  return exercises;
 }
 
 export function getExercise(/** @type {string} */ id) {
-	return exercises.find((exercise) => exercise.id === id);
+  return exercises.find((exercise) => exercise.id === id);
 }
