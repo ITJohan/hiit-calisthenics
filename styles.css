@@ -7,6 +7,7 @@
 :root {
 	--spacing-sm: 8px;
 	--spacing-md: 16px;
+	--spacing-lg: 24px;
 	--border-radius: 4px;
 	--opacity-hover: 0.8;
 	--opacity-disabled: 0.5;
@@ -93,5 +94,12 @@ rr-set {
 	& > div {
 		display: flex;
 		justify-content: space-between;
+		gap: var(--spacing-lg);
+
+		& > label {
+			background-color: var(--color-green);
+			padding: var(--spacing-md);
+			border-radius: var(--border-radius);
+		}
 	}
 }
