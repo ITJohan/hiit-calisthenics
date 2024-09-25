@@ -67,7 +67,8 @@ select {
 	background-size: 0.65rem auto;
 }
 
-rr-landing {
+rr-landing,
+rr-finished {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
