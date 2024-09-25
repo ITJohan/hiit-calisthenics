@@ -22,8 +22,10 @@ function template(
       ${reps
       .map(
         (rep) => `
-        <label for="rep-${rep}">${rep}</label>
-        <input type="radio" id="rep-${rep}" name="${id}" value="${rep}" hidden>
+          <label>
+            <input type="radio" name="${id}" value="${rep}" required>
+            ${rep}
+          </label>
       `,
       )
       .join("")}

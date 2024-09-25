@@ -96,11 +96,5 @@ rr-set {
 		display: flex;
 		justify-content: space-between;
 		gap: var(--spacing-lg);
-
-		& > label {
-			background-color: var(--color-green);
-			padding: var(--spacing-md);
-			border-radius: var(--border-radius);
-		}
 	}
 }
