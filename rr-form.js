@@ -1,3 +1,5 @@
+import { addRepsToExercise } from "./db.js";
+
 customElements.define(
   "rr-form",
   class RRForm extends HTMLElement {
@@ -11,7 +13,7 @@ customElements.define(
         const formData = new FormData(form);
 
         for (const [key, value] of formData) {
-          console.log(key, value);
+          addRepsToExercise(key, Number(value));
         }
       });
     }

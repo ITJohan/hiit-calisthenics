@@ -39,3 +39,17 @@ export function getExercises() {
 export function getExercise(/** @type {string} */ id) {
   return exercises.find((exercise) => exercise.id === id);
 }
+
+export function addRepsToExercise(
+	/** @type {string} */ exerciseId,
+	/** @type {number} */ reps,
+) {
+  const repsForExercise = JSON.parse(localStorage.getItem(exerciseId));
+
+  if (repsForExercise === null) {
+    localStorage.setItem(exerciseId, JSON.stringify([reps]));
+    return;
+  }
+
+  localStorage.setItem(exerciseId, JSON.stringify([...repsForExercise, reps]));
+}
