@@ -13,7 +13,8 @@ customElements.define(
         const formData = new FormData(form);
 
         for (const [key, value] of formData) {
-          addRepsToExercise(key, Number(value));
+          const exerciseId = key.substring(0, 32);
+          addRepsToExercise(exerciseId, Number(value));
         }
       });
     }

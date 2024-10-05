@@ -53,8 +53,10 @@ customElements.define(
         .fill()
         .map((_, index) => progressionSet.min + index);
 
+      const id = exercise.id + crypto.randomUUID().substring(0, 5);
+
       this.setHTMLUnsafe(
-        template(exercise.name, exercise.url, reps, exercise.id),
+        template(exercise.name, exercise.url, reps, id),
       );
     }
 
