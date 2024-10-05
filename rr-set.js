@@ -7,17 +7,8 @@ function template(
 	/** @type {string} */ id,
 ) {
   return `
-    <h2>${name}</h2>
-    <iframe
-      width="560"
-      height="315"
-      src="${url}"
-      title="YouTube video player"
-      frameborder="0"
-      loading="lazy"
-      referrerpolicy="strict-origin-when-cross-origin"
-      allowfullscreen
-    ></iframe>
+    <h2><a href=${url} target="_blank">${name}</a></h2>
+    <img src="/assets/placeholder.jpg" width="600" />
     <div>
       ${reps
       .map(
