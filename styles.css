@@ -68,7 +68,8 @@ select {
 }
 
 rr-landing,
-rr-finished {
+rr-finished,
+rr-rest {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
