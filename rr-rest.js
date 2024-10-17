@@ -1,27 +1,38 @@
-function template(/** @type {number} */ time) {
-  return `
-    <h2>Rest</h2>
-    <p>Ad</p>
-    <time>${time}</time>
-  `
-}
-
 customElements.define('rr-rest', class RRRest extends HTMLElement {
-  /** @type {number} */ time
-
   connectedCallback() {
-    this.setHTMLUnsafe(template(this.time))
+    this.innerHTML = `
+      <h2>Rest</h2>
+      <p>Ad</p>
+      <time></time>
+    `
+    setInterval(() => {
+      const timeAttribute = this.getAttribute('time');
+
+      if (timeAttribute === null || isNaN(Number(timeAttribute))) {
+        throw new Error('Attribute time needs to be a number')
+      }
+
+      const time = Number(timeAttribute);
+
+      if (time > 0) {
+        this.setAttribute('time', String(time - 1))
+        this.update()
+      }
+    }, 1000)
+
+    this.update()
   }
 
   static observedAttributes = ['time']
 
-  attributeChangedCallback(
-		/** @type {string} */ name,
-		/** @type {string} */ prev,
-		/** @type {string} */ next,
-  ) {
-    if (prev === next) return;
+  attributeChangedCallback() {
+    this.update()
+  }
 
-    this[name] = Number(next);
+  update() {
+    const timeEl = this.querySelector('time')
+    if (timeEl) {
+      timeEl.textContent = this.getAttribute('time');
+    }
   }
 })
