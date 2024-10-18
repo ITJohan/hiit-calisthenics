@@ -1,38 +1,57 @@
 customElements.define('rr-rest', class RRRest extends HTMLElement {
+  /** @type {HTMLTimeElement} */ timeElement
+  /** @type {number | undefined} */ intervalId
+
+  get time() { return this.getAttribute('time') }
+  set time(time) { this.setAttribute('time', time) }
+
+  get active() { return this.getAttribute('active') === '' ? true : false }
+  set active(active) { active === true ? this.setAttribute('active', '') : this.removeAttribute('active') }
+  
   connectedCallback() {
     this.innerHTML = `
       <h2>Rest</h2>
       <p>Ad</p>
       <time></time>
     `
-    setInterval(() => {
-      const timeAttribute = this.getAttribute('time');
-
-      if (timeAttribute === null || isNaN(Number(timeAttribute))) {
-        throw new Error('Attribute time needs to be a number')
-      }
-
-      const time = Number(timeAttribute);
-
-      if (time > 0) {
-        this.setAttribute('time', String(time - 1))
-        this.update()
-      }
-    }, 1000)
-
+    this.timeElement = this.querySelector('time')
     this.update()
   }
 
-  static observedAttributes = ['time']
+  disconnectedCallback() {
+    clearInterval(this.intervalId)
+    this.intervalId = undefined;
+  }
+
+  static observedAttributes = ['time', 'active']
 
   attributeChangedCallback() {
+    if (this.active && !this.intervalId) {
+      const initialTime = this.time
+
+      this.intervalId = setInterval(() => {
+        const timeAttribute = this.time;
+        const time = Number(timeAttribute);
+
+        if (time > 0) {
+          this.time = String(time - 1)
+          this.update()
+        } else {
+          this.active = false;
+          this.time = initialTime;
+
+          clearInterval(this.intervalId)
+          this.intervalId = undefined;
+        }
+      }, 1000)
+    }
+
     this.update()
   }
 
   update() {
-    const timeEl = this.querySelector('time')
-    if (timeEl) {
-      timeEl.textContent = this.getAttribute('time');
+    if (this.timeElement) {
+      this.timeElement.textContent = this.time;
     }
   }
 })
