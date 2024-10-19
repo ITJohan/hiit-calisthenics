@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "module": "ESNext",
+    "target": "ESNext",
+    "checkJs": true,
+    "lib": ["dom"]
+  },
+  "tasks": {
+    "dev": "deno run --watch main.ts"
+  }
+}
