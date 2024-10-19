@@ -4,7 +4,8 @@ import "./rr-set.js";
 function template(/** @type {IRRSet[]} */ rrSets) {
   return `
     <form>
-      ${rrSets
+      ${
+    rrSets
       .map(
         (set) => `
         <rr-set
@@ -14,7 +15,8 @@ function template(/** @type {IRRSet[]} */ rrSets) {
           id="${set.id}"
         ></rr-set>`,
       )
-      .join("")}
+      .join("")
+  }
     </form>
   `;
 }

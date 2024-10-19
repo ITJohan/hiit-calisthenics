@@ -1,639 +1,639 @@
 [
-	{
-		"id": "50eaa55c-5edf-4806-96d6-fcfdcba4df29",
-		"name": "Yuri's Shoulder Band Warmup",
-		"type": "rep",
-		"equipment": ["band"],
-		"url": "https://www.youtube.com/watch?v=Vwn5hSf3WEg"
-	},
-	{
-		"id": "0990fe2e-1081-4a18-8cf8-5857447c7851",
-		"name": "Squat Sky Reaches",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://youtu.be/lbozu0DPcYI?t=42s"
-	},
-	{
-		"id": "56940182-a40e-439c-82c1-888031c6b755",
-		"name": "GMB Wrist Prep",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=mSZWSQSSEjE"
-	},
-	{
-		"id": "6e5e46dc-a27b-40a0-8b52-80be03df5358",
-		"name": "Deadbugs",
-		"type": "sec",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=D1AIAl9UPVU"
-	},
-	{
-		"id": "f3c10e5c-5f61-4aa1-8143-4965a5a6e7e5",
-		"name": "Parallel Bar Support",
-		"type": "sec",
-		"equipment": ["parallel-bars"],
-		"url": "http://antranik.org/wp-content/uploads/2014/01/antranik-holding-support-hold-on-parallel-bars.jpg"
-	},
-	{
-		"id": "e8ef478b-73bd-4984-8429-1a797dcd4a1e",
-		"name": "Ring Support Hold",
-		"type": "sec",
-		"equipment": ["rings"],
-		"url": "https://imgur.com/hGRuEkA"
-	},
-	{
-		"id": "5d39eb5b-345e-4a9c-bb2c-e8b70c4950cb",
-		"name": "Rings Turned Out Support Hold",
-		"type": "sec",
-		"equipment": ["rings"],
-		"url": "https://imgur.com/hGRuEkA"
-	},
-	{
-		"id": "7cb26bfa-ac1f-4b23-b4b4-9c8721578a15",
-		"name": "Assisted Squat",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=OuR_Fp7AB0c"
-	},
-	{
-		"id": "ac2c5f97-3be6-4f2b-bb24-f5ab3f182083",
-		"name": "Squat",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=zJBLDJMJiDE"
-	},
-	{
-		"id": "4c0aad30-cbc1-4526-866a-250ba46b80e4",
-		"name": "Split Squat",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=SGHnCftrZkA"
-	},
-	{
-		"id": "7d7f5b67-1af8-4291-8555-ef426a5ce39b",
-		"name": "Bulgarian Split Squat",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=kkdmHTASZg8&feature=youtu.be&t=1m15s"
-	},
-	{
-		"id": "a50398ab-8e29-49fb-96e9-98d325afca22",
-		"name": "Beginner Shrimp Squat",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=TKt0-c83GSc&feature=youtu.be&t=3m9s"
-	},
-	{
-		"id": "27129057-ac84-401a-910b-45d6f83914dd",
-		"name": "Intermediate Shrimp Squat",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://youtu.be/Dpgn6eRtsdw?si=3X0UbU--gF6e974L&t=27a"
-	},
-	{
-		"id": "c3f654b9-43b2-41ed-bdb8-0531303d520d",
-		"name": "Advanced Shrimp Squat",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://youtu.be/xfl7SDj0Gzs?si=BgdVo0orZpTlkC1N&t=102"
-	},
-	{
-		"id": "0bc42641-337f-42ec-85fa-6306256377d6",
-		"name": "Weighted Shrimp Squat",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://youtu.be/xfl7SDj0Gzs?si=BgdVo0orZpTlkC1N&t=102"
-	},
-	{
-		"id": "b264b91a-d91d-4adb-84fa-0b2b243b50d6",
-		"name": "Step-ups",
-		"type": "rep",
-		"equipment": ["box"],
-		"url": "https://www.youtube.com/watch?v=487aR3A7HvM"
-	},
-	{
-		"id": "0b368d1d-a9b0-457d-8899-ae6033fc60d9",
-		"name": "Deep Step-ups",
-		"type": "rep",
-		"equipment": ["box"],
-		"url": "https://imgur.com/Ga6RHLE.gifv"
-	},
-	{
-		"id": "d076822a-3fe1-4753-bafb-c070b84a008c",
-		"name": "Partial ROM Pistol Squats",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=0SN8ZaxOBpA"
-	},
-	{
-		"id": "5ed9064a-bedb-491d-9096-cb36921c62db",
-		"name": "Pistol Squat",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://youtu.be/0SN8ZaxOBpA?t=30s"
-	},
-	{
-		"id": "56a69a2b-b1f1-47b9-ac64-6356241a9d25",
-		"name": "Romanian Deadlift",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=7j-2w4-P14I"
-	},
-	{
-		"id": "772479f0-fc71-4a57-98ac-b31cd1a89c19",
-		"name": "Single Legged Deadlift",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=iDV8r5u6En0"
-	},
-	{
-		"id": "27c6ef4b-8e7c-45ac-b575-a0aa17c2ef41",
-		"name": "Banded Nordic Curl Negatives",
-		"type": "rep",
-		"equipment": ["band"],
-		"url": "https://www.youtube.com/watch?v=HUXS3S2xSX4"
-	},
-	{
-		"id": "89951710-f4ff-4e44-a373-4c8450b6d8e4",
-		"name": "Banded Nordic Curl",
-		"type": "rep",
-		"equipment": ["band"],
-		"url": "https://www.youtube.com/watch?v=HUXS3S2xSX4"
-	},
-	{
-		"id": "841b4078-d471-4cd9-8a38-4775e5814995",
-		"name": "Nordic Curls",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=d8AAPcYxPo8"
-	},
-	{
-		"id": "67d58f46-c998-4777-9b3b-8a7d28133830",
-		"name": "Floor Slide Progressions",
-		"type": "rep",
-		"equipment": ["towel"],
-		"url": "https://www.youtube.com/watch?v=Dlazt593cuA"
-	},
-	{
-		"id": "d5db3373-1300-4d92-af79-d625ff9d4969",
-		"name": "Negative Hamstring Slide",
-		"type": "rep",
-		"equipment": ["towel"],
-		"url": "https://www.youtube.com/watch?v=OY8Jci5KJdM"
-	},
-	{
-		"id": "3f34ac75-09c0-4e41-bed3-1010f4025a32",
-		"name": "Hamstring Slide",
-		"type": "rep",
-		"equipment": ["towel"],
-		"url": "https://www.youtube.com/watch?v=Dlazt593cuA"
-	},
-	{
-		"id": "38b2cc3b-7163-4ee6-8ba8-7ae6a7bcdfb7",
-		"name": "Eccentric Single Leg Sliding Hamstring Slide",
-		"type": "rep",
-		"equipment": ["towel"],
-		"url": "https://www.youtube.com/watch?v=dE5d39sErBU"
-	},
-	{
-		"id": "e2b1f9a4-47f4-4567-8f5a-c2298e72cfab",
-		"name": "Single Leg Sliding Hamstring Slide",
-		"type": "rep",
-		"equipment": ["towel"],
-		"url": "https://www.youtube.com/watch?v=PzAtOaY1-Dk"
-	},
-	{
-		"id": "dff4434f-dffd-461a-a52f-6709edd3b251",
-		"name": "Beginner Harop Curl",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=A2xRx7dGWaE"
-	},
-	{
-		"id": "fe934ed8-31f7-4c1f-8aef-b7031562141d",
-		"name": "Advanced Harop Curl",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=Y7ndeehIOhU"
-	},
-	{
-		"id": "2c0b5509-ac52-433d-986e-2d758f96fa0a",
-		"name": "Glute Ham Raise",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=8w6nkNnE3-M"
-	},
-	{
-		"id": "97a1fdf4-baf6-4370-abe2-4723a7c6cede",
-		"name": "Scapular Pulls",
-		"type": "rep",
-		"equipment": ["pull-up-bar"],
-		"url": "https://youtu.be/FgYoc4O-cio?t=1m21s"
-	},
-	{
-		"id": "9ad1fe5d-f1b4-4004-b6cb-424e459e8d11",
-		"name": "Arch Hangs",
-		"type": "rep",
-		"equipment": ["pull-up-bar"],
-		"url": "https://youtu.be/C995b3KLXS4?t=7s"
-	},
-	{
-		"id": "c3273b5e-02c4-427a-8b73-df29165069ca",
-		"name": "Pull-up Negatives",
-		"type": "rep",
-		"equipment": ["pull-up-bar"],
-		"url": "https://www.youtube.com/watch?v=EkpJkHpJXmM"
-	},
-	{
-		"id": "05d72b5e-b68b-49ac-a575-428c6cb319fa",
-		"name": "Pull-ups",
-		"type": "rep",
-		"equipment": ["pull-up-bar"],
-		"url": "https://www.youtube.com/watch?v=eGo4IYlbE5g"
-	},
-	{
-		"id": "c938da17-8cfa-4541-929b-7191304daf88",
-		"name": "Weighted Pull-ups",
-		"type": "rep",
-		"equipment": ["pull-up-bar", "weights"],
-		"url": "https://www.youtube.com/watch?v=HuuyDNGrCI8"
-	},
-	{
-		"id": "3e310620-b105-4eb2-9313-f281a620949e",
-		"name": "L-sit Pull-ups",
-		"type": "rep",
-		"equipment": ["pull-up-bar"],
-		"url": "https://www.youtube.com/watch?v=qeGS55RHBUU"
-	},
-	{
-		"id": "8544846e-e38c-410d-a754-9d4a09266955",
-		"name": "Arch Body Pull-ups",
-		"type": "rep",
-		"equipment": ["pull-up-bar"],
-		"url": "https://www.youtube.com/watch?v=t8_TO8CBkgg"
-	},
-	{
-		"id": "7e62dcba-7d22-40f5-8650-e3f388658f45",
-		"name": "Type-Writer Pull-up",
-		"type": "rep",
-		"equipment": ["pull-up-bar"],
-		"url": "https://youtu.be/dvd5Fyl-Ves?t=15s"
-	},
-	{
-		"id": "b0af4c2b-aba0-4b30-896a-e92c31e317b1",
-		"name": "Archer Pull-ups",
-		"type": "rep",
-		"equipment": ["pull-up-bar"],
-		"url": "https://youtu.be/vdjWgw98EeI?t=1m52s"
-	},
-	{
-		"id": "f02760b9-094a-4ec4-8604-5cf4d66eb2b4",
-		"name": "Parallel Bar Support Hold",
-		"type": "sec",
-		"equipment": ["parallel-bars"],
-		"url": "https://www.youtube.com/watch?v=IbWE49HdsrE"
-	},
-	{
-		"id": "f221eebb-eb90-4dc9-9aaf-35616d4f427d",
-		"name": "Negative Dips",
-		"type": "rep",
-		"equipment": ["parallel-bars"],
-		"url": "https://www.youtube.com/watch?v=T3Scqw1BbCc"
-	},
-	{
-		"id": "14914a70-33fe-4e5d-8f28-3ace14f5f23e",
-		"name": "Parallel Bar Dips",
-		"type": "rep",
-		"equipment": ["parallel-bars"],
-		"url": "https://www.youtube.com/watch?v=2z8JmcrW-As"
-	},
-	{
-		"id": "1850a236-8c6c-4e90-9f34-d10439239d5a",
-		"name": "Weighted Dips",
-		"type": "rep",
-		"equipment": ["parallel-bars", "weights"],
-		"url": "https://www.youtube.com/watch?v=MhPl9Vf4toc"
-	},
-	{
-		"id": "100d003c-c4f6-45f4-95c3-2b7e6c5e1884",
-		"name": "Ring Dips",
-		"type": "rep",
-		"equipment": ["rings"],
-		"url": "http://www.youtube.com/watch?v=2Vymm8nH4wM"
-	},
-	{
-		"id": "a45c9210-d4cd-489c-adea-8e26fe24e82d",
-		"name": "Rings RTO Dips",
-		"type": "rep",
-		"equipment": ["rings"],
-		"url": "https://www.youtube.com/watch?v=WGbtrkzIiOA&t=60s"
-	},
-	{
-		"id": "c53ff42f-8c0a-4d13-8f6c-b8466522b631",
-		"name": "Pike Push-Up",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=XckEEwa1BPI"
-	},
-	{
-		"id": "8105c4fc-d7f6-4360-81cf-96ab704b33ec",
-		"name": "Box Push-Up",
-		"type": "rep",
-		"equipment": ["box"],
-		"url": "https://www.youtube.com/watch?v=ZnsLpLhywgk&t=50s"
-	},
-	{
-		"id": "7aa7d8bd-b504-4b86-90f4-5e837b1a2afd",
-		"name": "Wall Headstand Push-Up Eccentrics",
-		"type": "rep",
-		"equipment": [],
-		"url": "http://www.youtube.com/watch?v=Lj2KZwbr_jo"
-	},
-	{
-		"id": "a4f114fd-3f4c-48d3-9e7b-e8fd7340e4b4",
-		"name": "Wall Headstand Push-Up",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=WxgJS48wf1M"
-	},
-	{
-		"id": "a18776f6-506c-46e4-9654-ec77c19f6040",
-		"name": "Wall Handstand Push-Up Eccentrics",
-		"type": "rep",
-		"equipment": ["parallel-bars"],
-		"url": "https://www.youtube.com/watch?v=2vxkWqpYcCA"
-	},
-	{
-		"id": "3de39a47-6615-43b1-b850-62f2cc472b7a",
-		"name": "Wall Handstand Push-Up",
-		"type": "rep",
-		"equipment": ["parallel-bars"],
-		"url": "https://www.youtube.com/watch?v=r-aiCMOOhNQ"
-	},
-	{
-		"id": "f7ba3129-0c37-4646-92fb-35bbe00d8405",
-		"name": "Freestanding Headstand Push-Up",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=aAErmRDDJKY"
-	},
-	{
-		"id": "47cfea5f-eac3-4a27-b8f7-da158ee2207f",
-		"name": "Freestanding Handstand Push-Up",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=rOOL9vaIeo8&t=338s"
-	},
-	{
-		"id": "c852f177-0b26-4840-8c92-579415e63017",
-		"name": "Vertical Rows",
-		"type": "rep",
-		"equipment": ["rings"],
-		"url": "https://www.youtube.com/watch?v=wr8ZA-cvH3s"
-	},
-	{
-		"id": "f60aa2e9-9574-4e08-a901-d2bcbe9ce186",
-		"name": "Incline Rows",
-		"type": "rep",
-		"equipment": ["rings"],
-		"url": "https://www.youtube.com/watch?v=LR2EnFWpVao"
-	},
-	{
-		"id": "2905c4bd-f7ad-4990-b619-4af35f8eab2c",
-		"name": "Horizontal Rows",
-		"type": "rep",
-		"equipment": ["rings"],
-		"url": "https://www.youtube.com/watch?v=dvkIaarnf0g"
-	},
-	{
-		"id": "0317b18b-4ac1-4aba-b5c1-b58c04cc2aca",
-		"name": "Wide Rows",
-		"type": "rep",
-		"equipment": ["rings"],
-		"url": "https://www.youtube.com/watch?v=f3yfJ0RStQw"
-	},
-	{
-		"id": "dcac6d20-4bef-4aaf-975d-2f8c80200206",
-		"name": "Weighted Inverted Rows",
-		"type": "rep",
-		"equipment": ["rings", "weights"],
-		"url": "https://www.youtube.com/watch?v=3cYR6pis5zc"
-	},
-	{
-		"id": "28a93f8e-e160-488e-82b5-ece0a76c2d06",
-		"name": "Tuck Front Lever",
-		"type": "rep",
-		"equipment": ["pull-up-bar"],
-		"url": "https://youtu.be/tStwC06qdwM?t=2m50s"
-	},
-	{
-		"id": "65017558-c6e2-42bd-b72c-d877d64157a3",
-		"name": "Tuck Front Lever Pulls",
-		"type": "rep",
-		"equipment": ["pull-up-bar"],
-		"url": "https://www.youtube.com/watch?v=ZWxrvwRKR-s&t=259s"
-	},
-	{
-		"id": "b1771585-58cc-4746-802a-6a35a7b5ac9b",
-		"name": "Archer Rows",
-		"type": "rep",
-		"equipment": ["rings"],
-		"url": "https://www.youtube.com/watch?v=PGoW1i4K_o0"
-	},
-	{
-		"id": "77809396-30e0-486f-97ca-d5346d3ac554",
-		"name": "One Arm Rows",
-		"type": "rep",
-		"equipment": ["rings"],
-		"url": "https://www.youtube.com/watch?v=67Lp_DeX3-c"
-	},
-	{
-		"id": "e9dc0d0a-3339-4744-b463-2450a07b1a53",
-		"name": "Vertical Pushup",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=-KVhapnEtuk"
-	},
-	{
-		"id": "0bb01b69-d1cd-49a5-b38b-5b0d16f92e53",
-		"name": "Incline Pushup",
-		"type": "rep",
-		"equipment": ["box"],
-		"url": "https://www.youtube.com/watch?v=NnfAYkBRDPY"
-	},
-	{
-		"id": "8491f401-cb01-4c63-ba66-236474df208a",
-		"name": "Full Pushup",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=IODxDxX7oi4"
-	},
-	{
-		"id": "10550610-cc38-4b27-b774-3c05271c7080",
-		"name": "Diamond Pushup",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=J0DnG1_S92I"
-	},
-	{
-		"id": "c5df498a-20b5-48d0-a897-0315fb1b9c86",
-		"name": "Pseudo Planche Pushups",
-		"type": "rep",
-		"equipment": [],
-		"url": "http://www.youtube.com/watch?v=Cdmg0CfMZeo"
-	},
-	{
-		"id": "00d7d9cb-2d3b-499b-9a43-f83f22417f32",
-		"name": "Rings Pushup",
-		"type": "rep",
-		"equipment": ["rings"],
-		"url": "https://www.youtube.com/watch?v=vBviFvN3rHw"
-	},
-	{
-		"id": "8b82c548-9c41-40bc-a061-ecf6a64bc1cb",
-		"name": "RTO Pushup",
-		"type": "rep",
-		"equipment": ["rings"],
-		"url": "https://www.youtube.com/watch?v=MrlyEIpe0LI&t=2m55s"
-	},
-	{
-		"id": "ce40da1d-0df0-4819-8f30-60ba77dc1277",
-		"name": "Plank",
-		"type": "sec",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=kL_NJAkCQBg"
-	},
-	{
-		"id": "e2e38298-3e2c-4236-919a-d562db3a0a36",
-		"name": "Ring Ab Rollouts",
-		"type": "rep",
-		"equipment": ["rings"],
-		"url": "https://www.youtube.com/watch?v=LBUfnmugKLw"
-	},
-	{
-		"id": "3630b482-3992-4fb9-892b-145767531026",
-		"name": "Kneeling Ab Wheel Rollouts",
-		"type": "rep",
-		"equipment": ["wheel"],
-		"url": "https://www.youtube.com/watch?v=uYBOBBv9GzY"
-	},
-	{
-		"id": "58bc2c9f-aa1c-4b73-8646-d122cdb64f2a",
-		"name": "Standing Ab Wheel Rollouts",
-		"type": "rep",
-		"equipment": ["wheel"],
-		"url": "https://www.youtube.com/watch?v=L_2k97JeyzY"
-	},
-	{
-		"id": "613a37c9-dd2d-4301-a972-fc937947c103",
-		"name": "Tucked Hanging Leg Raises",
-		"type": "rep",
-		"equipment": ["pull-up-bar"],
-		"url": "https://www.youtube.com/watch?v=Gw3RyyARhBQ"
-	},
-	{
-		"id": "5d797cfe-72ba-4de3-b1ac-49492237953e",
-		"name": "Pike Hanging Leg Raises Negative",
-		"type": "rep",
-		"equipment": ["pull-up-bar"],
-		"url": "https://www.youtube.com/watch?v=_Yds3pKxOLU"
-	},
-	{
-		"id": "d9d57208-ca1a-478a-a443-2643e958f832",
-		"name": "Straight Hanging Leg Raises",
-		"type": "rep",
-		"equipment": ["pull-up-bar"],
-		"url": "https://www.youtube.com/watch?v=QyVq5oUBpss"
-	},
-	{
-		"id": "fab7e508-7b2b-4548-9c0c-d65ddedede4e",
-		"name": "Pike Compressions",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=G1_EoDs-G7E&t=251s"
-	},
-	{
-		"id": "b3b197a1-65dd-4fc4-bb3b-8bc4a132641b",
-		"name": "Banded Pallof Press",
-		"type": "rep",
-		"equipment": ["band"],
-		"url": "https://www.youtube.com/watch?v=AH_QZLm_0-s"
-	},
-	{
-		"id": "5a5d7911-fdb3-422e-8401-e855bee5fc77",
-		"name": "Assisted Knee Copenhagen Plank",
-		"type": "sec",
-		"equipment": ["box"],
-		"url": "https://youtu.be/1NNqUQvMYGc?si=8tkjTMPVpCosek-P&t=13"
-	},
-	{
-		"id": "7e93efc7-e058-4293-874d-65a470576fb1",
-		"name": "Knee Copenhagen Plank",
-		"type": "sec",
-		"equipment": ["box"],
-		"url": "https://youtu.be/1NNqUQvMYGc?si=8tkjTMPVpCosek-P&t=11"
-	},
-	{
-		"id": "b7ded961-07ae-494f-806e-7801bec925a7",
-		"name": "Assisted Copenhagen Plank",
-		"type": "sec",
-		"equipment": ["box"],
-		"url": "https://youtu.be/1NNqUQvMYGc?si=8tkjTMPVpCosek-P&t=7"
-	},
-	{
-		"id": "07bd9dc2-4054-49fc-a723-a78f60932e4e",
-		"name": "Copenhagen Plank",
-		"type": "sec",
-		"equipment": ["box"],
-		"url": "https://youtu.be/1NNqUQvMYGc?si=8tkjTMPVpCosek-P&t=5"
-	},
-	{
-		"id": "88d8a198-a2d9-41da-8992-3de24efe28c4",
-		"name": "Copenhagen Plank with Movement",
-		"type": "sec",
-		"equipment": ["box"],
-		"url": "https://www.youtube.com/watch?v=1NNqUQvMYGc"
-	},
-	{
-		"id": "18c9d7ca-5982-43e4-9d42-dc4f5ce1ce4f",
-		"name": "Ring Pallof Press",
-		"type": "rep",
-		"equipment": ["rings"],
-		"url": "https://www.youtube.com/watch?v=YSN3rqhYlKU"
-	},
-	{
-		"id": "b6519241-d838-48f6-8769-d27092736054",
-		"name": "Reverse Hyperextension",
-		"type": "rep",
-		"equipment": ["box"],
-		"url": "https://www.youtube.com/watch?v=ZeRsNzFcQLQ"
-	},
-	{
-		"id": "b6cf0f07-b8c5-4e53-8192-5078842b619f",
-		"name": "Arch Raises",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=OgyqYuh41Mw&t=220s"
-	},
-	{
-		"id": "7480a8cc-f285-4d33-997b-8a5a7f4f8b52",
-		"name": "Arch Body Hold",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=OgyqYuh41Mw"
-	},
-	{
-		"id": "8ffed1f9-7711-434d-870b-477eaf93be5f",
-		"name": "Arch Body Rocks",
-		"type": "rep",
-		"equipment": [],
-		"url": "https://www.youtube.com/watch?v=FazlcjNXMwA"
-	},
-	{
-		"id": "e246215e-4ef8-49de-b3e7-d2a27719ec1a",
-		"name": "Hyper Extension",
-		"type": "rep",
-		"equipment": ["nordic-strap"],
-		"url": "https://www.youtube.com/watch?v=ph3pddpKzzw"
-	}
+  {
+    "id": "50eaa55c-5edf-4806-96d6-fcfdcba4df29",
+    "name": "Yuri's Shoulder Band Warmup",
+    "type": "rep",
+    "equipment": ["band"],
+    "url": "https://www.youtube.com/watch?v=Vwn5hSf3WEg"
+  },
+  {
+    "id": "0990fe2e-1081-4a18-8cf8-5857447c7851",
+    "name": "Squat Sky Reaches",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://youtu.be/lbozu0DPcYI?t=42s"
+  },
+  {
+    "id": "56940182-a40e-439c-82c1-888031c6b755",
+    "name": "GMB Wrist Prep",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=mSZWSQSSEjE"
+  },
+  {
+    "id": "6e5e46dc-a27b-40a0-8b52-80be03df5358",
+    "name": "Deadbugs",
+    "type": "sec",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=D1AIAl9UPVU"
+  },
+  {
+    "id": "f3c10e5c-5f61-4aa1-8143-4965a5a6e7e5",
+    "name": "Parallel Bar Support",
+    "type": "sec",
+    "equipment": ["parallel-bars"],
+    "url": "http://antranik.org/wp-content/uploads/2014/01/antranik-holding-support-hold-on-parallel-bars.jpg"
+  },
+  {
+    "id": "e8ef478b-73bd-4984-8429-1a797dcd4a1e",
+    "name": "Ring Support Hold",
+    "type": "sec",
+    "equipment": ["rings"],
+    "url": "https://imgur.com/hGRuEkA"
+  },
+  {
+    "id": "5d39eb5b-345e-4a9c-bb2c-e8b70c4950cb",
+    "name": "Rings Turned Out Support Hold",
+    "type": "sec",
+    "equipment": ["rings"],
+    "url": "https://imgur.com/hGRuEkA"
+  },
+  {
+    "id": "7cb26bfa-ac1f-4b23-b4b4-9c8721578a15",
+    "name": "Assisted Squat",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=OuR_Fp7AB0c"
+  },
+  {
+    "id": "ac2c5f97-3be6-4f2b-bb24-f5ab3f182083",
+    "name": "Squat",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=zJBLDJMJiDE"
+  },
+  {
+    "id": "4c0aad30-cbc1-4526-866a-250ba46b80e4",
+    "name": "Split Squat",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=SGHnCftrZkA"
+  },
+  {
+    "id": "7d7f5b67-1af8-4291-8555-ef426a5ce39b",
+    "name": "Bulgarian Split Squat",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=kkdmHTASZg8&feature=youtu.be&t=1m15s"
+  },
+  {
+    "id": "a50398ab-8e29-49fb-96e9-98d325afca22",
+    "name": "Beginner Shrimp Squat",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=TKt0-c83GSc&feature=youtu.be&t=3m9s"
+  },
+  {
+    "id": "27129057-ac84-401a-910b-45d6f83914dd",
+    "name": "Intermediate Shrimp Squat",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://youtu.be/Dpgn6eRtsdw?si=3X0UbU--gF6e974L&t=27a"
+  },
+  {
+    "id": "c3f654b9-43b2-41ed-bdb8-0531303d520d",
+    "name": "Advanced Shrimp Squat",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://youtu.be/xfl7SDj0Gzs?si=BgdVo0orZpTlkC1N&t=102"
+  },
+  {
+    "id": "0bc42641-337f-42ec-85fa-6306256377d6",
+    "name": "Weighted Shrimp Squat",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://youtu.be/xfl7SDj0Gzs?si=BgdVo0orZpTlkC1N&t=102"
+  },
+  {
+    "id": "b264b91a-d91d-4adb-84fa-0b2b243b50d6",
+    "name": "Step-ups",
+    "type": "rep",
+    "equipment": ["box"],
+    "url": "https://www.youtube.com/watch?v=487aR3A7HvM"
+  },
+  {
+    "id": "0b368d1d-a9b0-457d-8899-ae6033fc60d9",
+    "name": "Deep Step-ups",
+    "type": "rep",
+    "equipment": ["box"],
+    "url": "https://imgur.com/Ga6RHLE.gifv"
+  },
+  {
+    "id": "d076822a-3fe1-4753-bafb-c070b84a008c",
+    "name": "Partial ROM Pistol Squats",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=0SN8ZaxOBpA"
+  },
+  {
+    "id": "5ed9064a-bedb-491d-9096-cb36921c62db",
+    "name": "Pistol Squat",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://youtu.be/0SN8ZaxOBpA?t=30s"
+  },
+  {
+    "id": "56a69a2b-b1f1-47b9-ac64-6356241a9d25",
+    "name": "Romanian Deadlift",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=7j-2w4-P14I"
+  },
+  {
+    "id": "772479f0-fc71-4a57-98ac-b31cd1a89c19",
+    "name": "Single Legged Deadlift",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=iDV8r5u6En0"
+  },
+  {
+    "id": "27c6ef4b-8e7c-45ac-b575-a0aa17c2ef41",
+    "name": "Banded Nordic Curl Negatives",
+    "type": "rep",
+    "equipment": ["band"],
+    "url": "https://www.youtube.com/watch?v=HUXS3S2xSX4"
+  },
+  {
+    "id": "89951710-f4ff-4e44-a373-4c8450b6d8e4",
+    "name": "Banded Nordic Curl",
+    "type": "rep",
+    "equipment": ["band"],
+    "url": "https://www.youtube.com/watch?v=HUXS3S2xSX4"
+  },
+  {
+    "id": "841b4078-d471-4cd9-8a38-4775e5814995",
+    "name": "Nordic Curls",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=d8AAPcYxPo8"
+  },
+  {
+    "id": "67d58f46-c998-4777-9b3b-8a7d28133830",
+    "name": "Floor Slide Progressions",
+    "type": "rep",
+    "equipment": ["towel"],
+    "url": "https://www.youtube.com/watch?v=Dlazt593cuA"
+  },
+  {
+    "id": "d5db3373-1300-4d92-af79-d625ff9d4969",
+    "name": "Negative Hamstring Slide",
+    "type": "rep",
+    "equipment": ["towel"],
+    "url": "https://www.youtube.com/watch?v=OY8Jci5KJdM"
+  },
+  {
+    "id": "3f34ac75-09c0-4e41-bed3-1010f4025a32",
+    "name": "Hamstring Slide",
+    "type": "rep",
+    "equipment": ["towel"],
+    "url": "https://www.youtube.com/watch?v=Dlazt593cuA"
+  },
+  {
+    "id": "38b2cc3b-7163-4ee6-8ba8-7ae6a7bcdfb7",
+    "name": "Eccentric Single Leg Sliding Hamstring Slide",
+    "type": "rep",
+    "equipment": ["towel"],
+    "url": "https://www.youtube.com/watch?v=dE5d39sErBU"
+  },
+  {
+    "id": "e2b1f9a4-47f4-4567-8f5a-c2298e72cfab",
+    "name": "Single Leg Sliding Hamstring Slide",
+    "type": "rep",
+    "equipment": ["towel"],
+    "url": "https://www.youtube.com/watch?v=PzAtOaY1-Dk"
+  },
+  {
+    "id": "dff4434f-dffd-461a-a52f-6709edd3b251",
+    "name": "Beginner Harop Curl",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=A2xRx7dGWaE"
+  },
+  {
+    "id": "fe934ed8-31f7-4c1f-8aef-b7031562141d",
+    "name": "Advanced Harop Curl",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=Y7ndeehIOhU"
+  },
+  {
+    "id": "2c0b5509-ac52-433d-986e-2d758f96fa0a",
+    "name": "Glute Ham Raise",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=8w6nkNnE3-M"
+  },
+  {
+    "id": "97a1fdf4-baf6-4370-abe2-4723a7c6cede",
+    "name": "Scapular Pulls",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://youtu.be/FgYoc4O-cio?t=1m21s"
+  },
+  {
+    "id": "9ad1fe5d-f1b4-4004-b6cb-424e459e8d11",
+    "name": "Arch Hangs",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://youtu.be/C995b3KLXS4?t=7s"
+  },
+  {
+    "id": "c3273b5e-02c4-427a-8b73-df29165069ca",
+    "name": "Pull-up Negatives",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://www.youtube.com/watch?v=EkpJkHpJXmM"
+  },
+  {
+    "id": "05d72b5e-b68b-49ac-a575-428c6cb319fa",
+    "name": "Pull-ups",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://www.youtube.com/watch?v=eGo4IYlbE5g"
+  },
+  {
+    "id": "c938da17-8cfa-4541-929b-7191304daf88",
+    "name": "Weighted Pull-ups",
+    "type": "rep",
+    "equipment": ["pull-up-bar", "weights"],
+    "url": "https://www.youtube.com/watch?v=HuuyDNGrCI8"
+  },
+  {
+    "id": "3e310620-b105-4eb2-9313-f281a620949e",
+    "name": "L-sit Pull-ups",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://www.youtube.com/watch?v=qeGS55RHBUU"
+  },
+  {
+    "id": "8544846e-e38c-410d-a754-9d4a09266955",
+    "name": "Arch Body Pull-ups",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://www.youtube.com/watch?v=t8_TO8CBkgg"
+  },
+  {
+    "id": "7e62dcba-7d22-40f5-8650-e3f388658f45",
+    "name": "Type-Writer Pull-up",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://youtu.be/dvd5Fyl-Ves?t=15s"
+  },
+  {
+    "id": "b0af4c2b-aba0-4b30-896a-e92c31e317b1",
+    "name": "Archer Pull-ups",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://youtu.be/vdjWgw98EeI?t=1m52s"
+  },
+  {
+    "id": "f02760b9-094a-4ec4-8604-5cf4d66eb2b4",
+    "name": "Parallel Bar Support Hold",
+    "type": "sec",
+    "equipment": ["parallel-bars"],
+    "url": "https://www.youtube.com/watch?v=IbWE49HdsrE"
+  },
+  {
+    "id": "f221eebb-eb90-4dc9-9aaf-35616d4f427d",
+    "name": "Negative Dips",
+    "type": "rep",
+    "equipment": ["parallel-bars"],
+    "url": "https://www.youtube.com/watch?v=T3Scqw1BbCc"
+  },
+  {
+    "id": "14914a70-33fe-4e5d-8f28-3ace14f5f23e",
+    "name": "Parallel Bar Dips",
+    "type": "rep",
+    "equipment": ["parallel-bars"],
+    "url": "https://www.youtube.com/watch?v=2z8JmcrW-As"
+  },
+  {
+    "id": "1850a236-8c6c-4e90-9f34-d10439239d5a",
+    "name": "Weighted Dips",
+    "type": "rep",
+    "equipment": ["parallel-bars", "weights"],
+    "url": "https://www.youtube.com/watch?v=MhPl9Vf4toc"
+  },
+  {
+    "id": "100d003c-c4f6-45f4-95c3-2b7e6c5e1884",
+    "name": "Ring Dips",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "http://www.youtube.com/watch?v=2Vymm8nH4wM"
+  },
+  {
+    "id": "a45c9210-d4cd-489c-adea-8e26fe24e82d",
+    "name": "Rings RTO Dips",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=WGbtrkzIiOA&t=60s"
+  },
+  {
+    "id": "c53ff42f-8c0a-4d13-8f6c-b8466522b631",
+    "name": "Pike Push-Up",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=XckEEwa1BPI"
+  },
+  {
+    "id": "8105c4fc-d7f6-4360-81cf-96ab704b33ec",
+    "name": "Box Push-Up",
+    "type": "rep",
+    "equipment": ["box"],
+    "url": "https://www.youtube.com/watch?v=ZnsLpLhywgk&t=50s"
+  },
+  {
+    "id": "7aa7d8bd-b504-4b86-90f4-5e837b1a2afd",
+    "name": "Wall Headstand Push-Up Eccentrics",
+    "type": "rep",
+    "equipment": [],
+    "url": "http://www.youtube.com/watch?v=Lj2KZwbr_jo"
+  },
+  {
+    "id": "a4f114fd-3f4c-48d3-9e7b-e8fd7340e4b4",
+    "name": "Wall Headstand Push-Up",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=WxgJS48wf1M"
+  },
+  {
+    "id": "a18776f6-506c-46e4-9654-ec77c19f6040",
+    "name": "Wall Handstand Push-Up Eccentrics",
+    "type": "rep",
+    "equipment": ["parallel-bars"],
+    "url": "https://www.youtube.com/watch?v=2vxkWqpYcCA"
+  },
+  {
+    "id": "3de39a47-6615-43b1-b850-62f2cc472b7a",
+    "name": "Wall Handstand Push-Up",
+    "type": "rep",
+    "equipment": ["parallel-bars"],
+    "url": "https://www.youtube.com/watch?v=r-aiCMOOhNQ"
+  },
+  {
+    "id": "f7ba3129-0c37-4646-92fb-35bbe00d8405",
+    "name": "Freestanding Headstand Push-Up",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=aAErmRDDJKY"
+  },
+  {
+    "id": "47cfea5f-eac3-4a27-b8f7-da158ee2207f",
+    "name": "Freestanding Handstand Push-Up",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=rOOL9vaIeo8&t=338s"
+  },
+  {
+    "id": "c852f177-0b26-4840-8c92-579415e63017",
+    "name": "Vertical Rows",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=wr8ZA-cvH3s"
+  },
+  {
+    "id": "f60aa2e9-9574-4e08-a901-d2bcbe9ce186",
+    "name": "Incline Rows",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=LR2EnFWpVao"
+  },
+  {
+    "id": "2905c4bd-f7ad-4990-b619-4af35f8eab2c",
+    "name": "Horizontal Rows",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=dvkIaarnf0g"
+  },
+  {
+    "id": "0317b18b-4ac1-4aba-b5c1-b58c04cc2aca",
+    "name": "Wide Rows",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=f3yfJ0RStQw"
+  },
+  {
+    "id": "dcac6d20-4bef-4aaf-975d-2f8c80200206",
+    "name": "Weighted Inverted Rows",
+    "type": "rep",
+    "equipment": ["rings", "weights"],
+    "url": "https://www.youtube.com/watch?v=3cYR6pis5zc"
+  },
+  {
+    "id": "28a93f8e-e160-488e-82b5-ece0a76c2d06",
+    "name": "Tuck Front Lever",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://youtu.be/tStwC06qdwM?t=2m50s"
+  },
+  {
+    "id": "65017558-c6e2-42bd-b72c-d877d64157a3",
+    "name": "Tuck Front Lever Pulls",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://www.youtube.com/watch?v=ZWxrvwRKR-s&t=259s"
+  },
+  {
+    "id": "b1771585-58cc-4746-802a-6a35a7b5ac9b",
+    "name": "Archer Rows",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=PGoW1i4K_o0"
+  },
+  {
+    "id": "77809396-30e0-486f-97ca-d5346d3ac554",
+    "name": "One Arm Rows",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=67Lp_DeX3-c"
+  },
+  {
+    "id": "e9dc0d0a-3339-4744-b463-2450a07b1a53",
+    "name": "Vertical Pushup",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=-KVhapnEtuk"
+  },
+  {
+    "id": "0bb01b69-d1cd-49a5-b38b-5b0d16f92e53",
+    "name": "Incline Pushup",
+    "type": "rep",
+    "equipment": ["box"],
+    "url": "https://www.youtube.com/watch?v=NnfAYkBRDPY"
+  },
+  {
+    "id": "8491f401-cb01-4c63-ba66-236474df208a",
+    "name": "Full Pushup",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=IODxDxX7oi4"
+  },
+  {
+    "id": "10550610-cc38-4b27-b774-3c05271c7080",
+    "name": "Diamond Pushup",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=J0DnG1_S92I"
+  },
+  {
+    "id": "c5df498a-20b5-48d0-a897-0315fb1b9c86",
+    "name": "Pseudo Planche Pushups",
+    "type": "rep",
+    "equipment": [],
+    "url": "http://www.youtube.com/watch?v=Cdmg0CfMZeo"
+  },
+  {
+    "id": "00d7d9cb-2d3b-499b-9a43-f83f22417f32",
+    "name": "Rings Pushup",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=vBviFvN3rHw"
+  },
+  {
+    "id": "8b82c548-9c41-40bc-a061-ecf6a64bc1cb",
+    "name": "RTO Pushup",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=MrlyEIpe0LI&t=2m55s"
+  },
+  {
+    "id": "ce40da1d-0df0-4819-8f30-60ba77dc1277",
+    "name": "Plank",
+    "type": "sec",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=kL_NJAkCQBg"
+  },
+  {
+    "id": "e2e38298-3e2c-4236-919a-d562db3a0a36",
+    "name": "Ring Ab Rollouts",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=LBUfnmugKLw"
+  },
+  {
+    "id": "3630b482-3992-4fb9-892b-145767531026",
+    "name": "Kneeling Ab Wheel Rollouts",
+    "type": "rep",
+    "equipment": ["wheel"],
+    "url": "https://www.youtube.com/watch?v=uYBOBBv9GzY"
+  },
+  {
+    "id": "58bc2c9f-aa1c-4b73-8646-d122cdb64f2a",
+    "name": "Standing Ab Wheel Rollouts",
+    "type": "rep",
+    "equipment": ["wheel"],
+    "url": "https://www.youtube.com/watch?v=L_2k97JeyzY"
+  },
+  {
+    "id": "613a37c9-dd2d-4301-a972-fc937947c103",
+    "name": "Tucked Hanging Leg Raises",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://www.youtube.com/watch?v=Gw3RyyARhBQ"
+  },
+  {
+    "id": "5d797cfe-72ba-4de3-b1ac-49492237953e",
+    "name": "Pike Hanging Leg Raises Negative",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://www.youtube.com/watch?v=_Yds3pKxOLU"
+  },
+  {
+    "id": "d9d57208-ca1a-478a-a443-2643e958f832",
+    "name": "Straight Hanging Leg Raises",
+    "type": "rep",
+    "equipment": ["pull-up-bar"],
+    "url": "https://www.youtube.com/watch?v=QyVq5oUBpss"
+  },
+  {
+    "id": "fab7e508-7b2b-4548-9c0c-d65ddedede4e",
+    "name": "Pike Compressions",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=G1_EoDs-G7E&t=251s"
+  },
+  {
+    "id": "b3b197a1-65dd-4fc4-bb3b-8bc4a132641b",
+    "name": "Banded Pallof Press",
+    "type": "rep",
+    "equipment": ["band"],
+    "url": "https://www.youtube.com/watch?v=AH_QZLm_0-s"
+  },
+  {
+    "id": "5a5d7911-fdb3-422e-8401-e855bee5fc77",
+    "name": "Assisted Knee Copenhagen Plank",
+    "type": "sec",
+    "equipment": ["box"],
+    "url": "https://youtu.be/1NNqUQvMYGc?si=8tkjTMPVpCosek-P&t=13"
+  },
+  {
+    "id": "7e93efc7-e058-4293-874d-65a470576fb1",
+    "name": "Knee Copenhagen Plank",
+    "type": "sec",
+    "equipment": ["box"],
+    "url": "https://youtu.be/1NNqUQvMYGc?si=8tkjTMPVpCosek-P&t=11"
+  },
+  {
+    "id": "b7ded961-07ae-494f-806e-7801bec925a7",
+    "name": "Assisted Copenhagen Plank",
+    "type": "sec",
+    "equipment": ["box"],
+    "url": "https://youtu.be/1NNqUQvMYGc?si=8tkjTMPVpCosek-P&t=7"
+  },
+  {
+    "id": "07bd9dc2-4054-49fc-a723-a78f60932e4e",
+    "name": "Copenhagen Plank",
+    "type": "sec",
+    "equipment": ["box"],
+    "url": "https://youtu.be/1NNqUQvMYGc?si=8tkjTMPVpCosek-P&t=5"
+  },
+  {
+    "id": "88d8a198-a2d9-41da-8992-3de24efe28c4",
+    "name": "Copenhagen Plank with Movement",
+    "type": "sec",
+    "equipment": ["box"],
+    "url": "https://www.youtube.com/watch?v=1NNqUQvMYGc"
+  },
+  {
+    "id": "18c9d7ca-5982-43e4-9d42-dc4f5ce1ce4f",
+    "name": "Ring Pallof Press",
+    "type": "rep",
+    "equipment": ["rings"],
+    "url": "https://www.youtube.com/watch?v=YSN3rqhYlKU"
+  },
+  {
+    "id": "b6519241-d838-48f6-8769-d27092736054",
+    "name": "Reverse Hyperextension",
+    "type": "rep",
+    "equipment": ["box"],
+    "url": "https://www.youtube.com/watch?v=ZeRsNzFcQLQ"
+  },
+  {
+    "id": "b6cf0f07-b8c5-4e53-8192-5078842b619f",
+    "name": "Arch Raises",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=OgyqYuh41Mw&t=220s"
+  },
+  {
+    "id": "7480a8cc-f285-4d33-997b-8a5a7f4f8b52",
+    "name": "Arch Body Hold",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=OgyqYuh41Mw"
+  },
+  {
+    "id": "8ffed1f9-7711-434d-870b-477eaf93be5f",
+    "name": "Arch Body Rocks",
+    "type": "rep",
+    "equipment": [],
+    "url": "https://www.youtube.com/watch?v=FazlcjNXMwA"
+  },
+  {
+    "id": "e246215e-4ef8-49de-b3e7-d2a27719ec1a",
+    "name": "Hyper Extension",
+    "type": "rep",
+    "equipment": ["nordic-strap"],
+    "url": "https://www.youtube.com/watch?v=ph3pddpKzzw"
+  }
 ]
