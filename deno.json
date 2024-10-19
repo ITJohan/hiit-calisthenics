@@ -1,11 +1,12 @@
 {
   "compilerOptions": {
-    "module": "ESNext",
-    "target": "ESNext",
     "checkJs": true,
     "lib": ["deno.ns", "dom"]
   },
   "tasks": {
-    "dev": "deno run --watch main.ts"
+    "dev": "deno run -NR --watch-hmr main.ts"
+  },
+  "imports": {
+    "@std/http": "jsr:@std/http@^1.0.8"
   }
 }

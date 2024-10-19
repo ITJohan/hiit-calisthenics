@@ -1,5 +1,5 @@
 import { getExercises } from "./db.js";
-import { isCategory } from "./public/utils/type-guards.js";
+import { isCategory } from "./utils/type-guards.js";
 
 // UI inspo: https://www.youtube.com/watch?v=KrJZPrCqhWU&list=WL&index=13
 
@@ -21,9 +21,6 @@ customElements.define(
       if (!isCategory(category)) throw new Error("category is of wrong type");
 
       this.setAttribute("category", category);
-    }
-
-    connectedCallback() {
     }
 
     static observedAttributes = ["category"];
@@ -55,7 +52,7 @@ customElements.define(
           )
           .join("")
       }
-    </div>
+        </div>
   `;
     }
   },

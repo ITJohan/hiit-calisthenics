@@ -40,9 +40,16 @@ export function getExercise(/** @type {string} */ id) {
   return exercises.find((exercise) => exercise.id === id);
 }
 
+export function getLogsForExercise(/** @type {string} */ exerciseId) {
+  /** @type {number[]} */
+  const logs = JSON.parse(localStorage.getItem(exerciseId));
+
+  return logs;
+}
+
 export function addRepsToExercise(
-	/** @type {string} */ exerciseId,
-	/** @type {number} */ reps,
+  /** @type {string} */ exerciseId,
+  /** @type {number} */ reps,
 ) {
   const repsForExercise = JSON.parse(localStorage.getItem(exerciseId));
 
@@ -52,4 +59,44 @@ export function addRepsToExercise(
   }
 
   localStorage.setItem(exerciseId, JSON.stringify([...repsForExercise, reps]));
+}
+
+export function getNextProgressionSet(
+  /** @type {string} */ progressionId,
+  /** @type {string} */ exerciseId,
+) {
+  const progression = getProgression(progressionId);
+  const progressionSet = progression.sets.find((set) =>
+    set.exerciseId === exerciseId
+  );
+  const workout = getWorkout("d32b6d9c-8e2a-4b23-a261-19f17286e8f3");
+  const noOfSets =
+    workout.progressions.filter((progression) => progression === progressionId)
+      .length;
+
+  const logs = getLogsForExercise(exerciseId);
+
+  const previousLogs = logs.slice(-3);
+
+  if (previousLogs.every((log) => log === progressionSet.max)) {
+    const currentLevel = progression.sets.indexOf(progressionSet);
+
+    if (currentLevel === progression.sets.length - 1) {
+      return progressionSet;
+    }
+
+    return progression.sets[currentLevel + 1];
+  }
+
+  if (previousLogs.every((log) => log < progressionSet.min)) {
+    const currentLevel = progression.sets.indexOf(progressionSet);
+
+    if (currentLevel === 0) {
+      return progressionSet;
+    }
+
+    return progression.sets[currentLevel - 1];
+  }
+
+  return progressionSet;
 }
