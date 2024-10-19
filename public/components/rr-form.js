@@ -1,4 +1,4 @@
-import { addRepsToExercise } from "./db.js";
+import { addRepsToExercise } from "../db.js";
 
 customElements.define(
   "rr-form",

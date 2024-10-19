@@ -1,5 +1,5 @@
-import { getExercises } from "./db.js";
-import { isCategory } from "./utils/type-guards.js";
+import { getExercises } from "../db.js";
+import { isCategory } from "../utils/type-guards.js";
 
 // UI inspo: https://www.youtube.com/watch?v=KrJZPrCqhWU&list=WL&index=13
 
