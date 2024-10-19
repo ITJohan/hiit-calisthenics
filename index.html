@@ -1,223 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./styles.css" />
+    <script src="rr-form.js" type="module"></script>
+    <script src="rr-set.js" type="module"></script>
+    <script src="rr-rest.js" type="module"></script>
+    <title>Recommended Routine App</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="./styles.css" />
-  <script src="rr-form.js" type="module"></script>
-  <script src="rr-set.js" type="module"></script>
-  <script src="rr-rest.js" type="module"></script>
-  <title>Recommended Routine App</title>
-</head>
+  <body>
+    <rr-form>
+      <form>
+        <rr-landing>
+          <h1>Recommended Routine</h1>
+          <p>Settings...</p>
+          <p>V Start workout</p>
+        </rr-landing>
 
-<body>
-  <rr-form>
-    <form>
-      <rr-landing>
-        <h1>Recommended Routine</h1>
-        <p>Settings...</p>
-        <p>V Start workout</p>
-      </rr-landing>
+        <!-- Warmup -->
+        <rr-set category="shoulder-warmup">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-set category="spine-warmup">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-set category="wrist-warmup">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-set category="core-warmup">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-set category="back-warmup">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-set category="hold-warmup">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-set category="squat-warmup">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-set category="hinge-warmup">
+          <p>Loading...</p>
+        </rr-set>
 
-      <!-- Warmup -->
-      <rr-set category="shoulder-warmup">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-set category="spine-warmup">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-set category="wrist-warmup">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-set category="core-warmup">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-set category="back-warmup">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-set category="hold-warmup">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-set category="squat-warmup">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-set category="hinge-warmup">
-        <p>Loading...</p>
-      </rr-set>
+        <!-- Pull-up/squat pair -->
+        <rr-set category="pull-up">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="90">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="squat">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="10" active>
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="pull-up">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="90">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="squat">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="90">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="pull-up">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="90">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="squat">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="90">
+          <p>Loading...</p>
+        </rr-rest>
 
-      <!-- Pull-up/squat pair -->
-      <rr-set category="pull-up">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="90">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="squat">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="90">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="pull-up">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="90">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="squat">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="90">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="pull-up">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="90">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="squat">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="90">
-        <p>Loading...</p>
-      </rr-rest>
+        <!-- Dip/hinge pair -->
+        <rr-set category="dip">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="90">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="hinge">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="90">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="dip">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="90">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="hinge">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="90">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="dip">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="90">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="hinge">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="90">
+          <p>Loading...</p>
+        </rr-rest>
 
-      <!-- Dip/hinge pair -->
-      <rr-set category="dip">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="90">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="hinge">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="90">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="dip">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="90">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="hinge">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="90">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="dip">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="90">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="hinge">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="90">
-        <p>Loading...</p>
-      </rr-rest>
+        <!-- Row/push-up pair -->
+        <rr-set category="row">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="90">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="push-up">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="90">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="row">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="90">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="push-up">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="90">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="row">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="90">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="push-up">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="90">
+          <p>Loading...</p>
+        </rr-rest>
 
-      <!-- Row/push-up pair -->
-      <rr-set category="row">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="90">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="push-up">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="90">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="row">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="90">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="push-up">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="90">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="row">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="90">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="push-up">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="90">
-        <p>Loading...</p>
-      </rr-rest>
-
-      <!-- Core triplet -->
-      <rr-set category="anti-extension">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="60">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="anti-rotation">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="60">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="extension">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="60">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="anti-extension">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="60">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="anti-rotation">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="60">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="extension">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="60">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="anti-extension">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="60">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="anti-rotation">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-rest time="60">
-        <p>Loading...</p>
-      </rr-rest>
-      <rr-set category="extension">
-        <p>Loading...</p>
-      </rr-set>
-      <rr-finished>
-        <h2>Finished! Good job💪</h2>
-        <button>Submit</button>
-      </rr-finished>
-    </form>
-  </rr-form>
-</body>
-
+        <!-- Core triplet -->
+        <rr-set category="anti-extension">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="60">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="anti-rotation">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="60">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="extension">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="60">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="anti-extension">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="60">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="anti-rotation">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="60">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="extension">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="60">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="anti-extension">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="60">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="anti-rotation">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-rest time="60">
+          <p>Loading...</p>
+        </rr-rest>
+        <rr-set category="extension">
+          <p>Loading...</p>
+        </rr-set>
+        <rr-finished>
+          <h2>Finished! Good job💪</h2>
+          <button>Submit</button>
+        </rr-finished>
+      </form>
+    </rr-form>
+  </body>
 </html>
