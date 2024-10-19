@@ -3,7 +3,7 @@
     "module": "ESNext",
     "target": "ESNext",
     "checkJs": true,
-    "lib": ["dom"]
+    "lib": ["deno.ns", "dom"]
   },
   "tasks": {
     "dev": "deno run --watch main.ts"
