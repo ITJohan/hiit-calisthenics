@@ -44,7 +44,7 @@ customElements.define(
 
       this.innerHTML = `
         <h2><a href=${exercise.url} target="_blank">${exercise.name}</a></h2>
-        <img src="/assets/placeholder.jpg" width="600" />
+        <img src="/assets/placeholder.jpg" width="200" />
         <div>
           ${
         reps
