@@ -37,13 +37,46 @@ export function getExercises() {
 }
 
 export function getExercise(/** @type {string} */ id) {
-  return exercises.find((exercise) => exercise.id === id);
+  const exercise = exercises.find((exercise) => exercise.id === id);
+
+  if (exercise === undefined) throw new Error("Could not find exercise");
+
+  return exercise;
+}
+
+/** @returns {number[][]} */
+export function getLogs(/** @type {string} */ exerciseId) {
+  return JSON.parse(localStorage.getItem(exerciseId) ?? "[]");
 }
 
 export function addRepsToExercise(
   /** @type {string} */ exerciseId,
   /** @type {number[]} */ sets,
 ) {
-  const logs = JSON.parse(localStorage.getItem(exerciseId) ?? "[]");
+  const logs = getLogs(exerciseId);
   localStorage.setItem(exerciseId, JSON.stringify([...logs, sets]));
+}
+
+export function getNextProgressionSet(/** @type {Category} */ category) {
+  const progressions = getProgressionsFromCategory(category);
+  // TODO: get chosen progression from category
+  const progression = progressions[0];
+
+  const uncompletedProgressionSet = progression.progressionSets.find(
+    (progressionSet) => {
+      const logs = getLogs(progressionSet.exerciseId);
+      const log = logs.findLast((log) => log.length === progression.noOfSets);
+
+      if (log === undefined) return true; // Exercise hasn't been logged yet so start with this one
+      if (log.every((set) => set === progressionSet.max)) return false; // Completed, so continue to check next
+
+      return true;
+    },
+  );
+
+  // TODO: handle completed last exercise
+
+  return uncompletedProgressionSet === undefined
+    ? progression.progressionSets[0]
+    : uncompletedProgressionSet;
 }

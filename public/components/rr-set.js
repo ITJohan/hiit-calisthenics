@@ -1,4 +1,4 @@
-import { getExercises } from "../db.js";
+import { getExercise, getNextProgressionSet } from "../db.js";
 import { isCategory } from "../utils/type-guards.js";
 
 // UI inspo: https://www.youtube.com/watch?v=KrJZPrCqhWU&list=WL&index=13
@@ -30,10 +30,12 @@ customElements.define(
     }
 
     update() {
-      const exercises = getExercises();
-      const exercise = exercises[0];
-      const reps = [6, 7, 8, 9, 10];
-
+      const progressionSet = getNextProgressionSet(this.category);
+      const exercise = getExercise(progressionSet.exerciseId);
+      const reps = new Array(progressionSet.max - progressionSet.min).map((
+        _,
+        index,
+      ) => progressionSet.min + index);
       const id = exercise.id + crypto.randomUUID().substring(0, 5);
 
       this.innerHTML = `
