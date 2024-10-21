@@ -21,13 +21,6 @@
   background-color: var(--color-black);
 }
 
-html,
-body {
-  display: flex;
-  flex-direction: column;
-  scroll-snap-type: y mandatory;
-}
-
 button {
   background-color: var(--color-green);
   color: var(--color-white);
@@ -67,16 +60,24 @@ select {
   background-size: 0.65rem auto;
 }
 
+rr-form form {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  width: 100%;
+}
+
 rr-landing,
 rr-finished,
 rr-rest {
   display: flex;
+  flex: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100lvh;
   padding: var(--spacing-md);
-  scroll-snap-align: start;
+  scroll-snap-align: center;
+  min-width: 100%;
 
   & > nav {
     display: flex;
@@ -86,12 +87,13 @@ rr-rest {
 
 rr-set {
   display: flex;
+  flex: none;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 100lvh;
   padding: var(--spacing-md);
-  scroll-snap-align: start;
+  scroll-snap-align: center;
+  min-width: 100%;
 
   & > div {
     display: flex;
