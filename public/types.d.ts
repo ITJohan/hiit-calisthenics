@@ -27,7 +27,8 @@ type ProgressionSet = {
 type Progression = {
   id: string;
   category: Category;
-  sets: ProgressionSet[];
+  noOfSets: number;
+  progressionSets: ProgressionSet[];
 };
 
 type Workout = {
