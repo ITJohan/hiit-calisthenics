@@ -32,11 +32,15 @@ customElements.define(
     update() {
       const progressionSet = getNextProgressionSet(this.category);
       const exercise = getExercise(progressionSet.exerciseId);
-      const reps = new Array(progressionSet.max - progressionSet.min).map((
+      const reps = Array(progressionSet.max - progressionSet.min + 1).fill(
+        undefined,
+      ).map((
         _,
         index,
       ) => progressionSet.min + index);
       const id = exercise.id + crypto.randomUUID().substring(0, 5);
+
+      // TODO: scroll to next rr-rest and set active attribute on input change
 
       this.innerHTML = `
         <h2><a href=${exercise.url} target="_blank">${exercise.name}</a></h2>
