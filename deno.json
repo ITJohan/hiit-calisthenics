@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "checkJs": true,
-    "lib": ["deno.ns", "dom"]
+    "lib": ["deno.ns", "dom", "dom.iterable"]
   },
   "tasks": {
     "dev": "deno run -NR --watch-hmr main.ts"
