@@ -12,10 +12,20 @@ customElements.define(
         e.preventDefault();
         const formData = new FormData(form);
 
-        for (const [key, value] of formData) {
+        const workout = formData.entries().reduce((workout, [key, value]) => {
           const exerciseId = key.substring(0, 32);
-          addRepsToExercise(exerciseId, Number(value));
-        }
+
+          return {
+            ...workout,
+            [exerciseId]: workout[exerciseId]
+              ? [...workout[exerciseId], Number(value)]
+              : [Number(value)],
+          };
+        }, /** @type {{[key: string]: number[]}} */ ({}));
+
+        Object.entries(workout).forEach((
+          [exerciseId, sets],
+        ) => addRepsToExercise(exerciseId, sets));
       });
     }
   },

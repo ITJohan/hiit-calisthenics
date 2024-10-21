@@ -42,9 +42,8 @@ export function getExercise(/** @type {string} */ id) {
 
 export function addRepsToExercise(
   /** @type {string} */ exerciseId,
-  /** @type {number} */ reps,
+  /** @type {number[]} */ sets,
 ) {
-  const logs = localStorage.getItem(exerciseId) ?? "[]";
-  const repsForExercise = JSON.parse(logs);
-  localStorage.setItem(exerciseId, JSON.stringify([...repsForExercise, reps]));
+  const logs = JSON.parse(localStorage.getItem(exerciseId) ?? "[]");
+  localStorage.setItem(exerciseId, JSON.stringify([...logs, sets]));
 }
