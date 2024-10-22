@@ -68,7 +68,6 @@ rr-form form {
   height: 100dvh;
 }
 
-rr-settings,
 rr-landing,
 rr-finished,
 rr-rest {
@@ -79,7 +78,7 @@ rr-rest {
   align-items: center;
   padding: var(--spacing-md);
   scroll-snap-align: center;
-  min-width: 50%;
+  width: 100%;
 
   & > nav {
     display: flex;
@@ -95,7 +94,7 @@ rr-set {
   align-items: center;
   padding: var(--spacing-md);
   scroll-snap-align: center;
-  min-width: 50%;
+  width: 100%;
 
   & > div {
     display: flex;
