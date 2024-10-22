@@ -68,6 +68,7 @@ rr-form form {
   height: 100dvh;
 }
 
+rr-settings,
 rr-landing,
 rr-finished,
 rr-rest {
