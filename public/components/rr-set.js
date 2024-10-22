@@ -42,9 +42,11 @@ customElements.define(
 
       // TODO: scroll to next rr-rest and set active attribute on input change
 
+      // TODO: replace radio inputs with range input, from 0 to max
+
       this.innerHTML = `
         <h2><a href=${exercise.url} target="_blank">${exercise.name}</a></h2>
-        <img src="/assets/placeholder.jpg" width="50" />
+        <img src="./assets/placeholder.jpg" width="50" />
         <div>
           ${
         reps
