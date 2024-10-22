@@ -19,7 +19,6 @@ type Exercise = {
 
 type ProgressionSet = {
   exerciseId: string;
-  min: number;
   max: number;
   rest: number;
 };

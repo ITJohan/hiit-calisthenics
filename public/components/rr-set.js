@@ -32,12 +32,9 @@ customElements.define(
     update() {
       const progressionSet = getNextProgressionSet(this.category);
       const exercise = getExercise(progressionSet.exerciseId);
-      const reps = Array(progressionSet.max - progressionSet.min + 1).fill(
+      const reps = Array(progressionSet.max + 1).fill(
         undefined,
-      ).map((
-        _,
-        index,
-      ) => progressionSet.min + index);
+      ).map((_, index,) => index);
       const id = exercise.id + crypto.randomUUID().substring(0, 5);
 
       // TODO: scroll to next rr-rest and set active attribute on input change
@@ -48,18 +45,11 @@ customElements.define(
         <h2><a href=${exercise.url} target="_blank">${exercise.name}</a></h2>
         <img src="./assets/placeholder.jpg" width="50" />
         <div>
-          ${
-        reps
-          .map(
-            (rep) => `
-              <label>
-                <input type="radio" name="${id}" value="${rep}" required>
-                ${rep}
-              </label>
-          `,
-          )
-          .join("")
-      }
+          <label for="${id}-input">Reps:</label>
+          <input id="${id}-input" type="range" name="${id}" max="${progressionSet.max}" list="reps">
+          <datalist id="reps">
+            ${reps.map(rep => `<option value="${rep}" label="${rep}"></option>`).join("")}
+          </datalist>
         </div>
   `;
     }

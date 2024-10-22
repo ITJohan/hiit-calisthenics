@@ -6,7 +6,6 @@
     "progressionSets": [
       {
         "exerciseId": "50eaa55c-5edf-4806-96d6-fcfdcba4df29",
-        "min": 5,
         "max": 10,
         "rest": 90
       }
@@ -19,7 +18,6 @@
     "progressionSets": [
       {
         "exerciseId": "0990fe2e-1081-4a18-8cf8-5857447c7851",
-        "min": 5,
         "max": 10,
         "rest": 90
       }
@@ -32,7 +30,6 @@
     "progressionSets": [
       {
         "exerciseId": "56940182-a40e-439c-82c1-888031c6b755",
-        "min": 10,
         "max": 10,
         "rest": 90
       }
@@ -45,7 +42,6 @@
     "progressionSets": [
       {
         "exerciseId": "6e5e46dc-a27b-40a0-8b52-80be03df5358",
-        "min": 30,
         "max": 30,
         "rest": 90
       }
@@ -58,7 +54,6 @@
     "progressionSets": [
       {
         "exerciseId": "9ad1fe5d-f1b4-4004-b6cb-424e459e8d11",
-        "min": 10,
         "max": 10,
         "rest": 90
       }
@@ -71,19 +66,16 @@
     "progressionSets": [
       {
         "exerciseId": "f3c10e5c-5f61-4aa1-8143-4965a5a6e7e5",
-        "min": 30,
         "max": 30,
         "rest": 90
       },
       {
         "exerciseId": "e8ef478b-73bd-4984-8429-1a797dcd4a1e",
-        "min": 30,
         "max": 30,
         "rest": 90
       },
       {
         "exerciseId": "5d39eb5b-345e-4a9c-bb2c-e8b70c4950cb",
-        "min": 30,
         "max": 30,
         "rest": 90
       }
@@ -96,19 +88,16 @@
     "progressionSets": [
       {
         "exerciseId": "7cb26bfa-ac1f-4b23-b4b4-9c8721578a15",
-        "min": 10,
         "max": 10,
         "rest": 90
       },
       {
         "exerciseId": "ac2c5f97-3be6-4f2b-bb24-f5ab3f182083",
-        "min": 10,
         "max": 10,
         "rest": 90
       },
       {
         "exerciseId": "4c0aad30-cbc1-4526-866a-250ba46b80e4",
-        "min": 10,
         "max": 10,
         "rest": 90
       }
@@ -121,19 +110,16 @@
     "progressionSets": [
       {
         "exerciseId": "56a69a2b-b1f1-47b9-ac64-6356241a9d25",
-        "min": 10,
         "max": 10,
         "rest": 90
       },
       {
         "exerciseId": "772479f0-fc71-4a57-98ac-b31cd1a89c19",
-        "min": 10,
         "max": 10,
         "rest": 90
       },
       {
         "exerciseId": "27c6ef4b-8e7c-45ac-b575-a0aa17c2ef41",
-        "min": 10,
         "max": 10,
         "rest": 90
       }
@@ -146,31 +132,26 @@
     "progressionSets": [
       {
         "exerciseId": "97a1fdf4-baf6-4370-abe2-4723a7c6cede",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "9ad1fe5d-f1b4-4004-b6cb-424e459e8d11",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "c3273b5e-02c4-427a-8b73-df29165069ca",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "05d72b5e-b68b-49ac-a575-428c6cb319fa",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "c938da17-8cfa-4541-929b-7191304daf88",
-        "min": 5,
         "max": 8,
         "rest": 90
       }
@@ -183,31 +164,26 @@
     "progressionSets": [
       {
         "exerciseId": "97a1fdf4-baf6-4370-abe2-4723a7c6cede",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "9ad1fe5d-f1b4-4004-b6cb-424e459e8d11",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "c3273b5e-02c4-427a-8b73-df29165069ca",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "05d72b5e-b68b-49ac-a575-428c6cb319fa",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "3e310620-b105-4eb2-9313-f281a620949e",
-        "min": 5,
         "max": 8,
         "rest": 90
       }
@@ -220,31 +196,26 @@
     "progressionSets": [
       {
         "exerciseId": "97a1fdf4-baf6-4370-abe2-4723a7c6cede",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "9ad1fe5d-f1b4-4004-b6cb-424e459e8d11",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "c3273b5e-02c4-427a-8b73-df29165069ca",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "05d72b5e-b68b-49ac-a575-428c6cb319fa",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "8544846e-e38c-410d-a754-9d4a09266955",
-        "min": 5,
         "max": 8,
         "rest": 90
       }
@@ -257,37 +228,31 @@
     "progressionSets": [
       {
         "exerciseId": "97a1fdf4-baf6-4370-abe2-4723a7c6cede",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "9ad1fe5d-f1b4-4004-b6cb-424e459e8d11",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "c3273b5e-02c4-427a-8b73-df29165069ca",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "05d72b5e-b68b-49ac-a575-428c6cb319fa",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "7e62dcba-7d22-40f5-8650-e3f388658f45",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "b0af4c2b-aba0-4b30-896a-e92c31e317b1",
-        "min": 5,
         "max": 8,
         "rest": 90
       }
@@ -300,55 +265,46 @@
     "progressionSets": [
       {
         "exerciseId": "7cb26bfa-ac1f-4b23-b4b4-9c8721578a15",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "ac2c5f97-3be6-4f2b-bb24-f5ab3f182083",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "4c0aad30-cbc1-4526-866a-250ba46b80e4",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "7d7f5b67-1af8-4291-8555-ef426a5ce39b",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "a50398ab-8e29-49fb-96e9-98d325afca22",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "27129057-ac84-401a-910b-45d6f83914dd",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "c3f654b9-43b2-41ed-bdb8-0531303d520d",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "c3f654b9-43b2-41ed-bdb8-0531303d520d",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "0bc42641-337f-42ec-85fa-6306256377d6",
-        "min": 5,
         "max": 8,
         "rest": 90
       }
@@ -361,37 +317,31 @@
     "progressionSets": [
       {
         "exerciseId": "7cb26bfa-ac1f-4b23-b4b4-9c8721578a15",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "ac2c5f97-3be6-4f2b-bb24-f5ab3f182083",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "4c0aad30-cbc1-4526-866a-250ba46b80e4",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "7d7f5b67-1af8-4291-8555-ef426a5ce39b",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "b264b91a-d91d-4adb-84fa-0b2b243b50d6",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "0b368d1d-a9b0-457d-8899-ae6033fc60d9",
-        "min": 5,
         "max": 8,
         "rest": 90
       }
@@ -404,37 +354,31 @@
     "progressionSets": [
       {
         "exerciseId": "7cb26bfa-ac1f-4b23-b4b4-9c8721578a15",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "ac2c5f97-3be6-4f2b-bb24-f5ab3f182083",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "4c0aad30-cbc1-4526-866a-250ba46b80e4",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "7d7f5b67-1af8-4291-8555-ef426a5ce39b",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "d076822a-3fe1-4753-bafb-c070b84a008c",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "5ed9064a-bedb-491d-9096-cb36921c62db",
-        "min": 5,
         "max": 8,
         "rest": 90
       }
@@ -447,25 +391,21 @@
     "progressionSets": [
       {
         "exerciseId": "f02760b9-094a-4ec4-8604-5cf4d66eb2b4",
-        "min": 60,
         "max": 60,
         "rest": 90
       },
       {
         "exerciseId": "f221eebb-eb90-4dc9-9aaf-35616d4f427d",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "14914a70-33fe-4e5d-8f28-3ace14f5f23e",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "1850a236-8c6c-4e90-9f34-d10439239d5a",
-        "min": 5,
         "max": 8,
         "rest": 90
       }
@@ -478,31 +418,26 @@
     "progressionSets": [
       {
         "exerciseId": "f02760b9-094a-4ec4-8604-5cf4d66eb2b4",
-        "min": 60,
         "max": 60,
         "rest": 90
       },
       {
         "exerciseId": "f221eebb-eb90-4dc9-9aaf-35616d4f427d",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "14914a70-33fe-4e5d-8f28-3ace14f5f23e",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "100d003c-c4f6-45f4-95c3-2b7e6c5e1884",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "a45c9210-d4cd-489c-adea-8e26fe24e82d",
-        "min": 5,
         "max": 8,
         "rest": 90
       }
@@ -515,49 +450,41 @@
     "progressionSets": [
       {
         "exerciseId": "c53ff42f-8c0a-4d13-8f6c-b8466522b631",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "8105c4fc-d7f6-4360-81cf-96ab704b33ec",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "7aa7d8bd-b504-4b86-90f4-5e837b1a2afd",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "a4f114fd-3f4c-48d3-9e7b-e8fd7340e4b4",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "a18776f6-506c-46e4-9654-ec77c19f6040",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "3de39a47-6615-43b1-b850-62f2cc472b7a",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "f7ba3129-0c37-4646-92fb-35bbe00d8405",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "47cfea5f-eac3-4a27-b8f7-da158ee2207f",
-        "min": 5,
         "max": 8,
         "rest": 90
       }
@@ -570,31 +497,26 @@
     "progressionSets": [
       {
         "exerciseId": "56a69a2b-b1f1-47b9-ac64-6356241a9d25",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "772479f0-fc71-4a57-98ac-b31cd1a89c19",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "27c6ef4b-8e7c-45ac-b575-a0aa17c2ef41",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "89951710-f4ff-4e44-a373-4c8450b6d8e4",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "841b4078-d471-4cd9-8a38-4775e5814995",
-        "min": 5,
         "max": 8,
         "rest": 90
       }
@@ -607,43 +529,36 @@
     "progressionSets": [
       {
         "exerciseId": "56a69a2b-b1f1-47b9-ac64-6356241a9d25",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "772479f0-fc71-4a57-98ac-b31cd1a89c19",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "67d58f46-c998-4777-9b3b-8a7d28133830",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "d5db3373-1300-4d92-af79-d625ff9d4969",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "3f34ac75-09c0-4e41-bed3-1010f4025a32",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "38b2cc3b-7163-4ee6-8ba8-7ae6a7bcdfb7",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "e2b1f9a4-47f4-4567-8f5a-c2298e72cfab",
-        "min": 5,
         "max": 8,
         "rest": 90
       }
@@ -656,25 +571,21 @@
     "progressionSets": [
       {
         "exerciseId": "56a69a2b-b1f1-47b9-ac64-6356241a9d25",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "772479f0-fc71-4a57-98ac-b31cd1a89c19",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "dff4434f-dffd-461a-a52f-6709edd3b251",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "fe934ed8-31f7-4c1f-8aef-b7031562141d",
-        "min": 5,
         "max": 8,
         "rest": 90
       }
@@ -687,19 +598,16 @@
     "progressionSets": [
       {
         "exerciseId": "56a69a2b-b1f1-47b9-ac64-6356241a9d25",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "772479f0-fc71-4a57-98ac-b31cd1a89c19",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "2c0b5509-ac52-433d-986e-2d758f96fa0a",
-        "min": 5,
         "max": 8,
         "rest": 90
       }
@@ -712,31 +620,26 @@
     "progressionSets": [
       {
         "exerciseId": "c852f177-0b26-4840-8c92-579415e63017",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "f60aa2e9-9574-4e08-a901-d2bcbe9ce186",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "2905c4bd-f7ad-4990-b619-4af35f8eab2c",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "0317b18b-4ac1-4aba-b5c1-b58c04cc2aca",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "dcac6d20-4bef-4aaf-975d-2f8c80200206",
-        "min": 5,
         "max": 8,
         "rest": 90
       }
@@ -749,37 +652,31 @@
     "progressionSets": [
       {
         "exerciseId": "c852f177-0b26-4840-8c92-579415e63017",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "f60aa2e9-9574-4e08-a901-d2bcbe9ce186",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "2905c4bd-f7ad-4990-b619-4af35f8eab2c",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "0317b18b-4ac1-4aba-b5c1-b58c04cc2aca",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "28a93f8e-e160-488e-82b5-ece0a76c2d06",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "65017558-c6e2-42bd-b72c-d877d64157a3",
-        "min": 5,
         "max": 8,
         "rest": 90
       }
@@ -792,37 +689,31 @@
     "progressionSets": [
       {
         "exerciseId": "c852f177-0b26-4840-8c92-579415e63017",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "f60aa2e9-9574-4e08-a901-d2bcbe9ce186",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "2905c4bd-f7ad-4990-b619-4af35f8eab2c",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "0317b18b-4ac1-4aba-b5c1-b58c04cc2aca",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "b1771585-58cc-4746-802a-6a35a7b5ac9b",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "77809396-30e0-486f-97ca-d5346d3ac554",
-        "min": 5,
         "max": 8,
         "rest": 90
       }
@@ -835,31 +726,26 @@
     "progressionSets": [
       {
         "exerciseId": "e9dc0d0a-3339-4744-b463-2450a07b1a53",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "0bb01b69-d1cd-49a5-b38b-5b0d16f92e53",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "8491f401-cb01-4c63-ba66-236474df208a",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "10550610-cc38-4b27-b774-3c05271c7080",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "c5df498a-20b5-48d0-a897-0315fb1b9c86",
-        "min": 5,
         "max": 8,
         "rest": 90
       }
@@ -872,37 +758,31 @@
     "progressionSets": [
       {
         "exerciseId": "e9dc0d0a-3339-4744-b463-2450a07b1a53",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "0bb01b69-d1cd-49a5-b38b-5b0d16f92e53",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "8491f401-cb01-4c63-ba66-236474df208a",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "10550610-cc38-4b27-b774-3c05271c7080",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "00d7d9cb-2d3b-499b-9a43-f83f22417f32",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "8b82c548-9c41-40bc-a061-ecf6a64bc1cb",
-        "min": 5,
         "max": 8,
         "rest": 90
       }
@@ -915,31 +795,26 @@
     "progressionSets": [
       {
         "exerciseId": "e9dc0d0a-3339-4744-b463-2450a07b1a53",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "0bb01b69-d1cd-49a5-b38b-5b0d16f92e53",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "8491f401-cb01-4c63-ba66-236474df208a",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "10550610-cc38-4b27-b774-3c05271c7080",
-        "min": 5,
         "max": 8,
         "rest": 90
       },
       {
         "exerciseId": "f7ba3129-0c37-4646-92fb-35bbe00d8405",
-        "min": 5,
         "max": 8,
         "rest": 90
       }
@@ -952,13 +827,11 @@
     "progressionSets": [
       {
         "exerciseId": "ce40da1d-0df0-4819-8f30-60ba77dc1277",
-        "min": 30,
         "max": 30,
         "rest": 60
       },
       {
         "exerciseId": "e2e38298-3e2c-4236-919a-d562db3a0a36",
-        "min": 8,
         "max": 12,
         "rest": 60
       }
@@ -971,19 +844,16 @@
     "progressionSets": [
       {
         "exerciseId": "ce40da1d-0df0-4819-8f30-60ba77dc1277",
-        "min": 30,
         "max": 30,
         "rest": 60
       },
       {
         "exerciseId": "3630b482-3992-4fb9-892b-145767531026",
-        "min": 8,
         "max": 12,
         "rest": 60
       },
       {
         "exerciseId": "58bc2c9f-aa1c-4b73-8646-d122cdb64f2a",
-        "min": 8,
         "max": 12,
         "rest": 60
       }
@@ -996,25 +866,21 @@
     "progressionSets": [
       {
         "exerciseId": "ce40da1d-0df0-4819-8f30-60ba77dc1277",
-        "min": 30,
         "max": 30,
         "rest": 60
       },
       {
         "exerciseId": "613a37c9-dd2d-4301-a972-fc937947c103",
-        "min": 8,
         "max": 12,
         "rest": 60
       },
       {
         "exerciseId": "5d797cfe-72ba-4de3-b1ac-49492237953e",
-        "min": 8,
         "max": 12,
         "rest": 60
       },
       {
         "exerciseId": "d9d57208-ca1a-478a-a443-2643e958f832",
-        "min": 8,
         "max": 12,
         "rest": 60
       }
@@ -1027,13 +893,11 @@
     "progressionSets": [
       {
         "exerciseId": "ce40da1d-0df0-4819-8f30-60ba77dc1277",
-        "min": 30,
         "max": 30,
         "rest": 60
       },
       {
         "exerciseId": "fab7e508-7b2b-4548-9c0c-d65ddedede4e",
-        "min": 8,
         "max": 12,
         "rest": 60
       }
@@ -1046,7 +910,6 @@
     "progressionSets": [
       {
         "exerciseId": "b3b197a1-65dd-4fc4-bb3b-8bc4a132641b",
-        "min": 8,
         "max": 12,
         "rest": 60
       }
@@ -1059,31 +922,26 @@
     "progressionSets": [
       {
         "exerciseId": "5a5d7911-fdb3-422e-8401-e855bee5fc77",
-        "min": 8,
         "max": 12,
         "rest": 60
       },
       {
         "exerciseId": "7e93efc7-e058-4293-874d-65a470576fb1",
-        "min": 8,
         "max": 12,
         "rest": 60
       },
       {
         "exerciseId": "b7ded961-07ae-494f-806e-7801bec925a7",
-        "min": 8,
         "max": 12,
         "rest": 60
       },
       {
         "exerciseId": "07bd9dc2-4054-49fc-a723-a78f60932e4e",
-        "min": 8,
         "max": 12,
         "rest": 60
       },
       {
         "exerciseId": "88d8a198-a2d9-41da-8992-3de24efe28c4",
-        "min": 8,
         "max": 12,
         "rest": 60
       }
@@ -1096,7 +954,6 @@
     "progressionSets": [
       {
         "exerciseId": "18c9d7ca-5982-43e4-9d42-dc4f5ce1ce4f",
-        "min": 8,
         "max": 12,
         "rest": 60
       }
@@ -1109,7 +966,6 @@
     "progressionSets": [
       {
         "exerciseId": "b6519241-d838-48f6-8769-d27092736054",
-        "min": 8,
         "max": 12,
         "rest": 60
       }
@@ -1122,19 +978,16 @@
     "progressionSets": [
       {
         "exerciseId": "b6cf0f07-b8c5-4e53-8192-5078842b619f",
-        "min": 8,
         "max": 12,
         "rest": 60
       },
       {
         "exerciseId": "7480a8cc-f285-4d33-997b-8a5a7f4f8b52",
-        "min": 8,
         "max": 12,
         "rest": 60
       },
       {
         "exerciseId": "8ffed1f9-7711-434d-870b-477eaf93be5f",
-        "min": 8,
         "max": 12,
         "rest": 60
       }
@@ -1147,7 +1000,6 @@
     "progressionSets": [
       {
         "exerciseId": "e246215e-4ef8-49de-b3e7-d2a27719ec1a",
-        "min": 8,
         "max": 12,
         "rest": 60
       }
