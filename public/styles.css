@@ -48,7 +48,8 @@ rr-form form {
 
 rr-landing,
 rr-finished,
-rr-rest {
+rr-rest,
+rr-set {
   display: flex;
   flex: none;
   flex-direction: column;
@@ -61,18 +62,8 @@ rr-rest {
   & > nav {
     display: flex;
     justify-content: space-between;
+    width: 80%;
   }
-}
-
-rr-set {
-  display: flex;
-  flex: none;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
-  padding: var(--spacing-md);
-  scroll-snap-align: center;
-  width: 100%;
 
   & > div {
     display: flex;
