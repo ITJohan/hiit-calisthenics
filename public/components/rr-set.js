@@ -48,16 +48,14 @@ customElements.define(
           </datalist>
         </div>
         <nav>
-          <button type="button">Previous</button>
-          <button type="button">Next</button>
+          <a href="#home">Previous</a>
+          <a href="#finish">Next</a>
         </nav>
       `;
 
       const inputEl = this.querySelector("input");
       const spanEl = this.querySelector("span");
-      const prevBtn = this.querySelector('button:first-child')
-      const nextBtn = this.querySelector('button:last-child')
-      if (inputEl === null || spanEl === null || prevBtn === null || nextBtn === null) {
+      if (inputEl === null || spanEl === null) {
         throw new Error("Could not query all elements");
       }
 
@@ -65,14 +63,6 @@ customElements.define(
         spanEl.textContent =
           /** @type {HTMLInputElement} */ (event.target).value;
       });
-      prevBtn.addEventListener('click', () => {
-        console.log('prev')
-        // TODO: go to previous
-      })
-      nextBtn.addEventListener('click', () => {
-        console.log('next')
-        // TODO: go to previous
-      })
     }
   },
 );

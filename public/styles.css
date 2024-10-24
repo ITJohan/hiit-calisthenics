@@ -21,6 +21,12 @@
   background-color: var(--color-black);
 }
 
+html {
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
 button {
   background-color: var(--color-green);
   color: var(--color-white);
@@ -40,8 +46,6 @@ button {
 
 rr-form form {
   display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
   width: 100%;
   height: 100dvh;
 }

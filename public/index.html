@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
     <link rel="stylesheet" type="text/css" href="./styles.css" />
     <script src="components/rr-form.js" type="module"></script>
     <script src="components/rr-set.js" type="module"></script>
@@ -14,11 +14,11 @@
     <rr-form>
       <form>
         <rr-landing>
-          <h1>Recommended Routine</h1>
+          <h1 id="home">Recommended Routine</h1>
         </rr-landing>
 
         <!-- Warmup -->
-        <rr-set category="shoulder-warmup">
+        <!-- <rr-set category="shoulder-warmup">
           <p>Loading...</p>
         </rr-set>
         <rr-set category="spine-warmup">
@@ -41,7 +41,7 @@
         </rr-set>
         <rr-set category="hinge-warmup">
           <p>Loading...</p>
-        </rr-set>
+        </rr-set> -->
 
         <!-- Pull-up/squat pair -->
         <rr-set category="pull-up">
@@ -53,7 +53,7 @@
         <rr-set category="squat">
           <p>Loading...</p>
         </rr-set>
-        <rr-rest time="10" active>
+        <!-- <rr-rest time="10" active>
           <p>Loading...</p>
         </rr-rest>
         <rr-set category="pull-up">
@@ -79,10 +79,10 @@
         </rr-set>
         <rr-rest time="90">
           <p>Loading...</p>
-        </rr-rest>
+        </rr-rest> -->
 
         <!-- Dip/hinge pair -->
-        <rr-set category="dip">
+        <!-- <rr-set category="dip">
           <p>Loading...</p>
         </rr-set>
         <rr-rest time="90">
@@ -117,10 +117,10 @@
         </rr-set>
         <rr-rest time="90">
           <p>Loading...</p>
-        </rr-rest>
+        </rr-rest> -->
 
         <!-- Row/push-up pair -->
-        <rr-set category="row">
+        <!-- <rr-set category="row">
           <p>Loading...</p>
         </rr-set>
         <rr-rest time="90">
@@ -155,10 +155,10 @@
         </rr-set>
         <rr-rest time="90">
           <p>Loading...</p>
-        </rr-rest>
+        </rr-rest> -->
 
         <!-- Core triplet -->
-        <rr-set category="anti-extension">
+        <!-- <rr-set category="anti-extension">
           <p>Loading...</p>
         </rr-set>
         <rr-rest time="60">
@@ -208,9 +208,9 @@
         </rr-rest>
         <rr-set category="extension">
           <p>Loading...</p>
-        </rr-set>
+        </rr-set> -->
         <rr-finished>
-          <h2>Finished! Good job💪</h2>
+          <h2 id="finish">Finished! Good job💪</h2>
           <button>Submit</button>
         </rr-finished>
       </form>
