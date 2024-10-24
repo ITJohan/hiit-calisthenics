@@ -27,6 +27,10 @@ customElements.define(
       <h2>Rest</h2>
       <p>Ad</p>
       <time></time>
+      <nav>
+        <button type="button">Previous</button>
+        <button type="button">Next</button>
+      </nav>
     `;
       this.timeElement = this.querySelector("time");
       this.update();
@@ -36,6 +40,8 @@ customElements.define(
       clearInterval(this.intervalId);
       this.intervalId = undefined;
     }
+
+    // TODO: time should only be the initial value
 
     static observedAttributes = ["time", "active"];
 

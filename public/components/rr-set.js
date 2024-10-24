@@ -37,8 +37,6 @@ customElements.define(
       ).map((_, index) => index);
       const id = exercise.id + crypto.randomUUID().substring(0, 5);
 
-      // TODO: scroll to next rr-rest and set active attribute on input change
-
       this.innerHTML = `
         <h2><a href=${exercise.url} target="_blank">${exercise.name}</a></h2>
         <img src="./assets/placeholder.jpg" width="50" />
@@ -49,11 +47,17 @@ customElements.define(
             ${reps.map((rep) => `<option value="${rep}"></option>`).join("")}
           </datalist>
         </div>
+        <nav>
+          <button type="button">Previous</button>
+          <button type="button">Next</button>
+        </nav>
       `;
 
       const inputEl = this.querySelector("input");
       const spanEl = this.querySelector("span");
-      if (inputEl === null || spanEl === null) {
+      const prevBtn = this.querySelector('button:first-child')
+      const nextBtn = this.querySelector('button:last-child')
+      if (inputEl === null || spanEl === null || prevBtn === null || nextBtn === null) {
         throw new Error("Could not query all elements");
       }
 
@@ -61,6 +65,14 @@ customElements.define(
         spanEl.textContent =
           /** @type {HTMLInputElement} */ (event.target).value;
       });
+      prevBtn.addEventListener('click', () => {
+        console.log('prev')
+        // TODO: go to previous
+      })
+      nextBtn.addEventListener('click', () => {
+        console.log('next')
+        // TODO: go to previous
+      })
     }
   },
 );
