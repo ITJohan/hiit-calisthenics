@@ -34,24 +34,33 @@ customElements.define(
       const exercise = getExercise(progressionSet.exerciseId);
       const reps = Array(progressionSet.max + 1).fill(
         undefined,
-      ).map((_, index,) => index);
+      ).map((_, index) => index);
       const id = exercise.id + crypto.randomUUID().substring(0, 5);
 
       // TODO: scroll to next rr-rest and set active attribute on input change
-
-      // TODO: replace radio inputs with range input, from 0 to max
 
       this.innerHTML = `
         <h2><a href=${exercise.url} target="_blank">${exercise.name}</a></h2>
         <img src="./assets/placeholder.jpg" width="50" />
         <div>
-          <label for="${id}-input">Reps:</label>
+          <label for="${id}-input">Reps: <span>0</span></label>
           <input id="${id}-input" type="range" name="${id}" max="${progressionSet.max}" list="reps">
           <datalist id="reps">
-            ${reps.map(rep => `<option value="${rep}" label="${rep}"></option>`).join("")}
+            ${reps.map((rep) => `<option value="${rep}"></option>`).join("")}
           </datalist>
         </div>
-  `;
+      `;
+
+      const inputEl = this.querySelector("input");
+      const spanEl = this.querySelector("span");
+      if (inputEl === null || spanEl === null) {
+        throw new Error("Could not query all elements");
+      }
+
+      inputEl.addEventListener("input", (event) => {
+        spanEl.textContent =
+          /** @type {HTMLInputElement} */ (event.target).value;
+      });
     }
   },
 );

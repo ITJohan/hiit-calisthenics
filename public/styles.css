@@ -79,7 +79,7 @@ rr-set {
     flex-direction: column;
     justify-content: space-between;
     width: 80%;
-    
+
     & > datalist {
       display: flex;
       justify-content: space-between;
