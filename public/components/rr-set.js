@@ -57,6 +57,8 @@ customElements.define("rr-set", class RRSet extends HTMLElement {
         throw new Error("Could not query all elements");
       }
 
+      // TODO: start animating right arrow on change
+
       inputEl.addEventListener("input", (event) => {
         timeEl.textContent =
           /** @type {HTMLInputElement} */ (event.target).value;

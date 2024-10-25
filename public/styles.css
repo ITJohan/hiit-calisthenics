@@ -44,8 +44,6 @@ button {
   }
 }
 
-/* TODO: refactor out and import rr-* CSS */
-
 rr-form form {
   display: flex;
   width: 100%;

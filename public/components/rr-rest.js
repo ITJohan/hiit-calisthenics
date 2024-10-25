@@ -24,16 +24,19 @@ customElements.define(
 
     connectedCallback() {
       this.innerHTML = `
-      <h2>Rest</h2>
-      <div>
-        <span>&lt;&lt;</span>
-        <rr-card>
-          <p>Ad</p>
-          <time></time>
-        </rr-card>
-        <span>&gt;&gt;</span>
-      </div>
-    `;
+        <h2>Rest</h2>
+        <div>
+          <span>&lt;&lt;</span>
+          <rr-card>
+            <p>Ad</p>
+            <time></time>
+          </rr-card>
+          <span>&gt;&gt;</span>
+        </div>
+      `;
+
+      // TODO: animate right arrow when timers finished
+
       this.timeElement = this.querySelector("time");
       this.update();
     }
@@ -44,6 +47,7 @@ customElements.define(
     }
 
     // TODO: time attribute should only be the initial value
+    // TODO: remove active attribute in favor of intersection observer
 
     static observedAttributes = ["time", "active"];
 
