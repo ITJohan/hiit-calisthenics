@@ -1,3 +1,9 @@
+@import "./components/rr-form.css";
+@import "./components/rr-landing.css";
+@import "./components/rr-set.css";
+@import "./components/rr-rest.css";
+@import "./components/rr-finished.css";
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -41,59 +47,5 @@ button {
 
   &:disabled {
     opacity: var(--opacity-disabled);
-  }
-}
-
-figure {
-  width: 400px;
-  
-  > *:not(figcaption) {
-    display: block;
-    width: 100%;
-    background-color: var(--color-green);
-    padding: var(--spacing-sm);
-  }
-
-  > figcaption {
-    background-color: var(--color-brown);
-    padding: var(--spacing-sm);
-  }
-}
-
-rr-form form {
-  display: flex;
-  width: 100%;
-  height: 100dvh;
-}
-
-rr-landing,
-rr-finished,
-rr-rest,
-rr-set {
-  display: flex;
-  flex: none;
-  flex-direction: column;
-  align-items: center;
-  padding: var(--spacing-md);
-  scroll-snap-align: center;
-  width: 100%;
-
-  & > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
-}
-
-rr-card {
-  display: flex;
-  flex-direction: column;
-  width: 200px;
-  background-color: var(--color-green);
-
-  & > datalist {
-    display: flex;
-    justify-content: space-between;
   }
 }

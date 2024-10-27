@@ -24,17 +24,16 @@ customElements.define(
 
     connectedCallback() {
       this.innerHTML = `
+        <h2>Rest</h2>
         <div>
           <span>&lt;&lt;</span>
-          <figure>
+          <div>
             <p>Ad</p>
-            <figcaption>
-              Rest: <time></time>
-            </figcaption>
-          </figure>
+          </div>
           <span>&gt;&gt;</span>
         </div>
-      `;
+        <div>Rest: <time></time></div>
+  `;
 
       // TODO: animate right arrow when timers finished
 
