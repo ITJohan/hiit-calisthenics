@@ -35,6 +35,10 @@ customElements.define("rr-set", class RRSet extends HTMLElement {
       ).map((_, index) => index);
       const id = exercise.id + crypto.randomUUID().substring(0, 5);
 
+      // TODO: maybe it's better to have the arrows fill the height.
+      // Right now they're not aligned between views.
+      // Maybe also makes it possible to extract a rr-view component
+
       this.innerHTML = `
         <h2>${exercise.name}</h2>
         <div>
