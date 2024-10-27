@@ -36,17 +36,19 @@ customElements.define("rr-set", class RRSet extends HTMLElement {
       const id = exercise.id + crypto.randomUUID().substring(0, 5);
 
       this.innerHTML = `
-        <h2><a href=${exercise.url} target="_blank">${exercise.name}</a></h2>
         <div>
           <span>&lt;&lt;</span>
-          <rr-card>
-            <img src="./assets/placeholder.jpg" width="50" />
+          <div>
+            <figure>
+              <img src="./assets/placeholder.jpg" alt="${exercise.name}" />
+              <figcaption>${exercise.name}</figcaption>
+            </figure>
             <label for="${id}-input">Reps: <time>0</time></label>
             <input id="${id}-input" type="range" name="${id}" max="${progressionSet.max}" list="reps">
             <datalist id="reps">
               ${reps.map((rep) => `<option value="${rep}"></option>`).join("")}
             </datalist>
-          </rr-card>
+          </div>
           <span>&gt;&gt;</span>
         </div>
       `;

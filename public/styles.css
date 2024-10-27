@@ -44,6 +44,22 @@ button {
   }
 }
 
+figure {
+  width: 400px;
+  
+  > *:not(figcaption) {
+    display: block;
+    width: 100%;
+    background-color: var(--color-green);
+    padding: var(--spacing-sm);
+  }
+
+  > figcaption {
+    background-color: var(--color-brown);
+    padding: var(--spacing-sm);
+  }
+}
+
 rr-form form {
   display: flex;
   width: 100%;
