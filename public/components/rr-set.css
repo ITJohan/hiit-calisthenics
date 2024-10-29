@@ -21,7 +21,7 @@ rr-set {
     }
   }
 
-  & > div:last-of-type {
+  > div:last-of-type {
     display: flex;
     flex-direction: column;
   }

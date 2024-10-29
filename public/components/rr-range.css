@@ -1,0 +1,31 @@
+rr-range {
+  width: 100%;
+  ul {
+    display: flex;
+    list-style-type: none;
+
+    border: 1px solid var(--color-white);
+    border-left: none;
+    border-right: none;
+
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+
+    li {
+      scroll-snap-align: center;
+      padding: var(--spacing-lg);
+
+      &:first-child {
+        margin-left: 50%;
+      }
+
+      &:last-child {
+        margin-right: 50%;
+      }
+
+      &.active {
+        background-color: var(--color-green);
+      }
+    }
+  }
+}

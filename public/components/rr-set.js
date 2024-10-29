@@ -1,5 +1,6 @@
 import { getExercise, getNextProgressionSet } from "../db.js";
 import { isCategory } from "../utils/type-guards.js";
+import './rr-range.js'
 
 customElements.define("rr-set", class RRSet extends HTMLElement {
     get category() {
@@ -53,6 +54,7 @@ customElements.define("rr-set", class RRSet extends HTMLElement {
             ${reps.map((rep) => `<option value="${rep}"></option>`).join("")}
           </datalist>
         </div>
+        <rr-range reps="${reps.join(",")}"></rr-range>
       `;
 
       const inputEl = this.querySelector("input");
