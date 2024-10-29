@@ -3,10 +3,22 @@ import { addRepsToExercise } from "../db.js";
 customElements.define(
   "rr-form",
   class RRForm extends HTMLElement {
+    #rrRestsObserver = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.setAttribute("active", "");
+        }
+      });
+    }, { threshold: 1.0 });
+
     connectedCallback() {
       const form = this.querySelector("form");
 
       if (!form) throw new Error("Need to wrap a form element");
+
+      this.querySelectorAll("rr-rest").forEach((rrRest) =>
+        this.#rrRestsObserver.observe(rrRest)
+      );
 
       form.addEventListener("submit", (e) => {
         e.preventDefault();
@@ -27,6 +39,10 @@ customElements.define(
           [exerciseId, sets],
         ) => addRepsToExercise(exerciseId, sets));
       });
+    }
+
+    disconnectedCallback() {
+      this.#rrRestsObserver.disconnect();
     }
   },
 );

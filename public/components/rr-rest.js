@@ -4,15 +4,7 @@ customElements.define(
     /** @type {HTMLTimeElement | null} */ timeElement = null;
     /** @type {number | undefined} */ intervalId = undefined;
     /** @type {number} */ time = 0;
-
-    get active() {
-      return this.getAttribute("active") === "" ? true : false;
-    }
-    set active(active) {
-      active === true
-        ? this.setAttribute("active", "")
-        : this.removeAttribute("active");
-    }
+    /** @type {boolean} */ active = false;
 
     connectedCallback() {
       this.innerHTML = `
@@ -38,27 +30,45 @@ customElements.define(
       this.intervalId = undefined;
     }
 
-    // TODO: remove active attribute in favor of intersection observer
-
     static observedAttributes = ["time", "active"];
 
-    attributeChangedCallback() {
-      if (this.active && !this.intervalId) {
-        this.intervalId = setInterval(() => {
-          const timeAttribute = this.time;
-          const time = Number(timeAttribute);
+    attributeChangedCallback(
+      /** @type {string} */ name,
+      /** @type {string} */ prev,
+      /** @type {string} */ next,
+    ) {
+      if (prev === next) return;
 
-          if (time > 0) {
-            this.time = time - 1;
-            this.update();
-          } else {
-            this.active = false;
-            this.time = Number(this.getAttribute('time'));
-
+      switch (name) {
+        case "time": {
+          const time = Number(next)
+          if (isNaN(time)) throw new Error('time must be a number')
+          this.time = time;
+          break;
+        }
+        case "active": {
+          if (this.intervalId) {
+            const time = Number(this.getAttribute('time'))
+            if (isNaN(time)) throw new Error('time must be a number')
+            this.time = time;
             clearInterval(this.intervalId);
             this.intervalId = undefined;
+            this.update();
           }
-        }, 1000);
+
+          this.active = next === null ? false : true;
+          if (this.active === false) break;
+
+          this.intervalId = setInterval(() => {
+            if (this.time > 0) {
+              this.time = this.time - 1;
+              this.update();
+            } else {
+              this.removeAttribute('active')
+            }
+          }, 1000);
+          break;
+        }
       }
 
       this.update();
