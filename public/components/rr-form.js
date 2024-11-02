@@ -20,8 +20,8 @@ customElements.define(
         this.#rrRestsObserver.observe(rrRest)
       );
 
-      form.addEventListener("submit", (e) => {
-        e.preventDefault();
+      form.addEventListener("submit", (event) => {
+        event.preventDefault();
         const formData = new FormData(form);
 
         const workout = formData.entries().reduce((workout, [key, value]) => {
@@ -38,6 +38,8 @@ customElements.define(
         Object.entries(workout).forEach((
           [exerciseId, sets],
         ) => addRepsToExercise(exerciseId, sets));
+
+        location.reload();
       });
     }
 
