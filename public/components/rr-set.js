@@ -1,8 +1,10 @@
 import { getExercise, getNextProgressionSet } from "../db.js";
 import { isCategory } from "../utils/type-guards.js";
-import './rr-range.js'
+import "./rr-range.js";
 
-customElements.define("rr-set", class RRSet extends HTMLElement {
+customElements.define(
+  "rr-set",
+  class RRSet extends HTMLElement {
     get category() {
       const category = this.getAttribute("category");
       if (category === null) throw new Error("category is required");
@@ -47,13 +49,6 @@ customElements.define("rr-set", class RRSet extends HTMLElement {
           <img src="./assets/placeholder.jpg" alt="${exercise.name}" />
           <span>&gt;&gt;</span>
         </div>
-        <div>
-          <label for="${id}-input">Reps: <time>0</time></label>
-          <input id="${id}-input" type="range" name="${id}" max="${progressionSet.max}" list="reps">
-          <datalist id="reps">
-            ${reps.map((rep) => `<option value="${rep}"></option>`).join("")}
-          </datalist>
-        </div>
         <rr-range reps="${reps.join(",")}"></rr-range>
       `;
 
@@ -68,6 +63,9 @@ customElements.define("rr-set", class RRSet extends HTMLElement {
       inputEl.addEventListener("input", (event) => {
         timeEl.textContent =
           /** @type {HTMLInputElement} */ (event.target).value;
+      });
+      this.addEventListener("rr-change", (event) => {
+        console.log(event);
       });
     }
   },

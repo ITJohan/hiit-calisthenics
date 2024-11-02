@@ -4,9 +4,15 @@ rr-range {
     display: flex;
     list-style-type: none;
 
-    border: 1px solid var(--color-white);
+    border: 5px solid var(--color-white);
     border-left: none;
     border-right: none;
+    border-image: linear-gradient(
+      90deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(9, 9, 121, 1) 35%,
+      rgba(0, 212, 255, 1) 100%
+    );
 
     overflow-x: auto;
     scroll-snap-type: x mandatory;

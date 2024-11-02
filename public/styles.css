@@ -3,7 +3,7 @@
 @import "./components/rr-set.css";
 @import "./components/rr-rest.css";
 @import "./components/rr-finished.css";
-@import './components/rr-range.css';
+@import "./components/rr-range.css";
 
 * {
   box-sizing: border-box;

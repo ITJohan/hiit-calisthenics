@@ -41,15 +41,15 @@ customElements.define(
 
       switch (name) {
         case "time": {
-          const time = Number(next)
-          if (isNaN(time)) throw new Error('time must be a number')
+          const time = Number(next);
+          if (isNaN(time)) throw new Error("time must be a number");
           this.time = time;
           break;
         }
         case "active": {
           if (this.intervalId) {
-            const time = Number(this.getAttribute('time'))
-            if (isNaN(time)) throw new Error('time must be a number')
+            const time = Number(this.getAttribute("time"));
+            if (isNaN(time)) throw new Error("time must be a number");
             this.time = time;
             clearInterval(this.intervalId);
             this.intervalId = undefined;
@@ -64,7 +64,7 @@ customElements.define(
               this.time = this.time - 1;
               this.update();
             } else {
-              this.removeAttribute('active')
+              this.removeAttribute("active");
             }
           }, 1000);
           break;
