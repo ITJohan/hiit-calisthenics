@@ -49,24 +49,10 @@ customElements.define(
           <img src="./assets/placeholder.jpg" alt="${exercise.name}" />
           <span>&gt;&gt;</span>
         </div>
-        <rr-range reps="${reps.join(",")}"></rr-range>
+        <rr-range name="${exercise.id}-${id}" reps="${reps.join(",")}"></rr-range>
       `;
 
-      const inputEl = this.querySelector("input");
-      const timeEl = this.querySelector("time");
-      if (inputEl === null || timeEl === null) {
-        throw new Error("Could not query all elements");
-      }
-
       // TODO: start animating right arrow on change
-
-      inputEl.addEventListener("input", (event) => {
-        timeEl.textContent =
-          /** @type {HTMLInputElement} */ (event.target).value;
-      });
-      this.addEventListener("rr-change", (event) => {
-        console.log(event);
-      });
     }
   },
 );

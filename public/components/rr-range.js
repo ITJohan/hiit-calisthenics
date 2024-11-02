@@ -2,8 +2,15 @@ customElements.define(
   "rr-range",
   class RRRange extends HTMLElement {
     /** @type {number[]} */ reps = [];
+    /** @type {number} */ value = 0;
 
+    static formAssociated = true;
     static observedAttributes = ["reps"];
+
+    constructor() {
+      super();
+      this.internals = this.attachInternals();
+    }
 
     attributeChangedCallback(
       /** @type {string} */ name,
@@ -23,14 +30,14 @@ customElements.define(
 
     update() {
       this.innerHTML = `
-      <ul>
-        ${
-        this.reps.map((rep, index) =>
-          `<li tabindex="0" ${index === 0 ? 'class="active"' : ""}>${rep}</li>`
-        ).join("")
-      }
-      </ul> 
-    `;
+        <ul>
+          ${
+          this.reps.map((rep, index) =>
+            `<li tabindex="0" ${index === 0 ? 'class="active"' : ""}>${rep}</li>`
+          ).join("")
+        }
+        </ul> 
+      `;
       const container = this.querySelector("ul");
       if (container === null) throw new Error("can not find the container");
 
@@ -42,9 +49,7 @@ customElements.define(
         // @ts-ignore: snapTargetInline is newly available
         const snapTarget = event.snapTargetInline;
         snapTarget.classList.add("active");
-        this.dispatchEvent(
-          new CustomEvent("rr-change", { detail: snapTarget.innerText }),
-        );
+        this.internals.setFormValue(snapTarget.innerText);
       });
     }
   },
