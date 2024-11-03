@@ -12,6 +12,7 @@ rr-set {
   > div {
     display: flex;
     justify-content: space-between;
+    gap: var(--spacing-lg);
     align-items: center;
     width: 100%;
 
