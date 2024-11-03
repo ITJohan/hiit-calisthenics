@@ -9,7 +9,7 @@ rr-set {
   height: 100dvh;
   width: 100dvw;
 
-  > div:first-of-type {
+  > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -19,10 +19,5 @@ rr-set {
       min-width: 0;
       max-width: 400px;
     }
-  }
-
-  > div:last-of-type {
-    display: flex;
-    flex-direction: column;
   }
 }
