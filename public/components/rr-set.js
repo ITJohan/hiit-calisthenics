@@ -42,12 +42,24 @@ customElements.define(
       // Right now they're not aligned between views.
       // Maybe also makes it possible to extract a rr-view component
 
+      // TODO: extract svg arrows to own custom elements, so they can be reused and isolate animation
+
       this.innerHTML = `
         <h2>${exercise.name}</h2>
         <div>
-          <span>&lt;&lt;</span>
+          <svg width="100" height="100">
+            <line x1="95" y1="5" x2="50" y2="50" stroke="white" stroke-width="10" stroke-linecap="round" />
+            <line x1="50" y1="50" x2="95" y2="95" stroke="white" stroke-width="10" stroke-linecap="round" />
+            <line x1="50" y1="5" x2="5" y2="50" stroke="white" stroke-width="10" stroke-linecap="round" />
+            <line x1="5" y1="50" x2="50" y2="95" stroke="white" stroke-width="10" stroke-linecap="round" />
+          </svg>
           <img src="./assets/placeholder.jpg" alt="${exercise.name}" />
-          <span>&gt;&gt;</span>
+          <svg width="100" height="100">
+            <line x1="5" y1="5" x2="50" y2="50" stroke="white" stroke-width="10" stroke-linecap="round" />
+            <line x1="50" y1="50" x2="5" y2="95" stroke="white" stroke-width="10" stroke-linecap="round" />
+            <line x1="50" y1="5" x2="95" y2="50" stroke="white" stroke-width="10" stroke-linecap="round" />
+            <line x1="95" y1="50" x2="50" y2="95" stroke="white" stroke-width="10" stroke-linecap="round" />
+          </svg>
         </div>
         <rr-range name="${exercise.id}-${id}" reps="${reps.join(",")}"></rr-range>
       `;

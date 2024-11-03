@@ -10,11 +10,21 @@ customElements.define(
       this.innerHTML = `
         <h2>Rest</h2>
         <div>
-          <span>&lt;&lt;</span>
+          <svg width="100" height="100">
+            <line x1="95" y1="5" x2="50" y2="50" stroke="white" stroke-width="10" stroke-linecap="round" />
+            <line x1="50" y1="50" x2="95" y2="95" stroke="white" stroke-width="10" stroke-linecap="round" />
+            <line x1="50" y1="5" x2="5" y2="50" stroke="white" stroke-width="10" stroke-linecap="round" />
+            <line x1="5" y1="50" x2="50" y2="95" stroke="white" stroke-width="10" stroke-linecap="round" />
+          </svg>
           <div>
             <p>Ad</p>
           </div>
-          <span>&gt;&gt;</span>
+          <svg width="100" height="100">
+            <line x1="5" y1="5" x2="50" y2="50" stroke="white" stroke-width="10" stroke-linecap="round" />
+            <line x1="50" y1="50" x2="5" y2="95" stroke="white" stroke-width="10" stroke-linecap="round" />
+            <line x1="50" y1="5" x2="95" y2="50" stroke="white" stroke-width="10" stroke-linecap="round" />
+            <line x1="95" y1="50" x2="50" y2="95" stroke="white" stroke-width="10" stroke-linecap="round" />
+          </svg>
         </div>
         <div>Rest: <time></time></div>
   `;
