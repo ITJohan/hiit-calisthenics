@@ -1,21 +1,18 @@
 rr-range {
   width: 100%;
+
   ul {
     display: flex;
     list-style-type: none;
 
-    border: 5px solid var(--color-white);
+    border: 1px solid var(--color-white);
+    border-image: linear-gradient(to right, transparent, var(--color-white), transparent) 1;
     border-left: none;
     border-right: none;
-    border-image: linear-gradient(
-      90deg,
-      rgba(2, 0, 36, 1) 0%,
-      rgba(9, 9, 121, 1) 35%,
-      rgba(0, 212, 255, 1) 100%
-    );
 
-    overflow-x: auto;
+    overflow-x: scroll;
     scroll-snap-type: x mandatory;
+    scrollbar-width: none;
 
     li {
       scroll-snap-align: center;
