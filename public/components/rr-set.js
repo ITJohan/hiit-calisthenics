@@ -48,7 +48,7 @@ customElements.define(
         <h2>${exercise.name}</h2>
         <div>
           <rr-chevron-left></rr-chevron-left>
-          <img src="./assets/placeholder.jpg" alt="${exercise.name}" />
+          <rr-squats></rr-squats>
           <rr-chevron-right></rr-chevron-right>
         </div>
         <rr-range name="${exercise.id}-${id}" reps="${reps.join(",")}"></rr-range>
