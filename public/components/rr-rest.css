@@ -6,6 +6,7 @@ rr-rest {
   justify-content: space-between;
   padding: var(--spacing-md);
   scroll-snap-align: center;
+  scroll-snap-stop: always;
   width: 100dvw;
   height: 100dvh;
 
