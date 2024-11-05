@@ -42,8 +42,6 @@ customElements.define(
       // Right now they're not aligned between views.
       // Maybe also makes it possible to extract a rr-view component
 
-      // TODO: extract svg arrows to own custom elements, so they can be reused and isolate animation
-
       this.innerHTML = `
         <h2>${exercise.name}</h2>
         <div>
